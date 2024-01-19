@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'amsterdam-four';
+  src: url('/fonts/amsterdam-four.ttf') format('truetype');
+}
+.logo {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.circle {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 3px solid transparent; // Rend toutes les bordures transparentes
+  border-top: 3px solid black; // Segment nord-est visible
+  border-bottom: 3px solid black; // Segment sud-ouest visible
+  transform: rotate(45deg); // Rotation de 45 degrés
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  // border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotate(-45deg);
+}
+
+.signature {
+  font-family: 'amsterdam-four';
+  font-size: 60px;
+
+  // border: 1px solid blue;
+  margin: 50px 0 50px 0;
+}
+
+.name {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: 500;
+  // border: 1px solid cyan;
+  margin-bottom: 5px;
+}
+
+.job {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  // border: 1px solid greenyellow;
+  margin: 10px;
+}
+
+// // Conteneur principal
+// .logo {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh; // Ajustez en fonction de vos besoins
+// }
+
+// // Conteneur du Cercle
+// .circle {
+//   width: 400px; // La taille du logo
+//   height: 400px;
+//   border-radius: 50%; // Pour le rendre circulaire
+//   border: 2px solid transparent; // Rend toutes les bordures transparentes
+//   border-top: 2px solid black; // Segment nord-est visible
+//   border-bottom: 2px solid black; // Segment sud-ouest visible
+//   transform: rotate(45deg); // Rotation de 45 degrés
+//   display: flex; /* Utiliser flexbox */
+//   flex-direction: column; // Pour empiler le texte verticalement
+//   align-items: center; /* Alignement vertical au centre */
+//   justify-content: center; /* Alignement horizontal au centre */
+// }
+
+// .textContainer {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   transform: rotate(-45deg);
+//   margin: 80px;
+//   border: 1px solid red;
+// }
+// .signature {
+//   font-family: 'amsterdam-four';
+//   font-size: 60px;
+//   margin: 80px;
+//   padding: 80px;
+//   border: 1px solid rgb(2, 113, 67);
+// }
+// .name {
+//   font-size: 40px;
+//   // padding: 20px;
+
+//   border: 1px solid green;
+// }
+// .job {
+//   font-size: 20px;
+// }

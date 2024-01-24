@@ -1,13 +1,6 @@
 import Image from 'next/image';
 import styles from './About.module.scss';
-import {
-  roboto,
-  roboto_Condensed,
-  roboto_Mono,
-  roboto_Flex,
-  roboto_Slab,
-  poppins,
-} from '@/styles/fonts';
+import { poppins } from '@/styles/fonts';
 
 export default function Home() {
   return (
@@ -26,8 +19,19 @@ export default function Home() {
           school, <br></br>im looking for opportunities
         </p>
       </div>
-      <div className={styles.presentationCardContainer}>
-        <div className={styles.presentationTextContainer}>
+      <div className={styles.cardContainer}>
+        <div className={styles.photoContainer}>
+          <Image
+            className={styles.image}
+            src="/images/imageprofil.jpg"
+            // width={1000}
+            // height={500}
+            alt="Photo de profil"
+            fill={true}
+            // layout="responsive"
+          />
+        </div>
+        <div className={styles.presentationContainer}>
           <p className={styles.presentationText}>
             Ayant un esprit créatif, j'ai une certaine appétance pour le
             front-end, c'est pourquoi durant ma formation j'ai choisis de suivre
@@ -37,6 +41,9 @@ export default function Home() {
             données et les API Rest. Je suis aujourd'hui capable de réaliser un
             projet complet front-end et back-end
           </p>
+          <button className={styles.presentionButton}>Learn More</button>
+        </div>
+        <div className={styles.goalContainer}>
           <p className={styles.goalText}>
             Aujourd'hui je suis à la recherche de nouvelles opportunitées et de
             nouveaux défis, j'ai obtenue de solides bases dans l'univers du
@@ -49,57 +56,11 @@ export default function Home() {
             l'image de marque de votre entreprise.
           </p>
           <div className={styles.contactContainer}>
-            <button className={styles.buttonLearnMore}>Learn More</button>
+            <p className={styles.contactText}>Feel free to contact me at:</p>
+            <p className={styles.contactMail}>axel.martin@outlook.com</p>
           </div>
-        </div>
-        <div className={styles.photoContainer}>
-          <Image
-            className={styles.image}
-            src="/images/imageprofil.jpg"
-            // width={1000}
-            // height={500}
-            alt="Photo de profil"
-            fill={true}
-            // layout="responsive"
-          />
         </div>
       </div>
     </section>
-
-    // <section className={styles.sectionContainer}>
-    //   <h2 className={styles.aboutSeparator}>About me</h2>
-    //   <div className={styles.cardContainer}>
-    //     <div className={styles.quoteContainer}>
-    //       <p className={styles.helloText}>Hello,</p>
-    //       <p className={styles.nameText}>I&apos;m Axel</p>
-    //       <p className={styles.quoteText}>I build things for the Web !</p>
-    //     </div>
-    //     <div className={styles.photoContainer}>
-    //       <Image
-    //         className={styles.image}
-    //         src="/images/imageprofil.jpg"
-    //         // width={1000}
-    //         // height={500}
-    //         alt="Photo de profil"
-    //         fill={true}
-    //         // layout="responsive"
-    //       />
-    //     </div>
-    //     <div className={styles.descriptionContainer}>
-    //       box 3
-    //       <p>
-    //         {' '}
-    //         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
-    //         eligendi at maiores facilis necessitatibus magni earum velit totam
-    //         fuga quae maxime, blanditiis inventore dolor ipsum rem, nam,
-    //         temporibus quaerat dolore? Lorem ipsum, dolor sit amet consectetur
-    //         adipisicing elit. Dolorum iure dignissimos quis magni beatae
-    //         inventore explicabo nam assumenda iusto. Numquam beatae nobis, ipsam
-    //         voluptas esse dicta recusandae unde suscipit labore?
-    //       </p>
-    //     </div>
-    //   </div>
-    //   <div className={styles.bottomSeparator}>Learn More</div>
-    // </section>
   );
 }

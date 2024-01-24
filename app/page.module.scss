@@ -1,5 +1,26 @@
-.h1 {
-  color: red;
+/* ------------------------------------------------------------------
+--------------------------- Section ABOUT ---------------------------
+--------------------------------------------------------------------- */
+.aboutContainer {
+  display: flex;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.hello {
+  margin: 10px;
+  border: 1px solid red;
+}
+.personalDescription {
+  margin: 10px;
+  border: 1px solid red;
+}
+.contactContainer {
+  margin: 10px;
+  border: 1px solid red;
+}
+.contactLinks {
+  margin: 10px;
+  border: 1px solid orange;
 }
 
 // .main {

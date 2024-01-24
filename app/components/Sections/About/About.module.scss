@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'Brandon_Grotesque_regular';
+  src: url('/fonts/Brandon_Grotesque_regular.otf') format('truetype');
+}
+
+.aboutSectionContainer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin: 20px;
+  border: 2px solid white;
+
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid red;
+
+    .headerTitle {
+      font-size: 50px;
+      // letter-spacing: 4px;
+      font-weight: 400;
+
+      margin: 20px;
+      border: 1px solid orange;
+    }
+
+    .headerQuote {
+      position: relative;
+      text-align: center;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+
+      border: 1px solid orange;
+      color: white;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%; // Centrer verticalement
+        width: 130px; // Longueur de la ligne
+        height: 1px; // Épaisseur de la ligne
+        background-color: rgb(255, 255, 255); // Couleur de la ligne
+      }
+      &::before {
+        left: -140px; // Positionner à gauche du texte
+      }
+      &::after {
+        right: -140px; // Positionner à droite du texte
+      }
+    }
+    .headerPresentation {
+      text-align: center;
+      font-size: 12px;
+      // text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 20px;
+
+      margin: 40px 340px;
+      border: 1px solid orange;
+    }
+  }
+
+  .presentationCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+    border: 1px solid red;
+
+    .presentationTextContainer {
+      max-width: 50%;
+      display: flex;
+      margin: 20px;
+      border: 1px solid orange;
+
+      .presentationText {
+        margin: 20px;
+        border: 1px solid yellow;
+      }
+
+      .goalText {
+        margin: 20px;
+        border: 1px solid yellow;
+      }
+    }
+
+    .photoContainer {
+      position: relative;
+      width: 40vw; //                                 Utilisez une unité relative pour la responsivité
+      max-width: 300px; //                            Maximum width
+      height: 40vw; //                                Assurez-vous que la hauteur et la largeur sont égales
+      max-height: 300px; //                           Maximum height
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      border: 3px solid #e9d4ae;
+      overflow: hidden;
+    }
+
+    .contactContainer {
+      margin: 20px;
+      border: 1px solid orange;
+    }
+  }
+}
+
+// .sectionContainer {
+//   color: white;
+//   margin: 40px;
+//   border: 1px solid white;
+
+//   .aboutSeparator {
+//     display: flex;
+//     align-items: center;
+
+//     font-size: 20px;
+
+//     margin: 20px;
+//     border: 1px solid red;
+//     &::before {
+//       content: '';
+//       display: block;
+//       height: 0.09em;
+//       min-width: 80px; // px au lieu de vw pour que la partie gauche soit fixe
+//       background: linear-gradient(to right, rgba(240, 240, 240, 0), #fff);
+//       margin-right: 4vh;
+//     }
+//     &::after {
+//       content: '';
+//       display: block;
+//       height: 0.09em;
+//       min-width: 30vw;
+//       background: linear-gradient(to left, rgba(240, 240, 240, 0), #fff);
+//       margin-left: 4vh;
+//     }
+//   }
+
+//   .cardContainer {
+//     display: flex;
+//     justify-content: space-between; //              Pour que le 2eme élément soit toujours centré (a combiner)
+
+//     margin: 20px;
+//     border: 1px solid red;
+
+//     .quoteContainer {
+//       // Parent : cardContainer
+//       flex-grow: 1; //                                Pour que le 2eme élément soit toujours centré (a combiner)
+//       flex-basis: 0; //                               Pour que le 2eme élément soit toujours centré (a combiner)
+
+//       // text-transform: uppercase;
+
+//       margin: 20px;
+//       // padding-left: 95px;
+//       border: 1px solid orange;
+
+//       .helloText {
+//         color: red;
+//       }
+//       .nameText {
+//         color: orange;
+//       }
+//       .quoteText {
+//         color: green;
+//       }
+//     }
+
+//     .photoContainer {
+//       // Parent : cardContainer
+//       position: relative;
+//       width: 40vw; //                                 Utilisez une unité relative pour la responsivité
+//       max-width: 150px; //                            Maximum width
+//       height: 40vw; //                                Assurez-vous que la hauteur et la largeur sont égales
+//       max-height: 150px; //                           Maximum height
+//       aspect-ratio: 1 / 1;
+//       border-radius: 50%;
+//       border: 3px solid #e9d4ae;
+//       overflow: hidden;
+//       border: 1px solid orange;
+
+//       margin: 20px;
+//       border: 1px solid orange;
+//     }
+
+//     .descriptionContainer {
+//       // Parent : cardContainer
+//       flex-grow: 1; //                                Pour que le 2eme élément soit toujours centré (a combiner)
+//       flex-basis: 0; //                               Pour que le 2eme élément soit toujours centré (a combiner)
+
+//       font-family: 'Bebas_Neue';
+//       margin: 20px;
+//       border: 1px solid orange;
+//     }
+//   }
+
+//   .bottomSeparator {
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+
+//     margin: 20px;
+//     border: 1px solid red;
+//     &::before {
+//       content: '';
+//       display: block;
+//       height: 0.09em;
+//       min-width: 30vw;
+//       background: linear-gradient(to right, rgba(240, 240, 240, 0), #fff);
+//       margin-right: 4vh;
+//     }
+//     &::after {
+//       content: '';
+//       display: block;
+//       height: 0.09em;
+//       min-width: 80px; // px au lieu de vw pour que la partie gauche soit fixe
+//       background: linear-gradient(to left, rgba(240, 240, 240, 0), #fff);
+//       margin-left: 4vh;
+//     }
+//   }
+// }

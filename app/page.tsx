@@ -1,10 +1,13 @@
 import Image from 'next/image';
 import styles from './page.module.scss';
+import Logo from './components/Logo/Logo';
+import About from './components/Sections/About/About';
 
 export default function Home() {
   return (
     <main>
-      <h1>Hello</h1>
+      <Logo />
+      <About />
     </main>
   );
 }

@@ -67,32 +67,30 @@
 
   .cardContainer {
     display: flex;
-    justify-content: space-between;
 
     border: 1px solid red;
     margin: 20px;
 
     .photoContainer {
       position: relative;
-      width: 40vw; //                                 Utilisez une unité relative pour la responsivité
-      max-width: 400px; //                            Maximum width
-      height: 40vw; //                                Assurez-vous que la hauteur et la largeur sont égales
-      max-height: 400px; //                           Maximum height
+      width: 33.33%; //                                 Utilisez une unité relative pour la responsivité
+
       aspect-ratio: 1 / 1;
-      // border-radius: 50%;
-      // border: 3px solid #e9d4ae;
+      border-radius: 50%;
+      border: 3px solid #e9d4ae;
       overflow: hidden;
 
       border: 1px solid orange;
+      .image {
+      }
     }
 
     .presentationContainer {
-      flex-grow: 1;
-      flex-basis: 0;
       display: flex;
       flex-direction: column;
+
       align-items: center;
-      justify-content: space-between;
+      width: 33.33%;
 
       border: 1px solid orange;
       margin: 20px;
@@ -107,11 +105,17 @@
     }
 
     .goalContainer {
-      flex-grow: 1;
-      flex-basis: 0;
+      width: 33.33%;
+      display: flex;
+      flex-direction: column;
+
       border: 1px solid orange;
       margin: 20px;
       .goalText {
+        border: 1px solid yellow;
+        margin: 20px;
+      }
+      .contactContainer {
         border: 1px solid yellow;
         margin: 20px;
       }

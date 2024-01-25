@@ -1,7 +1,39 @@
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 60px;
-  color: #f0f;
+  // border: 1px solid red;
+
+  .leftTextContainer {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    // border: 1px solid orange;
+
+    .portfolioText {
+      padding: 10px;
+      border: 1px solid #f1f1f2;
+    }
+    .nameText {
+      padding: 0 10px;
+    }
+  }
+
+  .separator {
+    width: 100%;
+    margin: 0 40px;
+    height: 1px;
+    background-color: #f1f1f2;
+  }
+
+  .navContainer {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    // border: 1px solid orange;
+
+    .navLink {
+      padding: 10px;
+    }
+  }
 }

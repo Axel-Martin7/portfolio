@@ -24,11 +24,8 @@ export default function Home() {
           <Image
             className={styles.image}
             src="/images/imageprofil.jpg"
-            // width={1000}
-            // height={500}
             alt="Photo de profil"
             fill={true}
-            // layout="responsive"
           />
         </div>
         <div className={styles.presentationContainer}>

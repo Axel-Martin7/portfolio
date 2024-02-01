@@ -4,105 +4,424 @@
 }
 
 .visitCardsContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* crée deux colonnes de taille égale */
-  grid-gap: 100px; /* espace entre les colonnes, ajustez selon vos besoins */
-  margin: 200px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
   // border: 1px solid red;
 
-  .textCardContainer {
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    align-items: center;
-    border: 1px solid white;
-
-    .title {
-      font-size: 40px;
-      // border: 1px solid orange;
-      margin: 20px;
-    }
-
-    .quoteContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      // border: 1px solid orange;
-
-      .quote {
-        white-space: nowrap; // Empêche le texte de passer à la ligne
-        padding: 0 10px; // Un peu d'espace autour du texte
-      }
-      .Separator {
-        flex-grow: 1; // Permet aux barres de se développer pour occuper l'espace disponible
-        min-width: 110px; // Assurez-vous que les barres ont une largeur minimale
-        height: 1px;
-        background-color: #f1f1f2;
-      }
-    }
-
-    .description {
-      width: 33.33%;
-      margin: 40px;
-      font-size: 12px;
-      text-align: center;
-      // border: 1px solid orange;
-    }
-  }
-
+  // ------- Top Card ------->
   .logoCardContainer {
-    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
 
-    .logo {
+    // border: 1px solid white;
+
+    .logoContainer {
+      width: 290px;
+      height: 290px;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 20px;
+      border: 1px solid transparent; // Rend toutes les bordures transparentes
+      border-top: 1px solid white; // Segment nord-est visible
+      border-bottom: 1px solid white; // Segment sud-ouest visible
+      border-radius: 50%;
+      transform: rotate(45deg); // Rotation de 45 degrés
 
-      .circle {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        border: 3px solid transparent; // Rend toutes les bordures transparentes
-        border-top: 2px solid white; // Segment nord-est visible
-        border-bottom: 2px solid white; // Segment sud-ouest visible
-        transform: rotate(45deg); // Rotation de 45 degrés
+      .logoTextContainer {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        transform: rotate(-45deg);
 
-        .textContainer {
-          // border: 1px solid orange;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          transform: rotate(-45deg);
-          color: white;
-          .signature {
-            font-family: 'amsterdam-four';
-            font-size: 40px;
+        // border: 1px solid orange;
 
-            // border: 1px solid blue;
-            margin: 30px 0 50px 0;
-          }
-          .name {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 8px;
-            font-weight: 500;
-            // border: 1px solid cyan;
-            margin-bottom: 2px;
-          }
-          .job {
-            font-size: 8px;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-weight: 500;
-            // border: 1px solid greenyellow;
-            margin: 10px;
-          }
+        .signature {
+          margin-top: 20px;
+          font-family: 'amsterdam-four';
+          font-size: 44px;
+
+          // border: 1px solid yellow;
+        }
+
+        .name {
+          margin: 45px 0 0 20px;
+          text-transform: uppercase;
+          font-size: 14px;
+          letter-spacing: 6px;
+          font-weight: 500;
+
+          // border: 1px solid yellow;
+        }
+
+        .job {
+          margin: 10px 0 0 20px;
+          text-transform: uppercase;
+          font-size: 9px;
+          letter-spacing: 3px;
+          font-weight: 500;
+
+          // border: 1px solid yellow;
         }
       }
     }
   }
+  // ------- Bottom Card ------->
+  .presentationCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    // border: 1px solid white;
+
+    .titlesContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+
+      // border: 1px solid red;
+
+      .title {
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 22px;
+        letter-spacing: 3px;
+        font-weight: 500;
+
+        // border: 1px solid orange;
+      }
+
+      .subTitleContainer {
+        display: flex;
+        align-items: center;
+
+        // border: 1px solid orange;
+
+        .subTitle {
+          // white-space: nowrap; // Empêche le texte de passer à la ligne
+          padding: 0 10px; // Un peu d'espace autour du texte
+          text-transform: uppercase;
+          font-size: 12px;
+          letter-spacing: 3px;
+          font-weight: 500;
+        }
+
+        .separator {
+          // flex-grow: 1; // Permet aux barres de se développer pour occuper l'espace disponible
+          min-width: 30px; // Assurez-vous que les barres ont une largeur minimale
+          height: 1px;
+          background-color: #f1f1f2;
+        }
+      }
+    }
+
+    .textsContainer {
+      width: 75%;
+      margin: 20px;
+      // text-align: center;
+      // text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: 300;
+
+      // border: 1px solid red;
+
+      .description {
+        padding: 5px;
+      }
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      // border: 1px solid red;
+      // margin: 20px;
+    }
+  }
 }
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .visitCardsContainer {
+    // border: 1px solid blue;
+
+    .logoCardContainer {
+      width: 600px;
+      height: 340px;
+      margin-bottom: 40px;
+
+      border: 1px solid white;
+    }
+
+    .presentationCardContainer {
+      width: 600px;
+      height: 340px;
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      border: 1px solid white;
+
+      .textsContainer {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .visitCardsContainer {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+
+    // border: 1px solid red;
+
+    .presentationCardContainer {
+      order: 1; // Affiche en second
+      margin-right: 80px;
+    }
+    .logoCardContainer {
+      order: 2;
+      margin: 0px;
+    }
+  }
+}
+// // ---------------------------------------------------   TABLETS
+// @media screen and (min-width: 768px) {
+//   .visitCardsContainer {
+//     border: 1px solid blue;
+
+//     .presentationCardContainer {
+//       width: 600px;
+//       height: 340px;
+//       margin-right: 80px;
+//       display: flex;
+//       justify-content: space-around;
+//       padding: 20px;
+
+//       border: 1px solid white;
+
+//       .titlesContainer {
+//         border: 1px solid red;
+//       }
+
+//       .textsContainer {
+//         border: 1px solid red;
+//       }
+
+//       .contactContainer {
+//         border: 1px solid red;
+//       }
+//     }
+
+//     .logoCardContainer {
+//       width: 600px;
+//       height: 340px;
+
+//       border: 1px solid white;
+//     }
+//   }
+// }
+// // ---------------------------------------------------   LAPTOPS
+// @media screen and (min-width: 1024px) {
+//   .visitCardsContainer {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     border: 1px solid green;
+
+//     .presentationCardContainer {
+//       order: 1; // Affiche en premier
+//     }
+
+//     .logoCardContainer {
+//       order: 2; // Affiche en deuxieme
+//     }
+//   }
+// }
+
+// // ---------------------------------------------------   DESKTOPS
+// @media screen and (min-width: 1200px) {
+//   .visitCardsContainer {
+//     border: 1px solid red;
+//   }
+// }
+
+//-------------------------------------------------
+// .visitCardsContainer {
+//   border: 1px solid red;
+//   margin: 20px;
+
+//   // ------- left Card ------->
+//   .presentationCardContainer {
+//     height: 300px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     border: 1px solid white;
+//     margin: 20px;
+
+//     .titlesContainer {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       border: 1px solid red;
+
+//       .title {
+//         margin-bottom: 5px;
+//         font-size: 30px;
+//         text-transform: uppercase;
+//         letter-spacing: 1px;
+//       }
+
+//       .subTitleContainer {
+//         display: flex;
+//         align-items: center;
+//         .subTitle {
+//           // white-space: nowrap; // Empêche le texte de passer à la ligne
+//           padding: 0 20px; // Un peu d'espace autour du texte
+//           font-size: 14px;
+//           text-transform: uppercase;
+//           letter-spacing: 2px;
+//         }
+//         .separator {
+//           flex-grow: 1; // Permet aux barres de se développer pour occuper l'espace disponible
+//           min-width: 55px; // Assurez-vous que les barres ont une largeur minimale
+//           height: 1px;
+//           background-color: #f1f1f2;
+//         }
+//       }
+//     }
+
+//     .textsContainer {
+//       width: 50%;
+
+//       font-size: 14px;
+//       // text-transform: uppercase;
+//       // letter-spacing: 1px;
+//       text-align: center;
+//       border: 1px solid red;
+//     }
+
+//     .contactMail {
+//       font-size: 14px;
+//       border: 1px solid red;
+//     }
+//   }
+
+//   // ------- Right card ------->
+//   .logoCardContainer {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     margin: 20px;
+
+//     .logoContainer {
+//       width: 260px;
+//       height: 260px;
+//       display: flex;
+//       justify-content: center;
+//       border: 3px solid transparent; // Rend toutes les bordures transparentes
+//       border-top: 2px solid white; // Segment nord-est visible
+//       border-bottom: 2px solid white; // Segment sud-ouest visible
+//       border-radius: 50%;
+//       transform: rotate(45deg); // Rotation de 45 degrés
+
+//       // border: 1px solid red;
+
+//       .logoTextContainer {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         transform: rotate(-45deg);
+
+//         // border: 1px solid orange;
+//         // margin: 20px;
+
+//         .signature {
+//           margin-top: 20px;
+//           font-family: 'amsterdam-four';
+//           font-size: 40px;
+
+//           // border: 1px solid yellow;
+//         }
+
+//         .name {
+//           margin: 45px 0 0 20px;
+//           font-size: 12px;
+//           text-transform: uppercase;
+//           letter-spacing: 6px;
+//           font-weight: 500;
+
+//           // border: 1px solid yellow;
+//         }
+
+//         .job {
+//           margin: 10px 0 0 20px;
+//           font-size: 9px;
+//           text-transform: uppercase;
+//           letter-spacing: 3px;
+//           font-weight: 400;
+
+//           // border: 1px solid yellow;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// ---------------------------------------------------   TABLETS
+// @media screen and (min-width: 768px) {
+//   .visitCardsContainer {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     border: 1px solid blue;
+
+//     // --- left Card --->
+//     .presentationCardContainer {
+//       width: 500px;
+//       height: 300px;
+//       display: flex;
+//       justify-content: space-between;
+//       padding: 40px;
+
+//       // border: 1px solid white;
+//     }
+
+//     // --- Right card --->
+//     .logoCardContainer {
+//       width: 500px;
+//       height: 300px;
+//       // border: 1px solid white;
+//     }
+//   }
+// }
+// // ---------------------------------------------------   LAPTOPS
+// @media screen and (min-width: 1024px) {
+//   .visitCardsContainer {
+//     // display: flex;
+//     // flex-wrap: wrap;
+//     border: 1px solid red;
+//   }
+// }
+
+// // ---------------------------------------------------   DESKTOPS
+// @media screen and (min-width: 1200px) {
+//   .visitCardsContainer {
+//     border: 1px solid blue;
+//   }
+// }

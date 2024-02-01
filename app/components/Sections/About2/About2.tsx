@@ -1,16 +1,29 @@
 import Image from 'next/image';
-import styles from './About.module.scss';
+import styles from './About2.module.scss';
 import { poppins } from '@/styles/fonts';
 
 export default function Home() {
   return (
     <section className={styles.aboutSectionContainer}>
-      <div className={styles.titleContainer}>
-        <h3 className={styles.aboutTitle}>About</h3>
-        <div className={styles.horizontalBar}></div>
+      <div className={styles.photoContainer}>
+        <div className={styles.photo}>
+          <Image
+            className={styles.image}
+            src="/images/imageprofil.jpg"
+            // width={1000}
+            // height={500}
+            alt="Photo de profil"
+            fill={true}
+            // layout="responsive"
+          />
+        </div>
       </div>
       <div className={styles.presentationContainer}>
-        <div className={styles.leftTextContainer}>
+        <div className={styles.textContainer}>
+          <div className={styles.titleContainer}>
+            <h3 className={styles.aboutTitle}>About</h3>
+            <div className={styles.horizontalBar}></div>
+          </div>
           <p className={styles.presentationText}>
             Je suis Axel, 2 Passionné et fasciné par la frontière entre l’art et
             la technologie, j’ai suivit en 2023 une formation FullStack
@@ -37,22 +50,6 @@ export default function Home() {
             les recommandations de sécurité et d’accéssibilité, ansi qu’un
             savoir faire et un savoir être
           </p>
-        </div>
-        <div className={styles.photoContainer}>
-          <div className={styles.photo}>
-            <Image
-              className={styles.image}
-              src="/images/imageprofil.jpg"
-              // width={1000}
-              // height={500}
-              alt="Photo de profil"
-              fill={true}
-              // layout="responsive"
-            />
-          </div>
-          <button className={styles.aboutButton}>Learn more</button>
-        </div>
-        <div className={styles.rightTextContainer}>
           <p className={styles.goalText}>
             Aujourd’hui, je suis avide d’apprentissage, je souhaite continuer à
             élargir et consolider mes compétences, je suis à la recherche de
@@ -70,15 +67,15 @@ export default function Home() {
             déterminé à exceller, je serais ravi de discuter de la façon dont je
             peux contribuer à votre projet ou à votre entreprise. Je suis prêt à
             mettre en pratique mes connaissances et compétences pour contribuer
-            au succès de votre équipe.
+            au succès de votre équipe.{' '}
           </p>
-          <div className={styles.contactContainer}>
-            <p className={styles.contactText}>Contact me at:</p>
-            <p className={styles.emailText}>axel.martin@outlook.com</p>
-          </div>
         </div>
+        <div className={styles.contactContainer}>
+          <p className={styles.contactText}>Contact me at:</p>
+          <p className={styles.emailText}>axel.martin@outlook.com</p>
+        </div>
+        <button className={styles.aboutButton}>Learn More</button>
       </div>
-      <button className={styles.aboutButton}>Learn more</button>
     </section>
   );
 }

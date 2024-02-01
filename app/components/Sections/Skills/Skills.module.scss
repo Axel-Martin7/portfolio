@@ -1,0 +1,61 @@
+.skillsSectionContainer {
+  display: grid;
+  grid-template-columns: 100px 2fr 2fr 100px 2fr 2fr 100px;
+  grid-template-rows: 100px 1fr 1fr 100px 1fr 1fr 100px;
+  gap: 0px 0px;
+
+  margin: 200px;
+  border: 2px solid red;
+
+  .leftCardContainer {
+    grid-area: 1 / 1 / 5 / 5;
+
+    border: 1px solid white;
+
+    .title {
+      grid-area: 1 / 2 / 2 / 4;
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+      font-size: 20px;
+      color: white;
+
+      border: 1px solid orange;
+    }
+
+    .textContainer {
+      display: flex;
+
+      padding: 100px;
+      border: 1px solid red;
+
+      .leftText {
+        grid-area: 2 / 2 / 4 / 3;
+        padding-right: 40px;
+        border-right: 1px solid white;
+
+        // border: 1px solid orange;
+      }
+      .rightText {
+        grid-area: 2 / 3 / 4 / 4;
+        padding-left: 40px;
+
+        // border: 1px solid orange;
+      }
+    }
+  }
+
+  .rightCardContainer {
+    grid-area: 4 / 4 / 8 / 8;
+    background-color: #0a0a0a;
+
+    border: 1px solid white;
+
+    .skillsContainer {
+      grid-area: 4 / 5 / 5 / 7;
+
+      border: 1px solid orange;
+    }
+  }
+}

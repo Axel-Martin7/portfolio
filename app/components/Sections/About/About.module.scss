@@ -1,123 +1,84 @@
-@font-face {
-  font-family: 'Brandon_Grotesque_regular';
-  src: url('/fonts/Brandon_Grotesque_regular.otf') format('truetype');
-}
-
 .aboutSectionContainer {
-  display: flex;
-  flex-direction: column;
+  // border: 1px solid white;
+  margin: 200px;
 
-  align-items: center;
-  margin: 20px;
-  border: 2px solid white;
-
-  .headerContainer {
+  .titleContainer {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    margin-bottom: 80px;
+    // border: 1px solid yellow;
+    // margin: 20px;
 
-    border: 1px solid red;
-
-    .headerTitle {
-      font-size: 50px;
-      // letter-spacing: 4px;
-      font-weight: 400;
-
-      margin: 20px;
-      border: 1px solid orange;
-    }
-
-    .headerQuote {
-      position: relative;
-      text-align: center;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-
-      border: 1px solid orange;
+    .aboutTitle {
       color: white;
-
-      &::before,
-      &::after {
-        content: '';
-        position: absolute;
-        top: 50%; // Centrer verticalement
-        width: 130px; // Longueur de la ligne
-        height: 1px; // Épaisseur de la ligne
-        background-color: rgb(255, 255, 255); // Couleur de la ligne
-      }
-      &::before {
-        left: -140px; // Positionner à gauche du texte
-      }
-      &::after {
-        right: -140px; // Positionner à droite du texte
-      }
+      margin-right: 20px; /* Ajuster selon le besoin */
     }
-    .headerPresentation {
-      text-align: center;
-      font-size: 12px;
-      // text-transform: uppercase;
-      letter-spacing: 2px;
-      line-height: 20px;
-
-      margin: 40px 340px;
-      border: 1px solid orange;
+    .horizontalBar {
+      height: 1px; /* Épaisseur de la barre */
+      background-color: #ffffff; /* Couleur de la barre */
+      flex-grow: 1; /* S'étend pour remplir l'espace disponible */
     }
   }
 
-  .cardContainer {
-    display: flex;
+  .aboutButton {
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+  }
 
-    border: 1px solid red;
-    margin: 20px;
+  .presentationContainer {
+    display: grid;
+    // grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 200px;
+
+    font-size: 14px;
+
+    // border: 1px solid white;
+    // margin: 20px;
+
+    .leftTextContainer {
+      // border: 1px solid red;
+      // margin: 20px;
+      .presentationText {
+        // border: 1px solid orange;
+        // margin: 20px;
+      }
+    }
 
     .photoContainer {
-      position: relative;
-      width: 33.33%; //                                 Utilisez une unité relative pour la responsivité
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // border: 1px solid red;
+      // margin: 20px;
 
-      aspect-ratio: 1 / 1;
-      border-radius: 50%;
-      border: 3px solid #e9d4ae;
-      overflow: hidden;
+      .photo {
+        position: relative;
+        aspect-ratio: 1/1;
 
-      border: 1px solid orange;
-      .image {
+        // border: 1px solid orange;
+        // margin: 20px;
+
+        .image {
+          border-radius: 50%;
+          width: 100%;
+
+          // border: 1px solid yellow;
+        }
       }
     }
 
-    .presentationContainer {
-      display: flex;
-      flex-direction: column;
-
-      align-items: center;
-      width: 33.33%;
-
-      border: 1px solid orange;
-      margin: 20px;
-
-      .presentationText {
-        border: 1px solid yellow;
-        margin: 20px;
-      }
-      .presentationButton {
-        border: 1px solid yellowgreen;
-      }
-    }
-
-    .goalContainer {
-      width: 33.33%;
-      display: flex;
-      flex-direction: column;
-
-      border: 1px solid orange;
-      margin: 20px;
+    .rightTextContainer {
+      // border: 1px solid red;
+      // margin: 20px;
       .goalText {
-        border: 1px solid yellow;
-        margin: 20px;
+        // border: 1px solid orange;
+        // margin: 20px;
       }
       .contactContainer {
-        border: 1px solid yellow;
-        margin: 20px;
+        // border: 1px solid orange;
+        // margin: 20px;
       }
     }
   }

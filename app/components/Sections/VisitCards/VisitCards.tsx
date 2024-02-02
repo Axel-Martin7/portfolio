@@ -1,6 +1,6 @@
 import styles from './VisitCards.module.scss';
 
-const VisitCards2 = () => {
+const VisitCards = () => {
   return (
     <section className={styles.visitCardsContainer}>
       <div className={styles.logoCardContainer}>
@@ -39,4 +39,4 @@ const VisitCards2 = () => {
   );
 };
 
-export default VisitCards2;
+export default VisitCards;

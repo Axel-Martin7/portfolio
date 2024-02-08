@@ -1,0 +1,30 @@
+.skillsSectionContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  border: 1px solid red;
+
+  .cardsContainer {
+    position: relative;
+    width: calc(1200px + 80px);
+    height: 680px;
+    border: 1px solid orange;
+
+    .presentationCardContainer {
+      width: calc(50% + 40px);
+      height: calc(50% + 40px);
+      border: 1px solid white;
+    }
+
+    .skillsCardContainer {
+      z-index: 2;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: calc(50% + 40px);
+      height: calc(50% + 40px);
+      background-color: black;
+      border: 1px solid white;
+    }
+  }
+}

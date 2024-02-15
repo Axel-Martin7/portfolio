@@ -1,85 +1,174 @@
 .aboutSectionContainer {
-  // border: 1px solid white;
-  margin: 200px;
+  border: 1px solid red;
 
-  .titleContainer {
+  .profilPictureContainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
-    // border: 1px solid yellow;
-    // margin: 20px;
+    // border: 1px solid white;
 
-    .aboutTitle {
-      color: white;
-      margin-right: 20px; /* Ajuster selon le besoin */
-    }
-    .horizontalBar {
-      height: 1px; /* Épaisseur de la barre */
-      background-color: #ffffff; /* Couleur de la barre */
-      flex-grow: 1; /* S'étend pour remplir l'espace disponible */
-    }
-  }
+    .photoContainer {
+      position: relative;
+      aspect-ratio: 1/1;
+      width: 100%;
+      max-width: 400px;
 
-  .aboutButton {
-    border: 1px solid white;
-    color: white;
-    padding: 10px;
+      // border: 1px solid red;
+
+      .image {
+        border-radius: 50%;
+        // border: 1px solid orange;
+        // max-width: 500px;
+        // max-height: 500px;
+      }
+    }
   }
 
   .presentationContainer {
-    display: grid;
-    // grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 200px;
-
-    font-size: 14px;
-
     // border: 1px solid white;
     // margin: 20px;
 
-    .leftTextContainer {
+    .presentationTextContainer {
       // border: 1px solid red;
-      // margin: 20px;
+
+      .titleContainer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .title {
+          margin-right: 20px;
+          font-weight: 500;
+        }
+
+        .titleSeparator {
+          height: 1px;
+          background-color: #ffffff;
+          flex-grow: 1; // S'étend pour remplir l'espace disponibles
+        }
+      }
+
       .presentationText {
-        // border: 1px solid orange;
-        // margin: 20px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        // border: 1px solid red;
       }
     }
 
-    .photoContainer {
+    .contactContainer {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       // border: 1px solid red;
-      // margin: 20px;
 
-      .photo {
-        position: relative;
-        aspect-ratio: 1/1;
+      .contactInfosContainer {
+        width: 75%;
+        margin-top: 20px; // s'aditionne avec les 20 px de presentationText pour obtenir 40px au total
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
 
-        // border: 1px solid orange;
-        // margin: 20px;
+        .contactTextContainer {
+          margin-top: 20px;
+          text-align: center;
 
-        .image {
-          border-radius: 50%;
-          width: 100%;
+          .contactText {
+            font-size: 14px;
+            font-weight: 300;
+          }
 
-          // border: 1px solid yellow;
+          .contactMail {
+            font-weight: 500;
+          }
+        }
+
+        .socialLinksContainer {
+          display: flex;
+          justify-content: center;
+          margin: 20px 0;
+          border: 1px solid yellow;
+
+          .itemContainer {
+            padding: 0 40px;
+            border: 1px solid yellowgreen;
+
+            .itemIcon {
+              border: 1px solid green;
+            }
+
+            .itemName {
+              border: 1px solid green;
+            }
+          }
         }
       }
     }
 
-    .rightTextContainer {
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
       // border: 1px solid red;
-      // margin: 20px;
-      .goalText {
-        // border: 1px solid orange;
-        // margin: 20px;
-      }
-      .contactContainer {
-        // border: 1px solid orange;
-        // margin: 20px;
+
+      .aboutButton {
+        padding: 10px;
+        border: 1px solid white;
+        color: white;
       }
     }
   }
+}
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .aboutSectionContainer {
+    border: 1px solid blue;
+  }
+}
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .aboutSectionContainer {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    border: 1px solid red;
+
+    .profilPictureContainer {
+      width: 400px;
+      height: 680px;
+      border: 1px solid white;
+    }
+
+    .presentationContainer {
+      width: 800px;
+      height: 680px;
+      border: 1px solid white;
+    }
+  }
+
+  // .aboutSectionContainer {
+  //   display: flex;
+  //   margin: 0 100px;
+
+  //   border: 1px solid red;
+
+  //   .profilPictureContainer {
+  //     width: 50%;
+
+  //     border: 1px solid white;
+
+  //     .photoContainer {
+  //       border: 1px solid red;
+  //     }
+  //   }
+
+  //   .presentationContainer {
+  //     width: 54%;
+
+  //     border: 1px solid white;
+
+  //     .presentationTextContainer {
+  //       border: 1px solid red;
+  //     }
+  //   }
+  // }
 }

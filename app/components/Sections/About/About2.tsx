@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import styles from './About3.module.scss';
+import styles from './About2.module.scss';
+import linkedin from '../../../../public/icons/linkedin.svg';
 
-export default function About3() {
+export default function About2() {
   return (
     <section className={styles.aboutSectionContainer}>
       <div className={styles.profilPictureContainer}>
@@ -14,12 +15,13 @@ export default function About3() {
           />
         </div>
       </div>
+
       <div className={styles.presentationContainer}>
-        <div className={styles.presentationTextContainer}>
-          <div className={styles.titleContainer}>
-            <h3 className={styles.title}>About</h3>
-            <div className={styles.titleSeparator}></div>
-          </div>
+        <div className={styles.titleContainer}>
+          <h2 className={styles.title}>About</h2>
+          <div className={styles.titleSeparator}></div>
+        </div>
+        <div className={styles.textsContainer}>
           <p className={styles.presentationText}>
             Bienvenue sur mon portfolio ! Je suis Axel, un développeur web
             FullStack Javascript récemment diplômé de l&apos;école O&apos;Clock.
@@ -59,18 +61,7 @@ export default function About3() {
             engagement mutuel en vue d’un avenir fructueux.
           </p>
         </div>
-        <div className={styles.contactContainer}>
-          <div className={styles.contactInfosContainer}>
-            <div className={styles.contactTextContainer}>
-              <p className={styles.contactText}>
-                Feel free to contact me directly at:
-              </p>
-              <p className={styles.contactMail}>axel.martin@outlook.com</p>
-            </div>
-            <div className={styles.socialLinksContainer}></div>
-          </div>
-        </div>
-        <div className={styles.buttonContainer}>
+        <div className={styles.aboutBtnContainer}>
           <button className={styles.aboutButton}>Learn More</button>
         </div>
       </div>

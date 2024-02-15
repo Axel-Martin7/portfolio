@@ -1,0 +1,108 @@
+.aboutSectionContainer {
+  margin-bottom: 80px;
+  border: 1px solid red;
+
+  .profilPictureContainer {
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+
+    .photoContainer {
+      position: relative;
+      aspect-ratio: 1/1;
+      max-width: 340px;
+
+      .image {
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .presentationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 680px;
+    border: 1px solid white;
+
+    .titleContainer {
+      display: flex;
+      align-items: center;
+      border: 1px solid red;
+
+      .title {
+        margin-right: 20px;
+        // font-size: 14px;
+        // text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+
+      .titleSeparator {
+        height: 1px;
+        background-color: #ffffff;
+        flex-grow: 1; // S'étend pour remplir l'espace disponibles
+      }
+    }
+
+    .textsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      border: 1px solid red;
+
+      .presentationText {
+        font-size: 14px;
+        line-height: 20px;
+        // letter-spacing: 1px;
+        font-weight: 300;
+        border: 1px solid orange;
+      }
+    }
+
+    .aboutBtnContainer {
+      display: flex;
+      justify-content: center;
+      border: 1px solid red;
+
+      .aboutButton {
+        padding: 10px;
+        color: white;
+        border: 1px solid white;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .aboutSectionContainer {
+    border: 1px solid blue;
+  }
+}
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .aboutSectionContainer {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    border: 1px solid red;
+
+    .profilPictureContainer {
+      width: 400px;
+      height: 680px;
+
+      .photoContainer {
+        max-width: 400px;
+        max-height: 400px;
+      }
+    }
+
+    .presentationContainer {
+      width: 800px;
+      height: 680px;
+    }
+  }
+}

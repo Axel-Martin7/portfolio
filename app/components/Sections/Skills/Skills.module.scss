@@ -1,61 +1,155 @@
 .skillsSectionContainer {
-  display: grid;
-  grid-template-columns: 100px 2fr 2fr 100px 2fr 2fr 100px;
-  grid-template-rows: 100px 1fr 1fr 100px 1fr 1fr 100px;
-  gap: 0px 0px;
+  border: 1px solid red;
+}
 
-  margin: 200px;
-  border: 2px solid red;
-
-  .leftCardContainer {
-    grid-area: 1 / 1 / 5 / 5;
-
-    border: 1px solid white;
-
-    .title {
-      grid-area: 1 / 2 / 2 / 4;
-      display: flex;
-      justify-content: center;
-      margin-top: 40px;
-
-      font-size: 20px;
-      color: white;
-
-      border: 1px solid orange;
-    }
-
-    .textContainer {
-      display: flex;
-
-      padding: 100px;
-      border: 1px solid red;
-
-      .leftText {
-        grid-area: 2 / 2 / 4 / 3;
-        padding-right: 40px;
-        border-right: 1px solid white;
-
-        // border: 1px solid orange;
-      }
-      .rightText {
-        grid-area: 2 / 3 / 4 / 4;
-        padding-left: 40px;
-
-        // border: 1px solid orange;
-      }
-    }
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .skillsSectionContainer {
+    border: 1px solid blue;
   }
+}
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .skillsSectionContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    border: 1px solid red;
 
-  .rightCardContainer {
-    grid-area: 4 / 4 / 8 / 8;
-    background-color: #0a0a0a;
-
-    border: 1px solid white;
-
-    .skillsContainer {
-      grid-area: 4 / 5 / 5 / 7;
-
+    .cardsContainer {
+      position: relative;
+      width: calc(1200px + 80px);
+      height: 680px;
       border: 1px solid orange;
+
+      .presentationCard {
+        width: calc(50% + 40px);
+        height: calc(50% + 40px);
+
+        border: 1px solid white;
+
+        .presentationContentContainer {
+          border: 1px solid red;
+          margin: 40px;
+
+          .skillsTitle {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .skillsCard {
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: calc(50% + 40px);
+        height: calc(50% + 40px);
+        background-color: black;
+        border: 1px solid white;
+
+        .skillsContentContainer {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+
+          height: calc(340px - 40px);
+          margin: 40px;
+
+          border: 1px solid red;
+
+          .itemContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            border: 1px solid orange;
+
+            .itemName {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
     }
   }
 }
+
+// .skillsSectionContainer {
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 80px;
+//   border: 1px solid red;
+
+//   .cardsContainer {
+//     position: relative;
+//     width: calc(1200px + 80px);
+//     height: 680px;
+//     border: 1px solid orange;
+
+//     .presentationCardContainer {
+//       width: calc(50% + 40px);
+//       height: calc(50% + 40px);
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: space-around;
+
+//       border: 1px solid white;
+
+//       .title {
+//         font-size: 12px;
+//         text-transform: uppercase;
+//         letter-spacing: 3px;
+//         font-weight: 500;
+//         border: 1px solid red;
+//       }
+
+//       .textsContainer {
+//         display: flex;
+//         margin: 0 80px;
+//         // text-align: center;
+//         font-size: 12px;
+//         letter-spacing: 1px;
+//         font-weight: 300;
+
+//         border: 1px solid red;
+
+//         .leftText {
+//           text-align: right;
+//           border-right: 1px solid white;
+//           padding-right: 40px;
+//         }
+
+//         .rightText {
+//           padding-left: 40px;
+//         }
+//       }
+//     }
+
+//     .skillsCardContainer {
+//       z-index: 2;
+//       position: absolute;
+//       bottom: 0;
+//       right: 0;
+//       width: calc(50% + 40px);
+//       height: calc(50% + 40px);
+//       background-color: black;
+//       border: 1px solid white;
+
+//       .linkedin {
+//         color: white;
+//         fill: red;
+//         stroke: red;
+//       }
+//     }
+//   }
+// }

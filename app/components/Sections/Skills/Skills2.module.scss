@@ -1,30 +1,221 @@
 .skillsSectionContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
   border: 1px solid red;
 
   .cardsContainer {
-    position: relative;
-    width: calc(1200px + 80px);
-    height: 680px;
     border: 1px solid orange;
 
-    .presentationCardContainer {
-      width: calc(50% + 40px);
-      height: calc(50% + 40px);
+    .presentationCard {
       border: 1px solid white;
     }
 
-    .skillsCardContainer {
-      z-index: 2;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: calc(50% + 40px);
-      height: calc(50% + 40px);
-      background-color: black;
+    .skillsCard {
       border: 1px solid white;
+
+      .skillsContentContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        row-gap: 40px;
+        margin: 40px;
+        border: 1px solid red;
+
+        .itemContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 10px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          border: 1px solid orange;
+
+          .itemName {
+            margin-top: 20px;
+          }
+        }
+      }
     }
   }
 }
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .skillsSectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid blue;
+
+    .cardsContainer {
+      .presentationCard {
+        width: 680px;
+        height: 380px;
+        margin-bottom: 80px; // marge entre les cartes
+      }
+
+      .skillsCard {
+        width: 680px;
+        height: 380px;
+
+        .skillsContentContainer {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          height: calc(340px - 40px);
+
+          .itemContainer {
+            display: flex;
+
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .skillsSectionContainer {
+    border: 1px solid red;
+
+    .cardsContainer {
+      position: relative;
+      width: calc(1200px + 80px);
+      height: 680px;
+
+      .presentationCard {
+        width: calc(50% + 40px);
+        height: calc(50% + 40px);
+      }
+      .skillsCard {
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: calc(50% + 40px);
+        height: calc(50% + 40px);
+        background-color: black;
+      }
+    }
+  }
+}
+
+// .skillsSectionContainer {
+//   border: 1px solid red;
+
+//   .cardsContainer {
+//     // border: 1px solid orange;
+//     // margin: 20px;
+//   }
+
+//   .presentationCard {
+//     border: 1px solid white;
+//     margin: 10px;
+//   }
+
+//   .skillsCard {
+//     border: 1px solid white;
+//     margin: 10px;
+
+//     .skillsContentContainer {
+//       display: grid;
+//       grid-template-columns: repeat(2, 1fr);
+//       grid-template-rows: repeat(5, 1fr);
+//       // height: calc(340px - 40px);
+//       margin: 40px;
+//       border: 1px solid red;
+//       margin: 10px;
+
+//       .itemContainer {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         font-size: 10px;
+//         text-transform: uppercase;
+//         letter-spacing: 1px;
+
+//         border: 1px solid orange;
+//         margin: 10px;
+//       }
+//     }
+//   }
+// }
+
+// // ---------------------------------------------------   TABLETS
+// @media screen and (min-width: 768px) {
+//   .skillsSectionContainer {
+//     display: flex;
+//     justify-content: center;
+//     border: 1px solid blue;
+
+//     .cardsContainer {
+//       border: 1px solid orange;
+
+//       .presentationCard {
+//         width: 680px;
+//         height: 380px;
+//         margin-bottom: 80px; // marge entre les cartes
+//         border: 1px solid white;
+//       }
+
+//       .skillsCard {
+//         width: 680px;
+//         height: 380px;
+//         border: 1px solid white;
+
+//         .skillsContentContainer {
+//           display: grid;
+//           grid-template-columns: repeat(5, 1fr);
+//           grid-template-rows: repeat(2, 1fr);
+//           height: calc(340px - 40px);
+//           margin: 40px;
+//           border: 1px solid red;
+
+//           .itemContainer {
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+
+//             border: 1px solid orange;
+
+//             .itemName {
+//               margin-top: 20px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// // ---------------------------------------------------   DESKTOPS
+// @media screen and (min-width: 1200px) {
+//   .skillsSectionContainer {
+//     border: 1px solid red;
+
+//     .cardsContainer {
+//       position: relative;
+//       width: calc(1200px + 80px);
+//       height: 680px;
+
+//       border: 1px solid orange;
+
+//       .presentationCard {
+//         width: calc(50% + 40px);
+//         height: calc(50% + 40px);
+//         border: 1px solid white;
+//       }
+
+//       .skillsCard {
+//         z-index: 2;
+//         position: absolute;
+//         bottom: 0;
+//         right: 0;
+//         width: calc(50% + 40px);
+//         height: calc(50% + 40px);
+//         background-color: black;
+//         border: 1px solid white;
+//       }
+//     }
+//   }
+// }

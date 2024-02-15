@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'amsterdam-four';
+  src: url('/fonts/amsterdam-four.ttf') format('truetype');
+}
+
+.visitCardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-bottom: 80px;
+  border: 1px solid red;
+
+  .logoCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+
+    border: 1px solid white;
+
+    .logoContainer {
+      width: 290px;
+      height: 290px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid transparent; // Rend toutes les bordures transparentes
+      border-top: 1px solid white; // Segment nord-est visible
+      border-bottom: 1px solid white; // Segment sud-ouest visible
+      border-radius: 50%;
+      transform: rotate(45deg); // Rotation de 45 degrés
+
+      .logoTextContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: rotate(-45deg);
+
+        .signature {
+          margin-top: 20px;
+          font-family: 'amsterdam-four';
+          font-size: 44px;
+        }
+        .name {
+          margin: 45px 0 0 20px;
+          text-transform: uppercase;
+          font-size: 14px;
+          letter-spacing: 6px;
+          font-weight: 500;
+        }
+        .job {
+          margin: 10px 0 0 20px;
+          text-transform: uppercase;
+          font-size: 9px;
+          letter-spacing: 3px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .presentationCardContainer {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+
+    border: 1px solid white;
+
+    .titlesContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 5px;
+
+      .title {
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 600;
+      }
+
+      .subTitleContainer {
+        display: flex;
+        align-items: center;
+
+        .subTitle {
+          padding: 0 10px; // Un peu d'espace autour du texte
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 500;
+        }
+
+        .separator {
+          // flex-grow: 1; // Permet aux barres de se développer pour occuper l'espace disponible
+          min-width: 30px; // Assurez-vous que les barres ont une largeur minimale
+          height: 1px;
+          background-color: #f1f1f2;
+        }
+      }
+    }
+
+    .presentationText {
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 20px;
+      font-weight: 300;
+    }
+
+    .email {
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+  }
+}
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .visitCardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid blue;
+
+    .logoCardContainer {
+      width: 600px;
+    }
+
+    .presentationCardContainer {
+      width: 600px;
+    }
+  }
+}
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .visitCardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border: 1px solid red;
+  }
+}

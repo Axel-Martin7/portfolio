@@ -1,35 +1,91 @@
 .skillsSectionContainer {
-  border: 1px solid red;
+  // border: 1px solid red;
 
   .cardsContainer {
-    border: 1px solid orange;
+    // border: 1px solid orange;
 
-    .presentationCard {
+    .formationCard {
+      margin-bottom: 80px;
       border: 1px solid white;
+
+      .formationContentContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        // border: 1px solid red;
+
+        .titleContainer {
+          // border: 1px solid orange;
+
+          .title {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
+          }
+        }
+
+        .textsContainer {
+          margin: 0 40px;
+          text-align: center;
+          // border: 1px solid orange;
+
+          .firstText {
+            margin-bottom: 20px;
+          }
+        }
+
+        .buttonContainer {
+          // border: 1px solid orange;
+
+          .skillsBtn {
+            padding: 10px;
+            color: white;
+            border: 1px solid white;
+          }
+        }
+      }
     }
 
     .skillsCard {
       border: 1px solid white;
 
       .skillsContentContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        row-gap: 40px;
-        margin: 40px;
-        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
 
-        .itemContainer {
+        gap: 40px;
+
+        .titleContainer {
           display: flex;
-          flex-direction: column;
-          align-items: center;
-          font-size: 10px;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          border: 1px solid orange;
+          justify-content: center;
 
-          .itemName {
-            margin-top: 20px;
+          .title {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
+          }
+        }
+
+        .skillsGridContainer {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          grid-row-gap: 20px;
+          place-items: center;
+
+          .itemContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            .itemName {
+              margin-top: 20px;
+            }
           }
         }
       }
@@ -41,31 +97,66 @@
 @media screen and (min-width: 768px) {
   .skillsSectionContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     border: 1px solid blue;
 
     .cardsContainer {
-      .presentationCard {
+      .formationCard {
         width: 680px;
         height: 380px;
-        margin-bottom: 80px; // marge entre les cartes
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .formationContentContainer {
+          width: calc(100% - 80px); // Pour créer une marge de 40px
+          height: calc(100% - 80px); // Pour créer une marge de 40px
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .textsContainer {
+            display: flex;
+            .firstText {
+              margin-bottom: 0;
+              padding-right: 20px;
+              border-right: 1px solid white;
+            }
+
+            .secondText {
+              padding-left: 20px;
+            }
+          }
+        }
       }
 
       .skillsCard {
         width: 680px;
         height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .skillsContentContainer {
+          width: calc(100% - 80px); // Pour créer une marge de 40px
+          height: calc(100% - 80px); // Pour créer une marge de 40px
           display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          grid-template-rows: repeat(2, 1fr);
-          height: calc(340px - 40px);
+          grid-template-rows: auto 1fr; /* Un espace auto pour le titre, 1fr prend le reste */
+          place-items: center;
+          grid-row-gap: 30px;
 
-          .itemContainer {
-            display: flex;
+          .skillsGridContainer {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 40px;
 
-            justify-content: center;
+            .itemContainer {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
           }
         }
       }
@@ -82,10 +173,11 @@
       width: calc(1200px + 80px);
       height: 680px;
 
-      .presentationCard {
+      .formationCard {
         width: calc(50% + 40px);
         height: calc(50% + 40px);
       }
+
       .skillsCard {
         z-index: 2;
         position: absolute;
@@ -104,38 +196,89 @@
 
 //   .cardsContainer {
 //     // border: 1px solid orange;
-//     // margin: 20px;
-//   }
 
-//   .presentationCard {
-//     border: 1px solid white;
-//     margin: 10px;
-//   }
+//     .presentationCard {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       border: 1px solid white;
 
-//   .skillsCard {
-//     border: 1px solid white;
-//     margin: 10px;
-
-//     .skillsContentContainer {
-//       display: grid;
-//       grid-template-columns: repeat(2, 1fr);
-//       grid-template-rows: repeat(5, 1fr);
-//       // height: calc(340px - 40px);
-//       margin: 40px;
-//       border: 1px solid red;
-//       margin: 10px;
-
-//       .itemContainer {
+//       .presentationContentContainer {
+//         width: calc(100% - 80px); // Pour créer une marge de 40px
+//         height: calc(100% - 80px); // Pour créer une marge de 40px
 //         display: flex;
 //         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//         font-size: 10px;
-//         text-transform: uppercase;
-//         letter-spacing: 1px;
+//         justify-content: space-between;
+//         // border: 1px solid red;
 
-//         border: 1px solid orange;
-//         margin: 10px;
+//         .titleContainer {
+//           display: flex;
+//           justify-content: center;
+//           // border: 1px solid orange;
+
+//           .title {
+//             text-transform: uppercase;
+//             letter-spacing: 3px;
+//             font-weight: 500;
+//           }
+//         }
+
+//         .textsContainer {
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           text-align: center;
+
+//           // border: 1px solid orange;
+
+//           .firstText {
+//             border-right: 1px solid white;
+//             padding-right: 20px;
+//           }
+
+//           .secondText {
+//             padding-left: 20px;
+//           }
+//         }
+
+//         .buttonContainer {
+//           display: flex;
+//           justify-content: center;
+//           // border: 1px solid orange;
+
+//           .skillsBtn {
+//             padding: 10px;
+//             color: white;
+//             border: 1px solid white;
+//           }
+//         }
+//       }
+//     }
+
+//     .skillsCard {
+//       border: 1px solid white;
+
+//       .skillsContentContainer {
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//         grid-template-rows: repeat(5, 1fr);
+//         row-gap: 40px;
+//         margin: 40px;
+//         // border: 1px solid red;
+
+//         .itemContainer {
+//           display: flex;
+//           flex-direction: column;
+//           align-items: center;
+//           font-size: 10px;
+//           text-transform: uppercase;
+//           letter-spacing: 1px;
+//           // border: 1px solid orange;
+
+//           .itemName {
+//             margin-top: 20px;
+//           }
+//         }
 //       }
 //     }
 //   }
@@ -145,43 +288,31 @@
 // @media screen and (min-width: 768px) {
 //   .skillsSectionContainer {
 //     display: flex;
-//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
 //     border: 1px solid blue;
 
 //     .cardsContainer {
-//       border: 1px solid orange;
-
 //       .presentationCard {
 //         width: 680px;
 //         height: 380px;
 //         margin-bottom: 80px; // marge entre les cartes
-//         border: 1px solid white;
 //       }
 
 //       .skillsCard {
 //         width: 680px;
 //         height: 380px;
-//         border: 1px solid white;
 
 //         .skillsContentContainer {
 //           display: grid;
 //           grid-template-columns: repeat(5, 1fr);
 //           grid-template-rows: repeat(2, 1fr);
 //           height: calc(340px - 40px);
-//           margin: 40px;
-//           border: 1px solid red;
 
 //           .itemContainer {
 //             display: flex;
-//             flex-direction: column;
+
 //             justify-content: center;
-//             align-items: center;
-
-//             border: 1px solid orange;
-
-//             .itemName {
-//               margin-top: 20px;
-//             }
 //           }
 //         }
 //       }
@@ -198,14 +329,10 @@
 //       width: calc(1200px + 80px);
 //       height: 680px;
 
-//       border: 1px solid orange;
-
 //       .presentationCard {
 //         width: calc(50% + 40px);
 //         height: calc(50% + 40px);
-//         border: 1px solid white;
 //       }
-
 //       .skillsCard {
 //         z-index: 2;
 //         position: absolute;
@@ -214,7 +341,6 @@
 //         width: calc(50% + 40px);
 //         height: calc(50% + 40px);
 //         background-color: black;
-//         border: 1px solid white;
 //       }
 //     }
 //   }

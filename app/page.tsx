@@ -19,8 +19,8 @@ export default function Home() {
     <main>
       {/* <VisitCards2 /> */}
       {/* <VisitCards /> */}
-      {/* <About2 />
-      <About /> */}
+      {/* <About2 /> */}
+      {/* <About />  */}
       <Skills2 />
       {/* <Skills /> */}
       {/* <Projects /> */}

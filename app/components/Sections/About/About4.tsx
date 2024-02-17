@@ -1,14 +1,14 @@
 import Image from 'next/image';
-import styles from './About.module.scss';
+import styles from './About4.module.scss';
 import linkedin from '../../../../public/icons/linkedin.svg';
 
-export default function About() {
+export default function About4() {
   return (
     <section className={styles.aboutSectionContainer}>
       <div className={styles.profilPictureContainer}>
         <div className={styles.photoContainer}>
           <Image
-            className={styles.image}
+            className={styles.photo}
             src="/images/imageprofil.jpg"
             alt="Photo de profil"
             fill
@@ -18,10 +18,10 @@ export default function About() {
 
       <div className={styles.presentationContainer}>
         <div className={styles.titleContainer}>
-          <h2 className={styles.title}>About</h2>
+          <h2 className={styles.title}>About me</h2>
           <div className={styles.titleSeparator}></div>
         </div>
-        <div className={styles.textsContainer}>
+        <div className={styles.presentationTextsContainer}>
           <p className={styles.presentationText}>
             Bienvenue sur mon portfolio ! Je suis Axel, un développeur web
             FullStack Javascript récemment diplômé de l&apos;école O&apos;Clock.
@@ -61,8 +61,8 @@ export default function About() {
             engagement mutuel en vue d’un avenir fructueux.
           </p>
         </div>
-        <div className={styles.aboutBtnContainer}>
-          <button className={styles.aboutButton}>Learn More</button>
+        <div className={styles.buttonContainer}>
+          <button className={styles.aboutBtn}>Learn More</button>
         </div>
       </div>
     </section>

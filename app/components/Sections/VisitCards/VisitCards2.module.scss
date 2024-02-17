@@ -16,8 +16,6 @@
     align-items: center;
     height: 340px;
 
-    border: 1px solid white;
-
     .logoContainer {
       width: 290px;
       height: 290px;
@@ -66,8 +64,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 40px;
-
-    border: 1px solid white;
 
     .titlesContainer {
       display: flex;
@@ -131,10 +127,12 @@
 
     .logoCardContainer {
       width: 600px;
+      border: 1px solid white;
     }
 
     .presentationCardContainer {
       width: 600px;
+      border: 1px solid white;
     }
   }
 }

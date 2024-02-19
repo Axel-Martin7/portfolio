@@ -1,0 +1,181 @@
+.skillsSectionContainer {
+  margin-bottom: 80px;
+  border: 1px solid red;
+
+  .cardsContainer {
+    border: 1px solid orange;
+
+    .skillsCard {
+      margin-bottom: 80px;
+
+      .skillsContentContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .titleContainer {
+          display: flex;
+          justify-content: center;
+
+          .title {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
+          }
+        }
+
+        .skillsGridContainer {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          grid-row-gap: 20px;
+          place-items: center;
+
+          .itemContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .itemName {
+              margin-top: 20px;
+              font-size: 10px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+    }
+
+    .formationCard {
+      // border: 1px solid white;
+
+      .formationContentContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        .titleContainer {
+          .title {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
+          }
+        }
+
+        .textsContainer {
+          margin: 0 40px;
+          text-align: center;
+          font-size: 14px;
+          line-height: 17px;
+
+          .firstText {
+            margin-bottom: 20px;
+          }
+        }
+
+        .buttonContainer {
+          .skillsBtn {
+            padding: 10px;
+            color: white;
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .skillsSectionContainer {
+    display: flex;
+    justify-content: center;
+    border: 1px solid blue;
+
+    .cardsContainer {
+      .skillsCard {
+        width: 680px;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+
+        .skillsContentContainer {
+          width: calc(100% - 80px); // Pour créer une marge de 40px
+          height: calc(100% - 80px); // Pour créer une marge de 40px
+          display: grid;
+          grid-template-rows: auto 1fr; /* Un espace auto pour le titre, 1fr prend le reste */
+          place-items: center;
+          grid-row-gap: 30px;
+
+          .skillsGridContainer {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 40px;
+          }
+        }
+      }
+
+      .formationCard {
+        width: 680px;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+
+        .formationContentContainer {
+          width: calc(100% - 80px); // Pour créer une marge de 40px
+          height: calc(100% - 80px); // Pour créer une marge de 40px
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .textsContainer {
+            display: flex;
+
+            .firstText {
+              margin-bottom: 0;
+              padding-right: 20px;
+              border-right: 1px solid white;
+            }
+
+            .secondText {
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .skillsSectionContainer {
+    border: 1px solid red;
+
+    .cardsContainer {
+      position: relative;
+      width: calc(1200px + 80px);
+      height: 680px;
+
+      .skillsCard {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+      }
+
+      .formationCard {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}

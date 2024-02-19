@@ -17,6 +17,7 @@ import Projects2 from './components/Sections/Projects/Projects2';
 
 import Contact from './components/Sections/Contact/Contact';
 import About6 from './components/Sections/About/About6';
+import Skills3 from './components/Sections/Skills/Skills3';
 
 export default function Home() {
   return (
@@ -28,7 +29,8 @@ export default function Home() {
       <About6 />
       {/* <About /> */}
       <Contact />
-      <Skills2 />
+      {/* <Skills2 /> */}
+      <Skills3 />
 
       {/* <Skills /> */}
       <Projects2 />

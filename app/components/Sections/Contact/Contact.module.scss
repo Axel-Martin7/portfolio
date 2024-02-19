@@ -15,7 +15,6 @@
       .titleContainer {
         display: flex;
         align-items: center;
-        border: 1px solid red;
 
         .title {
           margin-right: 20px;
@@ -35,31 +34,26 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        border: 1px solid red;
 
         .contactText {
           font-size: 14px;
           line-height: 17px;
-          border: 1px solid orange;
         }
 
         .contactMail {
-          border: 1px solid orange;
+          font-weight: 600;
         }
       }
 
       .socialLinksContainer {
         display: flex;
         gap: 20px;
-        border: 1px solid red;
 
         .itemContainer {
           width: 60px; // Pour que chaques item ai la meme taille et donc la meme marge
           display: flex;
           flex-direction: column;
           align-items: center;
-
-          border: 1px solid orange;
 
           .itemName {
             margin-top: 20px;
@@ -99,7 +93,6 @@
     .contactContainer {
       width: calc(1200px + 80px);
       height: 340px;
-      border: 1px solid orange;
 
       .contactInfosContainer {
         width: 600px;
@@ -109,17 +102,8 @@
         justify-content: space-between;
         padding: 0;
 
-        border: 1px solid white;
-
-        .contactTextsContainer {
-          // width: 50%;
-          border: 1px solid red;
-        }
-
         .socialLinksContainer {
           width: 50%;
-          // display: flex;
-          // justify-content: space-between;
         }
       }
     }

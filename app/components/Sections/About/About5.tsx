@@ -1,11 +1,12 @@
 import Image from 'next/image';
-import styles from './About3.module.scss';
+import styles from './About5.module.scss';
 import linkedin from '../../../../public/icons/linkedin.svg';
 
-export default function About3() {
+export default function About5() {
   return (
     <section className={styles.aboutSectionContainer}>
       <div className={styles.profilPictureContainer}>
+        <div className={styles.topRectangleDecoration}></div>
         <div className={styles.photoContainer}>
           <Image
             className={styles.photo}
@@ -14,6 +15,7 @@ export default function About3() {
             fill
           />
         </div>
+        <div className={styles.bottomRectangleDecoration}></div>
       </div>
 
       <div className={styles.presentationContainer}>

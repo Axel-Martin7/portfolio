@@ -1,0 +1,127 @@
+.contactSectionContainer {
+  margin-bottom: 80px;
+  border: 1px solid red;
+
+  .contactContainer {
+    border: 1px solid orange;
+
+    .contactInfosContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 0 40px;
+      border: 1px solid white;
+
+      .titleContainer {
+        display: flex;
+        align-items: center;
+        border: 1px solid red;
+
+        .title {
+          margin-right: 20px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 500;
+        }
+
+        .titleSeparator {
+          height: 1px;
+          background-color: white;
+          flex-grow: 1; // S'étend pour remplir l'espace disponibles
+        }
+      }
+
+      .contactTextsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        border: 1px solid red;
+
+        .contactText {
+          font-size: 14px;
+          line-height: 17px;
+          border: 1px solid orange;
+        }
+
+        .contactMail {
+          border: 1px solid orange;
+        }
+      }
+
+      .socialLinksContainer {
+        display: flex;
+        gap: 20px;
+        border: 1px solid red;
+
+        .itemContainer {
+          width: 60px; // Pour que chaques item ai la meme taille et donc la meme marge
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          border: 1px solid orange;
+
+          .itemName {
+            margin-top: 20px;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .contactSectionContainer {
+    border: 1px solid blue;
+
+    .contactContainer {
+      .contactInfosContainer {
+        padding: 0 80px;
+
+        .contactTextsContainer {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .contactSectionContainer {
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+
+    .contactContainer {
+      width: calc(1200px + 80px);
+      height: 340px;
+      border: 1px solid orange;
+
+      .contactInfosContainer {
+        width: 600px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+
+        border: 1px solid white;
+
+        .contactTextsContainer {
+          // width: 50%;
+          border: 1px solid red;
+        }
+
+        .socialLinksContainer {
+          width: 50%;
+          // display: flex;
+          // justify-content: space-between;
+        }
+      }
+    }
+  }
+}

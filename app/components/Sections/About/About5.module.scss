@@ -8,19 +8,17 @@
     justify-content: center;
     margin-bottom: 80px;
 
-    border: 1px solid white;
+    // border: 1px solid white;
 
     .photoContainer {
       position: relative;
       aspect-ratio: 1/1;
-      max-width: 400px;
-      max-height: 400px;
-
+      max-width: 340px;
       // border: 1px solid red;
 
       .photo {
         border: 1px solid white;
-        border-radius: 50%;
+        // border-radius: 50%;
       }
     }
   }
@@ -35,7 +33,7 @@
     .titleContainer {
       display: flex;
       align-items: center;
-      // border: 1px solid red;
+      border: 1px solid red;
 
       .title {
         margin-right: 20px;
@@ -54,18 +52,21 @@
     .presentationTextsContainer {
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      // border: 1px solid red;
+      gap: 40px;
+      border: 1px solid red;
 
       .presentationText {
-        // border: 1px solid orange;
+        font-size: 14px;
+        line-height: 17px;
+
+        border: 1px solid orange;
       }
     }
 
     .buttonContainer {
       display: flex;
       justify-content: center;
-      // border: 1px solid red;
+      border: 1px solid red;
 
       .aboutBtn {
         padding: 10px;
@@ -80,10 +81,6 @@
 @media screen and (min-width: 768px) {
   .aboutSectionContainer {
     border: 1px solid blue;
-
-    .profilPictureContainer {
-      border: 1px solid white;
-    }
 
     .presentationContainer {
       padding: 0 80px;
@@ -100,18 +97,47 @@
     border: 1px solid red;
 
     .profilPictureContainer {
+      position: relative;
       width: 600px;
       height: 680px;
       margin-bottom: 0px;
-      border: 1px solid white;
+      // border: 1px solid white;
+
+      .topRectangleDecoration {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 340px;
+        border: 1px solid white;
+      }
+
+      .photoContainer {
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); // Ajustement pour centrer précisément
+        width: 340px;
+        height: 340px;
+        // border: 1px solid white;
+      }
+
+      .bottomRectangleDecoration {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        height: 340px;
+        border: 1px solid white;
+      }
     }
 
     .presentationContainer {
+      // display: flex;
+      // justify-content: space-between;
       width: 600px;
       height: 680px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
       padding: 0;
       border: 1px solid white;
     }

@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import styles from './About4.module.scss';
-import linkedin from '../../../../public/icons/linkedin.svg';
+import styles from './About6.module.scss';
 
-export default function About4() {
+export default function About6() {
   return (
     <section className={styles.aboutSectionContainer}>
       <div className={styles.profilPictureContainer}>

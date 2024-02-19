@@ -12,14 +12,10 @@
     .photoContainer {
       position: relative;
       aspect-ratio: 1/1;
-      max-width: 400px;
-      max-height: 400px;
-
-      border: 1px solid red;
+      max-width: 340px;
 
       .photo {
         border: 1px solid white;
-        border-radius: 50%;
       }
     }
   }
@@ -34,7 +30,6 @@
     .titleContainer {
       display: flex;
       align-items: center;
-      border: 1px solid red;
 
       .title {
         margin-right: 20px;
@@ -45,7 +40,7 @@
 
       .titleSeparator {
         height: 1px;
-        background-color: #ffffff;
+        background-color: white;
         flex-grow: 1; // S'étend pour remplir l'espace disponibles
       }
     }
@@ -54,17 +49,16 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
-      border: 1px solid red;
 
       .presentationText {
-        border: 1px solid orange;
+        font-size: 14px;
+        line-height: 17px;
       }
     }
 
     .buttonContainer {
       display: flex;
       justify-content: center;
-      border: 1px solid red;
 
       .aboutBtn {
         padding: 10px;
@@ -78,15 +72,15 @@
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
   .aboutSectionContainer {
-    border: 1px solid blue;
-
     .profilPictureContainer {
-      border: 1px solid white;
+      .photoContainer {
+        width: 340px;
+        height: 340px;
+      }
     }
 
     .presentationContainer {
       padding: 0 80px;
-      border: 1px solid white;
     }
   }
 }
@@ -96,20 +90,20 @@
     display: flex;
     justify-content: center;
     gap: 80px;
-    border: 1px solid red;
 
     .profilPictureContainer {
-      width: 400px;
+      width: 600px;
       height: 680px;
       margin-bottom: 0px;
-      border: 1px solid white;
     }
 
     .presentationContainer {
-      width: 800px;
+      width: 600px;
       height: 680px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       padding: 0;
-      border: 1px solid white;
     }
   }
 }

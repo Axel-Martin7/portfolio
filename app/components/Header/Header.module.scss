@@ -1,39 +1,189 @@
-.header {
+@font-face {
+  font-family: 'blanka';
+  src: url('/fonts/blanka.otf') format('truetype');
+}
+
+.headerContainer {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  // border: 1px solid red;
+  border: 1px solid red;
 
-  .leftTextContainer {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    // border: 1px solid orange;
-
-    .portfolioText {
-      padding: 10px;
-      border: 1px solid #f1f1f2;
-    }
-    .nameText {
-      padding: 0 10px;
-    }
+  .signatureContainer {
+    border: 1px solid orange;
+    width: 80px;
+    height: 100%;
   }
 
-  .separator {
-    width: 100%;
-    margin: 0 40px;
-    height: 1px;
-    background-color: #f1f1f2;
-  }
-
-  .navContainer {
+  .menuContainer {
+    border: 1px solid orange;
+    width: 80px;
+    height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 20px;
-    // border: 1px solid orange;
 
-    .navLink {
-      padding: 10px;
+    .burgerLinesContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      border: 1px solid red;
+
+      .line {
+        width: 40px;
+        height: 4px;
+        transition: all 0.3s ease-in-out;
+
+        background-color: white;
+      }
+
+      // Lignes du burger apres avoir cliqué sur le menu
+      .line1Open {
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+      .line2Open {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .line3Open {
+        transform: rotate(-45deg) translate(10px, -10px);
+      }
     }
   }
 }
+
+.dropdownMenu {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: pink;
+
+  opacity: 0; // Assurez-vous que l'opacité est initialement à 0 pour le panneau fermé
+
+  clip-path: inset(0 0 100% 0); // Commence complètement "fermé".
+
+  transition: clip-path 0.3s ease-out, opacity 0.3s ease-out; // Appliquez la transition ici pour qu'elle soit effective dans les deux sens
+}
+.dropdownMenuOpen {
+  opacity: 1; // Opacité pleine lorsque le menu est ouvert
+
+  clip-path: inset(0 0 0 0); // Se "déroule" complètement.
+}
+
+.optionLanguageContainer {
+  border: 1px solid orange;
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .buttonLanguageContainer {
+    border: 1px solid red;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// .headerContainer {
+//   height: 80px;
+//   display: flex;
+//   justify-content: space-between;
+//   border: 1px solid red;
+
+//   .signatureContainer {
+//     width: 80px;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+
+//     border: 1px solid white;
+
+//     .signature {
+//       font-family: 'blanka';
+//       // font-family: 'amsterdam-four';
+//       font-size: 20px;
+//     }
+//     .portfolio {
+//       font-size: 10px;
+//     }
+//   }
+
+//   .menuContainer {
+//     width: 80px;
+//     height: 100%;
+
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     border: 1px solid white;
+
+//     .burgerLinesContainer {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 10px;
+
+//       border: 1px solid orange;
+
+//       .line {
+//         width: 40px;
+//         height: 3px;
+//         background-color: white;
+//       }
+//     }
+//   }
+
+//   .optionLanguageContainer {
+//     width: 80px;
+//     height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border: 1px solid white;
+
+//     .languageButtonContainer {
+//       width: 40px;
+//       height: 40px;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       border: 1px solid white;
+//       border-radius: 50%;
+//     }
+//   }
+// }
+
+// // ---------------------------------------------------   TABLETS
+// @media screen and (min-width: 768px) {
+//   .headerContainer {
+//     border: 1px solid blue;
+//   }
+// }
+// // ---------------------------------------------------   DESKTOPS à 1440px /!\
+// @media screen and (min-width: 1440px) {
+//   .headerContainer {
+//     border: 1px solid red;
+
+//     .menuContainer {
+//       width: 1280px;
+//     }
+
+//     .signatureContainer,
+//     .optionLanguageContainer {
+//       flex-grow: 1;
+//     }
+//   }
+// }

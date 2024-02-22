@@ -13,7 +13,10 @@ export default function Header() {
 
   return (
     <section className={styles.headerContainer}>
-      <div className={styles.signatureContainer}></div>
+      <div className={styles.signatureContainer}>
+        <p className={styles.signature}>AM</p>
+        {/* <p className={styles.signature2}>AM</p> */}
+      </div>
       <div className={styles.menuContainer} onClick={toggleMenu}>
         <div className={styles.burgerLinesContainer}>
           <div
@@ -33,7 +36,23 @@ export default function Header() {
           isMenuOpen ? styles.dropdownMenuOpen : ''
         }`}
       >
-        <p> Coucou</p>
+        <div className={styles.navLinksContainer}>
+          <div className={styles.navItemContainer}>
+            <a href="/">Home</a>
+          </div>
+          <div className={styles.navItemContainer}>
+            <a href="/">About</a>
+          </div>
+          <div className={styles.navItemContainer}>
+            <a href="/">Skills</a>
+          </div>
+          <div className={styles.navItemContainer}>
+            <a href="/">Projects</a>
+          </div>
+          <div className={styles.navItemContainer}>
+            <a href="/">Contact</a>
+          </div>
+        </div>
       </div>
 
       <div className={styles.optionLanguageContainer}>
@@ -44,30 +63,3 @@ export default function Header() {
     </section>
   );
 }
-
-// import styles from './Header.module.scss';
-
-// const Header = () => {
-//   return (
-//     <header className={styles.headerContainer}>
-//       <div className={styles.signatureContainer}>
-//         <p className={styles.signature}>AM</p>
-//         <p className={styles.portfolio}>portfolio</p>
-//       </div>
-//       <div className={styles.menuContainer}>
-//         <div className={styles.burgerLinesContainer}>
-//           <div className={styles.line}></div>
-//           <div className={styles.line}></div>
-//           <div className={styles.line}></div>
-//         </div>
-//       </div>
-//       <div className={styles.optionLanguageContainer}>
-//         <div className={styles.languageButtonContainer}>
-//           <p className={styles.language}>FR</p>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Header;

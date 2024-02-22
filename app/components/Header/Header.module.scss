@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'blanka';
-  src: url('/fonts/blanka.otf') format('truetype');
+  font-family: 'holligate';
+  src: url('/fonts/holligate-signature.ttf') format('truetype');
 }
 
 .headerContainer {
@@ -12,15 +12,23 @@
   display: flex;
   justify-content: space-between;
   border: 1px solid red;
+  background-color: black;
 
   .signatureContainer {
-    border: 1px solid orange;
     width: 80px;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .signature {
+      font-family: 'holligate';
+      font-size: 30px;
+      margin-left: 10px;
+    }
   }
 
   .menuContainer {
-    border: 1px solid orange;
     width: 80px;
     height: 100%;
     display: flex;
@@ -31,8 +39,6 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-
-      border: 1px solid red;
 
       .line {
         width: 40px;
@@ -55,135 +61,52 @@
       }
     }
   }
-}
+  // Panneau déroulant -->
+  .dropdownMenu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    visibility: hidden;
+    display: none;
+  }
+  .dropdownMenuOpen {
+    visibility: visible;
+    display: block;
 
-.dropdownMenu {
-  position: absolute;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: pink;
+    .navLinksContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-  opacity: 0; // Assurez-vous que l'opacité est initialement à 0 pour le panneau fermé
+      margin-top: 80px;
 
-  clip-path: inset(0 0 100% 0); // Commence complètement "fermé".
+      .navItemContainer {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 500;
+      }
+    }
+  }
 
-  transition: clip-path 0.3s ease-out, opacity 0.3s ease-out; // Appliquez la transition ici pour qu'elle soit effective dans les deux sens
-}
-.dropdownMenuOpen {
-  opacity: 1; // Opacité pleine lorsque le menu est ouvert
-
-  clip-path: inset(0 0 0 0); // Se "déroule" complètement.
-}
-
-.optionLanguageContainer {
-  border: 1px solid orange;
-  width: 80px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .buttonLanguageContainer {
-    border: 1px solid red;
-    width: 40px;
-    height: 40px;
+  .optionLanguageContainer {
+    width: 80px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .buttonLanguageContainer {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
-
-// .headerContainer {
-//   height: 80px;
-//   display: flex;
-//   justify-content: space-between;
-//   border: 1px solid red;
-
-//   .signatureContainer {
-//     width: 80px;
-//     height: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-
-//     border: 1px solid white;
-
-//     .signature {
-//       font-family: 'blanka';
-//       // font-family: 'amsterdam-four';
-//       font-size: 20px;
-//     }
-//     .portfolio {
-//       font-size: 10px;
-//     }
-//   }
-
-//   .menuContainer {
-//     width: 80px;
-//     height: 100%;
-
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     border: 1px solid white;
-
-//     .burgerLinesContainer {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 10px;
-
-//       border: 1px solid orange;
-
-//       .line {
-//         width: 40px;
-//         height: 3px;
-//         background-color: white;
-//       }
-//     }
-//   }
-
-//   .optionLanguageContainer {
-//     width: 80px;
-//     height: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     border: 1px solid white;
-
-//     .languageButtonContainer {
-//       width: 40px;
-//       height: 40px;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       border: 1px solid white;
-//       border-radius: 50%;
-//     }
-//   }
-// }
-
-// // ---------------------------------------------------   TABLETS
-// @media screen and (min-width: 768px) {
-//   .headerContainer {
-//     border: 1px solid blue;
-//   }
-// }
-// // ---------------------------------------------------   DESKTOPS à 1440px /!\
-// @media screen and (min-width: 1440px) {
-//   .headerContainer {
-//     border: 1px solid red;
-
-//     .menuContainer {
-//       width: 1280px;
-//     }
-
-//     .signatureContainer,
-//     .optionLanguageContainer {
-//       flex-grow: 1;
-//     }
-//   }
-// }

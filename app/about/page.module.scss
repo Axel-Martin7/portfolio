@@ -1,0 +1,204 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  border: 1px solid red;
+
+  .profilPictureContainer {
+    display: flex;
+    justify-content: center;
+    border: 1px solid orange;
+
+    .photoContainer {
+      width: 340px;
+      height: 340px;
+      position: relative;
+      aspect-ratio: 1/1;
+      border: 1px solid white;
+
+      .photo {
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .informationsSectionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 0 40px;
+    border: 1px solid orange;
+
+    .presentationContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      border: 1px solid white;
+
+      .titleContainer {
+        display: flex;
+        align-items: center;
+
+        .title {
+          margin-right: 20px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 500;
+        }
+
+        .titleSeparator {
+          height: 1px;
+          background-color: white;
+          flex-grow: 1; // S'étend pour remplir l'espace disponibles
+        }
+      }
+
+      .presentationTextsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .buttonContainer {
+        display: flex;
+        justify-content: center;
+
+        .skillsBtn {
+          padding: 10px;
+          color: white;
+          border: 1px solid white;
+        }
+      }
+    }
+
+    .pastContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      border: 1px solid white;
+
+      .titleContainer {
+        display: flex;
+        align-items: center;
+
+        .title {
+          margin-right: 20px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 500;
+        }
+
+        .titleSeparator {
+          height: 1px;
+          background-color: white;
+          flex-grow: 1; // S'étend pour remplir l'espace disponibles
+        }
+      }
+
+      .pastTextsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .goalsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      border: 1px solid white;
+
+      .titleContainer {
+        display: flex;
+        align-items: center;
+
+        .title {
+          margin-right: 20px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 500;
+        }
+
+        .titleSeparator {
+          height: 1px;
+          background-color: white;
+          flex-grow: 1; // S'étend pour remplir l'espace disponibles
+        }
+      }
+
+      .goalsTextsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .contactContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        .contactMail {
+          font-weight: 600;
+        }
+
+        .socialLinksContainer {
+          display: flex;
+          gap: 80px;
+
+          .itemContainer {
+            width: 60px; // Pour que chaques item ai la meme taille et donc la meme marge
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .itemName {
+              margin-top: 20px;
+              font-size: 10px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .aboutContainer {
+    border: 1px solid blue;
+
+    .informationsSectionsContainer {
+      padding: 0 80px;
+    }
+  }
+}
+
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+
+    .profilPictureContainer {
+      width: calc(1200px + 80px);
+    }
+
+    .informationsSectionsContainer {
+      width: calc(1200px + 80px);
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+}

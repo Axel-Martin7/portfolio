@@ -1,0 +1,147 @@
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  border: 1px solid red;
+
+  .skillsCardContainer {
+    border: 1px solid orange;
+
+    .skillsCard {
+      .skillsContentContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .titleContainer {
+          display: flex;
+          justify-content: center;
+
+          .title {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
+          }
+        }
+
+        .skillsGridContainer {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          grid-row-gap: 20px;
+          place-items: center;
+
+          .itemContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .itemName {
+              margin-top: 20px;
+              font-size: 10px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .formationContainer {
+    border: 1px solid orange;
+    margin: 20px;
+
+    .formationPresentationContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      border: 1px solid white;
+
+      .titleContainer {
+        display: flex;
+        justify-content: center;
+        border: 1px solid red;
+
+        .title {
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 500;
+        }
+      }
+
+      .formationPresentationContentContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        border: 1px solid red;
+
+        .list {
+          color: white;
+          list-style: inside;
+        }
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .skillsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid blue;
+
+    .skillsCardContainer {
+      display: flex;
+      justify-content: center;
+
+      .skillsCard {
+        width: 680px;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+
+        .skillsContentContainer {
+          width: calc(100% - 80px); // Pour créer une marge de 40px
+          height: calc(100% - 80px); // Pour créer une marge de 40px
+          display: grid;
+          grid-template-rows: auto 1fr; /* Un espace auto pour le titre, 1fr prend le reste */
+          place-items: center;
+          grid-row-gap: 30px;
+
+          .skillsGridContainer {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 40px;
+          }
+        }
+      }
+    }
+
+    .formationContainer {
+    }
+  }
+}
+
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .skillsContainer {
+    border: 1px solid red;
+
+    .skillsCardContainer {
+      width: calc(1200px + 80px);
+    }
+
+    .formationContainer {
+      width: calc(1200px + 80px);
+      max-width: 100%;
+    }
+  }
+}

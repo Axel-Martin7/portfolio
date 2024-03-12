@@ -152,6 +152,128 @@
         }
       }
     }
+
+    .specialisationContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      border: 1px solid white;
+
+      .titleContainer {
+        display: flex;
+        align-items: center;
+        border: 1px solid red;
+
+        .title {
+          margin-right: 20px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 500;
+        }
+
+        .titleSeparator {
+          height: 1px;
+          background-color: white;
+          flex-grow: 1; // S'étend pour remplir l'espace disponibles
+        }
+      }
+
+      .specialisationContentContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        border: 1px solid red;
+
+        .moduleContainer {
+          border: 1px solid orange;
+
+          .moduleTitle {
+            font-weight: 600;
+          }
+
+          .list {
+            color: white;
+            list-style: inside;
+          }
+
+          .moduleContentContainer {
+            border: 1px solid yellow;
+
+            .moduleTitle {
+              font-weight: 600;
+            }
+
+            .list {
+              color: white;
+              list-style: inside;
+            }
+          }
+        }
+      }
+    }
+
+    .apotheoseContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      border: 1px solid white;
+
+      .titleContainer {
+        display: flex;
+        align-items: center;
+        border: 1px solid red;
+
+        .title {
+          margin-right: 20px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 500;
+        }
+
+        .titleSeparator {
+          height: 1px;
+          background-color: white;
+          flex-grow: 1; // S'étend pour remplir l'espace disponibles
+        }
+      }
+
+      .apotheoseContentContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        border: 1px solid red;
+
+        .moduleContainer {
+          border: 1px solid orange;
+
+          .moduleTitle {
+            font-weight: 600;
+          }
+
+          .list {
+            color: white;
+            list-style: inside;
+          }
+
+          .moduleContentContainer {
+            border: 1px solid yellow;
+
+            .moduleTitle {
+              font-weight: 600;
+            }
+
+            .list {
+              color: white;
+              list-style: inside;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -214,6 +336,15 @@
       padding: 0px;
 
       .socleContainer {
+        width: calc(50% - 80px);
+      }
+
+      .specialisationContainer {
+        width: calc(50% - 80px);
+        align-self: flex-end;
+      }
+
+      .apotheoseContainer {
         width: calc(50% - 80px);
       }
     }

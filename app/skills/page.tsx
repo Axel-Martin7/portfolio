@@ -320,6 +320,175 @@ export default function Skills() {
               </div>
             </div>
           </div>
+
+          <div className={styles.specialisationContainer}>
+            <div className={styles.titleContainer}>
+              <h3 className={styles.title}>Spécialisation</h3>
+              <div className={styles.titleSeparator}></div>
+            </div>
+            <div className={styles.specialisationContentContainer}>
+              <p>
+                Le socle de connaissances nous a fourni des fondations solides.
+                <br></br>
+                Après cela, nous avons eu la possibilité de nous concentrer sur
+                une technologie durant un mois entier, afin de maîtriser
+                l&apos;une des technologies les plus utilisées par les
+                développeurs professionnels dans l&apos;écosystème JavaScript.
+                <br></br>
+                Nous avions le choix entre React et Data & API.<br></br>
+                J&apos;ai opté pour la spécialisation React.
+              </p>
+              <div className={styles.moduleContainer}>
+                <p className={styles.moduleTitle}>
+                  Module: Développement front :
+                </p>
+                <ul className={styles.list}>
+                  <li>
+                    Outils de développement : Npm, Yarn, WebPack, Babel et
+                    ESlint
+                  </li>
+                  <li>Programmation déclarative et fonctionnelle</li>
+                  <li>Outils de test: Jest</li>
+                  <li>SASS</li>
+                </ul>
+              </div>
+              <div className={styles.moduleContainer}>
+                <p className={styles.moduleTitle}>
+                  Module: JavaScript avancé :
+                </p>
+                <ul className={styles.list}>
+                  <li>Syntaxe ES2015</li>
+                  <li>Rappels POO</li>
+                  <li>Bundles et conventions</li>
+                </ul>
+              </div>
+              <div className={styles.moduleContainer}>
+                <p className={styles.moduleTitle}>Module: React :</p>
+                <ul className={styles.list}>
+                  <li>Installation</li>
+                  <li>Composants, props, state et JSX</li>
+                  <li>Cycles de vie</li>
+                  <li>Hooks</li>
+                </ul>
+              </div>
+              <div className={styles.moduleContainer}>
+                <p className={styles.moduleTitle}>Module: React avancé :</p>
+                <ul className={styles.list}>
+                  <li>Redux et React-Redux</li>
+                  <li>Router</li>
+                  <li>TypeScript</li>
+                  <li>NextJs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.apotheoseContainer}>
+            <div className={styles.titleContainer}>
+              <h3 className={styles.title}>Apothéose</h3>
+              <div className={styles.titleSeparator}></div>
+            </div>
+            <div className={styles.apotheoseContentContainer}>
+              <p>
+                Après 1 mois de spécialisation, nous entamons la phase du projet
+                final qu&apos; O’Clock nomme l’Apothéose. <br></br> Nous sommes
+                répartis en petits groupes de travail et avons 1 mois pour
+                concevoir et réaliser un projet en mettant en pratique nos
+                compétences récemment acquises. <br></br>Nous sommes en
+                autonomie pendant cette période, qui est une partie essentielle
+                de la préparation pour l’obtention du Titre Professionnel.
+                <br></br> Cette étape reproduit les conditions de travail en
+                entreprise et toutes les obligations que cela suppose. Taches
+                individuelles, travail en groupe, dead line …
+              </p>
+              <p>
+                Pour mon projet, notre équipe était composée de 5 développeurs :
+                3 back-end et 2 front-end dont je faisais partie. <br></br> Nous
+                nous sommes inspiré du cade de développement Scrum, basé sur les
+                principes agiles pour mener à bien notre projet.
+              </p>
+              <p>
+                Le projet d’Apothéose devait être structuré sous forme de
+                sprints, avec l’obligations de respecter les délais. <br></br>
+                Chaque sprint durait une semaine :
+              </p>
+              <div className={styles.moduleContainer}>
+                <p className={styles.moduleTitle}>
+                  Sprint 0 : Mise en place du projet :
+                </p>
+                <ul className={styles.list}>
+                  <li>Réalisation du cahier des charges</li>
+                  <li>
+                    Identification des fonctionnalités à intégrer pour obtenir
+                    un MVP fiable, ainsi que ses évolutions potentielles
+                  </li>
+                  <li>
+                    Liste des technologies à utiliser pour les repos front-end
+                    et back-end
+                  </li>
+                  <li>Création des User Stories</li>
+                  <li>Établissement de l’arborescence du projet</li>
+                  <li>Création du MCD et d’un dictionnaire des données</li>
+                  <li>
+                    Identification des routes à mettre en place coté front-end
+                    et coté back-end
+                  </li>
+                  <li>
+                    Création des Wireframes pour toutes les pages du projet
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.moduleContainer}>
+                <p className={styles.moduleTitle}>
+                  Sprint 1 : Début du développement:
+                </p>
+                <ul className={styles.list}>
+                  <li>Mise en place des repos</li>
+                  <li>Répartitions en deux équipes</li>
+                  <li>Début de la mise en place du projet</li>
+                  <li>
+                    Implémentation des fonctionnalités définies pour le MVP
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.moduleContainer}>
+                <p className={styles.moduleTitle}>Sprint 2 :</p>
+                <ul className={styles.list}>
+                  <li>Amélioration des fonctionnalités existantes</li>
+                  <li>Ajout de nouvelles fonctionnalités</li>
+                  <li>Correction des bugs</li>
+                </ul>
+              </div>
+              <div className={styles.moduleContainer}>
+                <p className={styles.moduleTitle}>Sprint 3 : Finalisation :</p>
+                <ul className={styles.list}>
+                  <li>Pas d’ajout de nouvelles fonctionnalités</li>
+                  <li>Finalisation des fonctionnalités existantes</li>
+                  <li>Vérification du bon fonctionnement de tout le système</li>
+                  <li>Travail sur le style et le design</li>
+                  <li>Préparation à la présentation finale.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className={styles.specialisationContainer}>
+            <div className={styles.titleContainer}>
+              <h3 className={styles.title}>Spécialisation</h3>
+              <div className={styles.titleSeparator}></div>
+            </div>
+            <div className={styles.specialisationContentContainer}>
+              <p>
+                Le socle de connaissances nous a fourni des fondations solides.
+                Après cela, nous avons eu la possibilité de nous concentrer sur
+                une technologie durant un mois entier, afin de maîtriser
+                l&apos;une des technologies les plus utilisées par les
+                développeurs professionnels dans l&apos;écosystème JavaScript.
+                Nous avions le choix entre React et Data & API. J&apos;ai opté
+                pour la spécialisation React.
+              </p>
+            </div>
+          </div> */}
         </section>
       </div>
     </main>

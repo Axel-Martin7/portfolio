@@ -19,7 +19,6 @@ export default function Projects2() {
             <div className={styles.skillsContainer}>
               <p className={styles.skills}>Html</p>
               <p className={styles.skills}>Scss</p>
-
               <p className={styles.skills}>NextJs</p>
               <p className={styles.skills}>TypeScript</p>
               <p className={styles.skills}>Git</p>

@@ -14,7 +14,9 @@ export default function Header() {
   return (
     <section className={styles.headerContainer}>
       <div className={styles.signatureContainer}>
-        <p className={styles.signature}>AM</p>
+        <a className={styles.signature} href="/">
+          AM
+        </a>
         {/* <p className={styles.signature2}>AM</p> */}
       </div>
       <div className={styles.menuContainer} onClick={toggleMenu}>
@@ -41,16 +43,16 @@ export default function Header() {
             <a href="/">Home</a>
           </div>
           <div className={styles.navItemContainer}>
-            <a href="/">About</a>
+            <a href="/about">About</a>
           </div>
           <div className={styles.navItemContainer}>
-            <a href="/">Skills</a>
+            <a href="/skills">Skills</a>
           </div>
           <div className={styles.navItemContainer}>
-            <a href="/">Projects</a>
+            <a href="/projects">Projects</a>
           </div>
           <div className={styles.navItemContainer}>
-            <a href="/">Contact</a>
+            <a href="/contact">Contact</a>
           </div>
         </div>
       </div>

@@ -1,0 +1,155 @@
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0 40px;
+  border: 1px solid red;
+
+  .presentationSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border: 1px solid orange;
+
+    .projectImage {
+      border: 1px solid white;
+      max-width: 400px;
+      height: 340px;
+    }
+
+    .projectInformationsContainer {
+      border: 1px solid white;
+    }
+  }
+
+  .imagesSection {
+    border: 1px solid orange;
+  }
+}
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .projectContainer {
+    padding: 0 80px;
+    border: 1px solid blue;
+
+    .presentationSection {
+      .projectImage {
+        width: 400px;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .projectContainer {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: 1px solid red;
+
+    .presentationSection {
+      width: calc(1200px + 80px);
+
+      .projectInformationsContainer {
+        width: calc(800px + 80px);
+      }
+    }
+
+    .imagesSection {
+      width: calc(1200px + 80px);
+    }
+  }
+}
+
+// .projectContainer {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   border: 1px solid red;
+
+//   .presentationSection {
+//     border: 1px solid orange;
+
+//     .projectImage {
+//       border: 1px solid white;
+//       margin: 20px;
+//     }
+
+//     .projectInformationsContainer {
+//       border: 1px solid white;
+
+//       .titlesContainer {
+//         border: 1px solid red;
+
+//         .projectName {
+//           font-size: 22px;
+//           text-transform: uppercase;
+//           letter-spacing: 3px;
+//           font-weight: 600;
+//           border: 1px solid orange;
+//         }
+
+//         .subTitleContainer {
+//           display: flex;
+//           align-items: center;
+//           border: 1px solid orange;
+
+//           .subTitle {
+//             padding: 0 10px; // Un peu d'espace autour du texte
+//             font-size: 12px;
+//             text-transform: uppercase;
+//             letter-spacing: 3px;
+//             font-weight: 500;
+//           }
+
+//           .separator {
+//             // flex-grow: 1; // Permet aux barres de se développer pour occuper l'espace disponible
+//             min-width: 30px; // Assurez-vous que les barres ont une largeur minimale
+//             height: 1px;
+//             background-color: #f1f1f2;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .imagesSection {
+//     border: 1px solid orange;
+//   }
+// }
+
+// // ---------------------------------------------------   TABLETS
+// @media screen and (min-width: 768px) {
+//   .projectContainer {
+//     gap: 80px;
+//     border: 1px solid blue;
+
+//     .presentationSection {
+//       .projectImage {
+//         width: 400px;
+//         height: 340px;
+//       }
+//     }
+//   }
+// }
+
+// // ---------------------------------------------------   DESKTOPS
+// @media screen and (min-width: 1200px) {
+//   .projectContainer {
+//     border: 1px solid red;
+
+//     .presentationSection {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       width: calc(1200px + 80px);
+//     }
+
+//     .imagesSection {
+//       width: calc(1200px + 80px);
+//     }
+//   }
+// }

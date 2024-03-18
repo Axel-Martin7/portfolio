@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 80px;
     border: 1px solid orange;
 
     .projectImage {
@@ -19,12 +19,108 @@
     }
 
     .projectInformationsContainer {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
       border: 1px solid white;
+
+      .titlesContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid red;
+
+        .projectName {
+          margin-bottom: 5px;
+          font-size: 22px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 600;
+          border: 1px solid orange;
+        }
+
+        .subTitleContainer {
+          display: flex;
+          align-items: center;
+          border: 1px solid orange;
+
+          .subTitle {
+            padding: 0 10px; // Un peu d'espace autour du texte
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .projectSkills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        border: 1px solid red;
+
+        .skills {
+          font-size: 10px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 300;
+        }
+      }
+
+      .projectDescription {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-size: 14px;
+        line-height: 20px;
+        border: 1px solid red;
+      }
     }
   }
 
   .imagesSection {
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
     border: 1px solid orange;
+
+    .desktopImageContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      border: 1px solid white;
+
+      .image {
+        position: relative;
+
+        width: 100%;
+        max-width: 400px;
+        height: 340px;
+        border: 1px solid red;
+      }
+    }
+
+    .mobileImageContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      border: 1px solid white;
+
+      .image {
+        position: relative;
+
+        width: 100%;
+        max-width: 200px;
+        height: 340px;
+        border: 1px solid red;
+      }
+    }
   }
 }
 
@@ -37,6 +133,35 @@
     .presentationSection {
       .projectImage {
         width: 400px;
+      }
+
+      .projectInformationsContainer {
+        .titlesContainer {
+          .projectName {
+            font-size: 29px;
+            letter-spacing: 4px;
+          }
+          .subTitleContainer {
+            .separator {
+              // flex-grow: 1; // Permet aux barres de se développer pour occuper l'espace disponible
+              min-width: 30px; // Assurez-vous que les barres ont une largeur minimale
+              height: 1px;
+              background-color: #f1f1f2;
+            }
+          }
+        }
+      }
+    }
+
+    .imagesSection {
+      .mobileImageContainer {
+        display: grid;
+        grid-template-columns: repeat(
+          2,
+          200px
+        ); /* Fixe la largeur de chaque colonne à la largeur de vos images */
+        grid-auto-rows: 340px; /* Fixe la hauteur de chaque rangée à la hauteur de vos images */
+        justify-content: center;
       }
     }
   }
@@ -60,96 +185,102 @@
 
     .imagesSection {
       width: calc(1200px + 80px);
+      max-width: 100%;
+
+      .desktopImageContainer {
+        display: grid;
+        grid-template-columns: repeat(
+          3,
+          400px
+        ); /* Fixe la largeur de chaque colonne à la largeur de vos images */
+        grid-auto-rows: 340px; /* Fixe la hauteur de chaque rangée à la hauteur de vos images */
+        gap: 40px 0;
+        justify-content: space-between; /* Ajuste l'espacement horizontal entre les éléments */
+        align-content: space-between; /* Ajuste l'espacement vertical entre les éléments */
+      }
+
+      .mobileImageContainer {
+        display: grid;
+        grid-template-columns: repeat(
+          6,
+          200px
+        ); /* Fixe la largeur de chaque colonne à la largeur de vos images */
+        grid-auto-rows: 340px; /* Fixe la hauteur de chaque rangée à la hauteur de vos images */
+
+        justify-content: space-between; /* Ajuste l'espacement horizontal entre les éléments */
+        align-content: space-between; /* Ajuste l'espacement vertical entre les éléments */
+        gap: 0;
+      }
+
+      // .desktopImageContainer {
+      //   display: grid;
+      //   grid-template-columns: repeat(
+      //     3,
+      //     400px
+      //   ); /* Fixe la largeur de chaque colonne à la largeur de vos images */
+      //   grid-auto-rows: 340px; /* Fixe la hauteur de chaque rangée à la hauteur de vos images */
+      //   gap: 40px 0;
+      //   justify-content: space-between; /* Ajuste l'espacement horizontal entre les éléments */
+      //   align-content: space-between; /* Ajuste l'espacement vertical entre les éléments */
+
+      //   border: 1px solid white;
+
+      //   .image {
+      //     position: relative;
+      //     // width: 100%;
+      //     // height: 100%;
+      //     border: 1px solid red;
+      //   }
+      // }
+
+      // .mobileImageContainer {
+      //   display: grid;
+      //   grid-template-columns: repeat(
+      //     6,
+      //     200px
+      //   ); /* Fixe la largeur de chaque colonne à la largeur de vos images */
+      //   grid-auto-rows: 340px; /* Fixe la hauteur de chaque rangée à la hauteur de vos images */
+
+      //   justify-content: space-between; /* Ajuste l'espacement horizontal entre les éléments */
+      //   align-content: space-between; /* Ajuste l'espacement vertical entre les éléments */
+
+      //   margin-top: 40px;
+      //   border: 1px solid white;
+
+      //   .image {
+      //     position: relative;
+      //     // aspect-ratio: 1/1;
+      //     border: 1px solid red;
+      //   }
+      // }
     }
+
+    // ----------------------------
+    // .imagesSection {
+    //   width: calc(1200px + 80px);
+    //   display: flex;
+    //   gap: 80px;
+
+    //   .desktopContainer {
+    //     width: 800px;
+    //     border: 1px solid white;
+    //   }
+
+    //   .mobileContainer {
+    //     width: 400px;
+    //     height: 800px;
+    //     border: 1px solid white;
+
+    //     .image {
+    //       position: relative;
+    //       // aspect-ratio: 1/1;
+    //       width: 100%;
+    //       height: 100%;
+
+    //       border: 1px solid red;
+    //     }
+    //   }
+    // }
+    // ----------------------------
   }
 }
-
-// .projectContainer {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   border: 1px solid red;
-
-//   .presentationSection {
-//     border: 1px solid orange;
-
-//     .projectImage {
-//       border: 1px solid white;
-//       margin: 20px;
-//     }
-
-//     .projectInformationsContainer {
-//       border: 1px solid white;
-
-//       .titlesContainer {
-//         border: 1px solid red;
-
-//         .projectName {
-//           font-size: 22px;
-//           text-transform: uppercase;
-//           letter-spacing: 3px;
-//           font-weight: 600;
-//           border: 1px solid orange;
-//         }
-
-//         .subTitleContainer {
-//           display: flex;
-//           align-items: center;
-//           border: 1px solid orange;
-
-//           .subTitle {
-//             padding: 0 10px; // Un peu d'espace autour du texte
-//             font-size: 12px;
-//             text-transform: uppercase;
-//             letter-spacing: 3px;
-//             font-weight: 500;
-//           }
-
-//           .separator {
-//             // flex-grow: 1; // Permet aux barres de se développer pour occuper l'espace disponible
-//             min-width: 30px; // Assurez-vous que les barres ont une largeur minimale
-//             height: 1px;
-//             background-color: #f1f1f2;
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   .imagesSection {
-//     border: 1px solid orange;
-//   }
-// }
-
-// // ---------------------------------------------------   TABLETS
-// @media screen and (min-width: 768px) {
-//   .projectContainer {
-//     gap: 80px;
-//     border: 1px solid blue;
-
-//     .presentationSection {
-//       .projectImage {
-//         width: 400px;
-//         height: 340px;
-//       }
-//     }
-//   }
-// }
-
-// // ---------------------------------------------------   DESKTOPS
-// @media screen and (min-width: 1200px) {
-//   .projectContainer {
-//     border: 1px solid red;
-
-//     .presentationSection {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       width: calc(1200px + 80px);
-//     }
-
-//     .imagesSection {
-//       width: calc(1200px + 80px);
-//     }
-//   }
-// }

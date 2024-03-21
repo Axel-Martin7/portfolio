@@ -38,7 +38,7 @@ export default function Projects2() {
           <div className={styles.imageContainer}>
             <Image
               src="/images/projects/victoryzone/desktophome2.png"
-              alt="Photo section team du projet Victory Zone"
+              alt="Image du projet VictoryZone"
               fill
             />
           </div>

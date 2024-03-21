@@ -9,7 +9,7 @@ export default function VictoryZone() {
           <div className={styles.projectImage}>
             <Image
               src="/images/projects/victoryzone/desktophome2.png"
-              alt="Photo de profil"
+              alt="Image du projet VictoryZone"
               fill
             />
           </div>
@@ -193,42 +193,42 @@ export default function VictoryZone() {
             <div className={styles.image}>
               <Image
                 src="/images/projects/victoryzone/desktophome1.png"
-                alt="Photo de profil"
+                alt="Image section présentation du project VictoryZone version desktop"
                 fill
               />
             </div>
             <div className={styles.image}>
               <Image
                 src="/images/projects/victoryzone/desktophome2.png"
-                alt="Photo de profil"
+                alt="Image section team du project VictoryZone version desktop"
                 fill
               />
             </div>
             <div className={styles.image}>
               <Image
                 src="/images/projects/victoryzone/desktophome3.png"
-                alt="Photo de profil"
+                alt="Image section calendrier du project VictoryZone version desktop"
                 fill
               />
             </div>
             <div className={styles.image}>
               <Image
                 src="/images/projects/victoryzone/desktophome4.png"
-                alt="Photo de profil"
+                alt="Image section articles du project VictoryZone version desktop"
                 fill
               />
             </div>
             <div className={styles.image}>
               <Image
                 src="/images/projects/victoryzone/desktopform.png"
-                alt="Photo de profil"
+                alt="Image page formulaire de recrutement du project VictoryZone version desktop"
                 fill
               />
             </div>
             <div className={styles.image}>
               <Image
                 src="/images/projects/victoryzone/desktopadmin.png"
-                alt="Photo de profil"
+                alt="Image page administrateur du project VictoryZone version desktop"
                 fill
               />
             </div>
@@ -237,42 +237,42 @@ export default function VictoryZone() {
             <div className={styles.image}>
               <Image
                 src="/images/projects/victoryzone/mobilehome1.png"
-                alt="Photo de profil"
+                alt="Image section présentation du project VictoryZone version mobile"
                 fill
               />
             </div>
             <div className={styles.image}>
               <Image
                 src="/images/projects/victoryzone/mobilehome2.png"
-                alt="Photo de profil"
+                alt="Image section team du project VictoryZone version mobile"
                 fill
               />
             </div>
             <div className={styles.image}>
               <Image
                 src="/images/projects/victoryzone/mobilehome3.png"
-                alt="Photo de profil"
+                alt="Image section calendrier du project VictoryZone version mobile"
                 fill
               />
             </div>
             <div className={styles.image}>
               <Image
                 src="/images/projects/victoryzone/mobilehome4.png"
-                alt="Photo de profil"
+                alt="Image section articles du project VictoryZone version desktop"
                 fill
               />
             </div>
             <div className={styles.image}>
               <Image
                 src="/images/projects/victoryzone/mobilehome5.png"
-                alt="Photo de profil"
+                alt="Image footer du project VictoryZone version mobile"
                 fill
               />
             </div>
             <div className={styles.image}>
               <Image
                 src="/images/projects/victoryzone/mobileadmin.png"
-                alt="Photo de profil"
+                alt="Image page administrateur du project VictoryZone version mobile"
                 fill
               />
             </div>

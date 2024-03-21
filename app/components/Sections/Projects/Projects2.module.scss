@@ -11,6 +11,10 @@
       border: 1px solid white;
 
       .imageContainer {
+        position: relative;
+        width: 100%;
+        height: 340px;
+        max-width: 400px;
         border: 1px solid red;
       }
 

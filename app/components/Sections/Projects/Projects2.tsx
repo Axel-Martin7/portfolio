@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Projects2.module.scss';
 
 export default function Projects2() {
@@ -34,7 +35,13 @@ export default function Projects2() {
           className={styles.projectCardContainer}
           href={'/projects/victoryzone'}
         >
-          <div className={styles.imageContainer}></div>
+          <div className={styles.imageContainer}>
+            <Image
+              src="/images/projects/victoryzone/desktophome2.png"
+              alt="Photo section team du projet Victory Zone"
+              fill
+            />
+          </div>
           <div className={styles.descriptionContainer}>
             <h2 className={styles.projectName}>Victory Zone</h2>
             <p className={styles.creationDate}>2023</p>

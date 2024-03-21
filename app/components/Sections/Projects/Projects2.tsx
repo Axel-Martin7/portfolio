@@ -11,7 +11,13 @@ export default function Projects2() {
           className={styles.projectCardContainer}
           href={'/projects/portfolio'}
         >
-          <div className={styles.imageContainer}></div>
+          <div className={styles.imageContainer}>
+            <Image
+              src="/images/projects/portfolio/portfoliologo.png"
+              alt="Logo du projet portfolio v1"
+              fill
+            />
+          </div>
           <div className={styles.descriptionContainer}>
             <h2 className={styles.projectName}>Portfolio v.1</h2>
             <p className={styles.creationDate}>2024</p>

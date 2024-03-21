@@ -7,11 +7,11 @@ export default function Portfolio() {
       <div className={styles.projectContainer}>
         <section className={styles.presentationSection}>
           <div className={styles.projectImage}>
-            {/* <Image
-              src="/images/projects/victoryzone/desktophome2.png"
-              alt="Image du projet VictoryZone"
+            <Image
+              src="/images/projects/portfolio/portfoliologo.png"
+              alt="Logo du projet portfolio v1"
               fill
-            /> */}
+            />
           </div>
           <div className={styles.projectInformationsContainer}>
             <div className={styles.titlesContainer}>

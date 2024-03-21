@@ -70,7 +70,13 @@ export default function Projects2() {
           className={styles.projectCardContainer}
           href={'/projects/okanban'}
         >
-          <div className={styles.imageContainer}></div>
+          <div className={styles.imageContainer}>
+            <Image
+              src="/images/projects/okanban/okanbandesktop.png"
+              alt="Aperçu du projet oKanban en version desktop"
+              fill
+            />
+          </div>
           <div className={styles.descriptionContainer}>
             <h2 className={styles.projectName}>O&apos;Kanban</h2>
             <p className={styles.creationDate}>2023</p>

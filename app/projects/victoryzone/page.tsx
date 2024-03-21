@@ -25,10 +25,13 @@ export default function VictoryZone() {
             <div className={styles.projectSkills}>
               <p className={styles.skills}>Html</p>
               <p className={styles.skills}>Scss</p>
-              <p className={styles.skills}>NextJs</p>
+              <p className={styles.skills}>Next.js</p>
               <p className={styles.skills}>TypeScript</p>
-              <p className={styles.skills}>Git</p>
+              <p className={styles.skills}>Node.js</p>
+              <p className={styles.skills}>Express</p>
+              <p className={styles.skills}>PostgreSQL</p>
               <p className={styles.skills}>Agile</p>
+              <p className={styles.skills}>Git</p>
             </div>
             <div className={styles.projectDescription}>
               <p>

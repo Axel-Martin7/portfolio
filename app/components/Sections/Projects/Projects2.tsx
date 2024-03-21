@@ -56,17 +56,23 @@ export default function Projects2() {
               <p className={styles.skills}>Scss</p>
               <p className={styles.skills}>NextJs</p>
               <p className={styles.skills}>TypeScript</p>
+              <p className={styles.skills}>Node.js</p>
+              <p className={styles.skills}>Express</p>
+              <p className={styles.skills}>PostgreSQL</p>
               <p className={styles.skills}>Git</p>
               <p className={styles.skills}>Agile</p>
             </div>
           </div>
         </Link>
 
-        {/* Incomming --> */}
-        <div className={styles.projectCardContainer}>
+        {/* OKanban --> */}
+        <Link
+          className={styles.projectCardContainer}
+          href={'/projects/okanban'}
+        >
           <div className={styles.imageContainer}></div>
           <div className={styles.descriptionContainer}>
-            <h2 className={styles.projectName}>Incomming</h2>
+            <h2 className={styles.projectName}>O&apos;Kanban</h2>
             <p className={styles.creationDate}>2023</p>
             <p className={styles.description}>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
@@ -79,7 +85,7 @@ export default function Projects2() {
               <p className={styles.skills}>Css</p>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

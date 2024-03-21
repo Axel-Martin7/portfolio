@@ -89,6 +89,11 @@ export default function Projects2() {
             <div className={styles.skillsContainer}>
               <p className={styles.skills}>Html</p>
               <p className={styles.skills}>Css</p>
+              <p className={styles.skills}>JavaScript</p>
+              <p className={styles.skills}>Node.js</p>
+              <p className={styles.skills}>Express</p>
+              <p className={styles.skills}>PostgreSQL</p>
+              <p className={styles.skills}>Sequelize</p>
             </div>
           </div>
         </Link>

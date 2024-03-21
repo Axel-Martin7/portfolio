@@ -24,11 +24,12 @@ export default function Okanban() {
             </div>
             <div className={styles.projectSkills}>
               <p className={styles.skills}>Html</p>
-              <p className={styles.skills}>Scss</p>
-              <p className={styles.skills}>NextJs</p>
-              <p className={styles.skills}>TypeScript</p>
-              <p className={styles.skills}>Git</p>
-              <p className={styles.skills}>Agile</p>
+              <p className={styles.skills}>Css</p>
+              <p className={styles.skills}>JavaScript</p>
+              <p className={styles.skills}>Node.js</p>
+              <p className={styles.skills}>Express</p>
+              <p className={styles.skills}>PostgreSQL</p>
+              <p className={styles.skills}>Sequelize</p>
             </div>
             <div className={styles.projectDescription}>
               <p>
@@ -81,15 +82,6 @@ export default function Okanban() {
             />
           </div>
         </section>
-
-        {/* <section className={styles.imagesSection}>
-          <div className={styles.desktopImageContainer}>
-            <div className={styles.image}></div>
-          </div>
-          <div className={styles.mobileImageContainer}>
-            <div className={styles.image}></div>
-          </div>
-        </section> */}
       </div>
     </main>
   );

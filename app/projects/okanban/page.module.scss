@@ -79,43 +79,6 @@
         font-size: 14px;
         line-height: 20px;
         border: 1px solid red;
-
-        .sprintsLists {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-          border: 1px solid orange;
-          span {
-            font-size: 14px;
-            font-weight: 400;
-          }
-
-          ul {
-            color: white;
-            list-style: inside;
-            font-size: 12px;
-            font-weight: 200;
-          }
-        }
-
-        // .sprintTexts {
-        //   display: flex;
-        //   flex-direction: column;
-        //   gap: 20px;
-
-        //   border: 1px solid orange;
-
-        //   span {
-        //     font-weight: 400;
-        //   }
-
-        //   ul {
-        //     color: white;
-        //     list-style: inside;
-        //     font-weight: 200;
-        //     font-size: 12px;
-        //   }
-        // }
       }
     }
   }
@@ -123,37 +86,25 @@
   .imagesSection {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
     gap: 80px;
+    border: 1px solid orange;
 
     .desktopImageContainer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
+      position: relative;
 
-      .image {
-        position: relative;
-        width: 100%;
-        max-width: 400px;
-        height: 340px;
-        border: 1px solid white;
-      }
+      width: 100%;
+      max-width: 400px;
+      height: 340px;
+      border: 1px solid white;
     }
 
     .mobileImageContainer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-
-      .image {
-        position: relative;
-        width: 100%;
-        max-width: 200px;
-        height: 340px;
-        border: 1px solid white;
-      }
+      position: relative;
+      width: 100%;
+      max-width: 200px;
+      height: 340px;
+      border: 1px solid white;
     }
   }
 }
@@ -186,18 +137,6 @@
         }
       }
     }
-
-    .imagesSection {
-      .mobileImageContainer {
-        display: grid;
-        grid-template-columns: repeat(
-          2,
-          200px
-        ); /* Fixe la largeur de chaque colonne à la largeur de vos images */
-        grid-auto-rows: 340px; /* Fixe la hauteur de chaque rangée à la hauteur de vos images */
-        justify-content: center;
-      }
-    }
   }
 }
 
@@ -218,33 +157,10 @@
     }
 
     .imagesSection {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
       width: calc(1200px + 80px);
-      max-width: 100%;
-
-      .desktopImageContainer {
-        display: grid;
-        grid-template-columns: repeat(
-          3,
-          400px
-        ); /* Fixe la largeur de chaque colonne à la largeur de vos images */
-        grid-auto-rows: 340px; /* Fixe la hauteur de chaque rangée à la hauteur de vos images */
-        gap: 40px 0;
-        justify-content: space-between; /* Ajuste l'espacement horizontal entre les éléments */
-        align-content: space-between; /* Ajuste l'espacement vertical entre les éléments */
-      }
-
-      .mobileImageContainer {
-        display: grid;
-        grid-template-columns: repeat(
-          6,
-          200px
-        ); /* Fixe la largeur de chaque colonne à la largeur de vos images */
-        grid-auto-rows: 340px; /* Fixe la hauteur de chaque rangée à la hauteur de vos images */
-
-        justify-content: space-between; /* Ajuste l'espacement horizontal entre les éléments */
-        align-content: space-between; /* Ajuste l'espacement vertical entre les éléments */
-        gap: 0;
-      }
     }
   }
 }

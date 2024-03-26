@@ -12,6 +12,7 @@ const VisitCards = () => {
           </div>
         </div>
       </div>
+
       <div className={styles.presentationCardContainer}>
         <div className={styles.titlesContainer}>
           <h1 className={styles.title}>Welcome to my world</h1>
@@ -21,19 +22,13 @@ const VisitCards = () => {
             <div className={styles.separator}></div>
           </div>
         </div>
-        <div className={styles.textsContainer}>
-          <p className={styles.description}>Hello,</p>
-          <p className={styles.description}>
-            my name is Axel. Im a french web developper based in Geneva.
-          </p>
-          <p className={styles.description}>
-            Recently graduated in fullstack JavaScript web development degree,
-          </p>
-          <p className={styles.description}>
-            Im looking now for career opportunities
-          </p>
-        </div>
-        <p className={styles.contact}>axel.martin@outlook.com</p>
+        <p className={styles.presentationText}>
+          Hello, <br></br> my name is Axel. I&apos;m a french web developper
+          based in Geneva. <br></br> Recently graduated in fullstack JavaScript
+          web development degree, <br></br> I&apos;m looking now for career
+          opportunities
+        </p>
+        <p className={styles.email}>axel.martin@outlook.com</p>
       </div>
     </section>
   );

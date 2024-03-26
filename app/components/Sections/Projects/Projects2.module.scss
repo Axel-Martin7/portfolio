@@ -77,8 +77,16 @@
       .projectCardContainer {
         width: 400px;
         height: 680px;
+        border: 1px solid #121212;
+        border-radius: 10px;
+        background: radial-gradient(at 30% 31%, transparent 0%, #121212 100%),
+          #434343;
 
-        border: 1px solid white;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        // border: 1px solid white;
 
         .imageContainer {
           width: 100%;

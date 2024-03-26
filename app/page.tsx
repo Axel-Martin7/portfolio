@@ -22,8 +22,8 @@ import Skills3 from './components/Sections/Skills/Skills3';
 export default function Home() {
   return (
     <main>
-      <VisitCards2 />
-      {/* <VisitCards /> */}
+      <VisitCards />
+      {/* <VisitCards2 /> */}
 
       {/* <About5 /> */}
       <About6 />

@@ -2,6 +2,10 @@
   margin-bottom: 80px;
   border: 1px solid red;
 
+  padding: 140px 0;
+  background: radial-gradient(transparent 18%, #121212 86%),
+    linear-gradient(0deg, #121212 0%, #434343 50%, #121212 100%);
+
   .cardsContainer {
     border: 1px solid orange;
 
@@ -102,6 +106,14 @@
         justify-content: center;
         align-items: center;
         border: 1px solid white;
+        border: 1px solid #121212;
+        border-radius: 10px;
+        background: radial-gradient(at 30% 31%, transparent 0%, #121212 100%),
+          #434343;
+
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
         .skillsContentContainer {
           width: calc(100% - 80px); // Pour créer une marge de 40px
@@ -127,6 +139,14 @@
         justify-content: center;
         align-items: center;
         border: 1px solid white;
+        border: 1px solid #121212;
+        border-radius: 10px;
+        background: radial-gradient(at 30% 31%, transparent 0%, #121212 100%),
+          #434343;
+
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
         .formationContentContainer {
           width: calc(100% - 80px); // Pour créer une marge de 40px
@@ -168,7 +188,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-color: black;
+        // background-color: black;
       }
 
       .formationCard {

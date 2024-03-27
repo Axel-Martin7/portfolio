@@ -16,6 +16,7 @@ import Projects from './components/Sections/Projects/Projects';
 import Projects2 from './components/Sections/Projects/Projects2';
 
 import Contact from './components/Sections/Contact/Contact';
+import Contact2 from './components/Sections/Contact/Contact2';
 
 import Skills3 from './components/Sections/Skills/Skills3';
 
@@ -29,6 +30,7 @@ export default function Home() {
       {/* <About6 /> */}
 
       <Contact />
+      <Contact2 />
       {/* <Skills2 /> */}
       <Skills3 />
 

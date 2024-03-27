@@ -1,26 +1,11 @@
 .contactSectionContainer {
-  margin-bottom: 80px;
+  padding: 80px 0;
   border: 1px solid red;
 
-  padding: 140px 0;
-  /*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=434343&c2=121212&gt=r&gd=dcr
-*/
-  background: #434343;
-  background: radial-gradient(transparent 18%, #121212 86%),
-    radial-gradient(at right center, #434343, #121212);
-
   .contactContainer {
-    border: 1px solid orange;
+    padding: 0 40px;
 
-    .contactInfosContainer {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-      padding: 0 40px;
-      border: 1px solid white;
-
+    .contactContentContainer {
       .titleContainer {
         display: flex;
         align-items: center;
@@ -39,36 +24,41 @@
         }
       }
 
-      .contactTextsContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-
-        .contactText {
-          font-size: 14px;
-          line-height: 17px;
-        }
-
-        .contactMail {
-          font-weight: 600;
-        }
+      .contactText {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 17px;
       }
 
-      .socialLinksContainer {
-        display: flex;
-        gap: 20px;
+      .contactInfos {
+        display: inline-block;
 
-        .itemContainer {
-          width: 60px; // Pour que chaques item ai la meme taille et donc la meme marge
+        .mail {
+          display: block;
+          padding: 20px 0;
+          font-size: 16px;
+          line-height: 17px;
+          font-weight: 600;
+        }
+
+        .socialLinksContainer {
           display: flex;
-          flex-direction: column;
-          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
 
-          .itemName {
-            margin-top: 20px;
-            font-size: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+          .itemContainer {
+            width: 80px; // Pour que chaques item ai la meme taille et donc la meme marge
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .itemName {
+              margin-top: 20px;
+              font-size: 10px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            }
           }
         }
       }
@@ -82,13 +72,7 @@
     border: 1px solid blue;
 
     .contactContainer {
-      .contactInfosContainer {
-        padding: 0 80px;
-
-        .contactTextsContainer {
-          width: 50%;
-        }
-      }
+      padding: 0 80px;
     }
   }
 }
@@ -102,17 +86,15 @@
     .contactContainer {
       width: calc(1200px + 80px);
       height: 340px;
+      padding: 0;
 
-      .contactInfosContainer {
+      .contactContentContainer {
         width: 600px;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0;
 
-        .socialLinksContainer {
-          width: 50%;
+        .itemIcon {
+          width: 40px;
+          height: 40px;
         }
       }
     }

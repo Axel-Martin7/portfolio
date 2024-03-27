@@ -126,6 +126,7 @@
       width: 600px;
       height: 340px;
       @include insidecardsbg;
+      @include cardsboxshadow;
     }
 
     .presentationCardContainer {
@@ -137,6 +138,7 @@
       justify-content: space-between;
       padding: 40px;
       @include insidecardsbg;
+      @include cardsboxshadow;
 
       .presentationText {
         margin: 0;

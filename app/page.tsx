@@ -5,7 +5,7 @@ import VisitCards from './components/Sections/VisitCards/VisitCards';
 import VisitCards2 from './components/Sections/VisitCards/VisitCards2';
 
 import About from './components/Sections/About/About';
-import About5 from './components/Sections/About/About5';
+import About6 from './components/Sections/About/About6';
 
 import Skills from './components/Sections/Skills/Skills';
 import Skills2 from './components/Sections/Skills/Skills2';
@@ -16,7 +16,7 @@ import Projects from './components/Sections/Projects/Projects';
 import Projects2 from './components/Sections/Projects/Projects2';
 
 import Contact from './components/Sections/Contact/Contact';
-import About6 from './components/Sections/About/About6';
+
 import Skills3 from './components/Sections/Skills/Skills3';
 
 export default function Home() {
@@ -25,9 +25,9 @@ export default function Home() {
       <VisitCards />
       {/* <VisitCards2 /> */}
 
-      {/* <About5 /> */}
-      <About6 />
-      {/* <About /> */}
+      <About />
+      {/* <About6 /> */}
+
       <Contact />
       {/* <Skills2 /> */}
       <Skills3 />

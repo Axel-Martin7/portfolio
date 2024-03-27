@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from './About.module.scss';
-import linkedin from '../../../../public/icons/linkedin.svg';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -8,8 +8,8 @@ export default function About() {
       <div className={styles.profilPictureContainer}>
         <div className={styles.photoContainer}>
           <Image
-            className={styles.image}
-            src="/images/imageprofil.jpg"
+            className={styles.photo}
+            src="/images/imageprofil2.jpg"
             alt="Photo de profil"
             fill
           />
@@ -18,11 +18,12 @@ export default function About() {
 
       <div className={styles.presentationContainer}>
         <div className={styles.titleContainer}>
-          <h2 className={styles.title}>About</h2>
+          <h2 className={styles.title}>About me</h2>
           <div className={styles.titleSeparator}></div>
         </div>
+
         <div className={styles.textsContainer}>
-          <p className={styles.presentationText}>
+          <p>
             Bienvenue sur mon portfolio ! Je suis Axel, un développeur web
             FullStack Javascript récemment diplômé de l&apos;école O&apos;Clock.
             Mon parcours académique m&apos;a permis d&apos;acquérir des
@@ -43,7 +44,7 @@ export default function About() {
             solutions efficaces et innovantes sont essentielles pour mon
             parcours de développeur.
           </p>
-          <p className={styles.presentationText}>
+          <p>
             Aujourd’hui, mon objectif est de continuer à élargir et à renforcer
             mes compétences. Je recherche activement de nouveaux défis
             passionnants qui me permettront de progresser professionnellement.
@@ -61,9 +62,10 @@ export default function About() {
             engagement mutuel en vue d’un avenir fructueux.
           </p>
         </div>
-        <div className={styles.aboutBtnContainer}>
-          <button className={styles.aboutButton}>Learn More</button>
-        </div>
+
+        <Link className={styles.buttonContainer} href="/about">
+          <button className={styles.aboutBtn}>Learn More</button>
+        </Link>
       </div>
     </section>
   );

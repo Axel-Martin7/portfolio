@@ -7,18 +7,15 @@ import VisitCards2 from './components/Sections/VisitCards/VisitCards2';
 import About from './components/Sections/About/About';
 import About6 from './components/Sections/About/About6';
 
-import Skills from './components/Sections/Skills/Skills';
-import Skills2 from './components/Sections/Skills/Skills2';
+import Contact from './components/Sections/Contact/Contact';
+import Contact2 from './components/Sections/Contact/Contact2';
+
+import Skills3 from './components/Sections/Skills/Skills3';
 
 import Logo from './components/Logo/Logo';
 
 import Projects from './components/Sections/Projects/Projects';
 import Projects2 from './components/Sections/Projects/Projects2';
-
-import Contact from './components/Sections/Contact/Contact';
-import Contact2 from './components/Sections/Contact/Contact2';
-
-import Skills3 from './components/Sections/Skills/Skills3';
 
 export default function Home() {
   return (
@@ -30,7 +27,8 @@ export default function Home() {
       {/* <About6 /> */}
 
       <Contact />
-      <Contact2 />
+      {/* <Contact2 /> */}
+
       {/* <Skills2 /> */}
       <Skills3 />
 

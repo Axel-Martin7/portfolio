@@ -10,6 +10,7 @@ import About6 from './components/Sections/About/About6';
 import Contact from './components/Sections/Contact/Contact';
 import Contact2 from './components/Sections/Contact/Contact2';
 
+import Skills from './components/Sections/Skills/Skills';
 import Skills3 from './components/Sections/Skills/Skills3';
 
 import Logo from './components/Logo/Logo';
@@ -29,7 +30,7 @@ export default function Home() {
       <Contact />
       {/* <Contact2 /> */}
 
-      {/* <Skills2 /> */}
+      <Skills />
       <Skills3 />
 
       {/* <Skills /> */}

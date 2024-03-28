@@ -15,8 +15,8 @@ import Skills3 from './components/Sections/Skills/Skills3';
 
 import Logo from './components/Logo/Logo';
 
-import Projects from './components/Sections/Projects/Projects';
 import Projects2 from './components/Sections/Projects/Projects2';
+import Projects from './components/Sections/Projects/Projects';
 
 export default function Home() {
   return (
@@ -31,11 +31,10 @@ export default function Home() {
       {/* <Contact2 /> */}
 
       <Skills />
-      <Skills3 />
+      {/* <Skills3 /> */}
 
-      {/* <Skills /> */}
+      <Projects />
       <Projects2 />
-      {/* <Projects /> */}
 
       <Logo />
     </main>

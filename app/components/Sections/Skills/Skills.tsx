@@ -157,7 +157,31 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className={styles.formationCard}></div>
+        <div className={styles.formationCard}>
+          <div className={styles.formationContentContainer}>
+            <div className={styles.titleContainer}>
+              <h2 className={styles.title}>My Formation</h2>
+              <div className={styles.titleSeparator}></div>
+            </div>
+            <div className={styles.textsContainer}>
+              <p className={styles.firstText}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                exercitationem, animi ipsa illo, quidem quos veritatis nesciunt
+                dolore excepturi dignissimos fuga tenetur aut quasi dolorem hic
+                quibusdam repellendus vitae eum.
+              </p>
+              <p className={styles.secondText}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                exercitationem, animi ipsa illo, quidem quos veritatis nesciunt
+                dolore excepturi dignissimos fuga tenetur aut quasi dolorem hic
+                quibusdam repellendus vitae eum.
+              </p>
+            </div>
+            <Link className={styles.buttonContainer} href="/skills">
+              <button className={styles.skillsBtn}>Learn More</button>
+            </Link>
+          </div>
+        </div>
       </div>
 
       {/* <div className={styles.sectionHeaderContainer}>
@@ -166,17 +190,6 @@ export default function Skills() {
           <div className={styles.titleSeparator}></div>
         </div>
       </div>
-
-      <div className={styles.cardContainer}>
-        <div className={styles.skillsCard}>
-          <div className={styles.skillsContentContainer}>
-            <div className={styles.titleContainer}>
-              <h2 className={styles.title}>My Skills</h2>
-              <div className={styles.titleSeparator}></div>
-            </div>
-            
-          </div>
-        </div>
 
         <div className={styles.formationCard}>
           <div className={styles.formationContentContainer}>

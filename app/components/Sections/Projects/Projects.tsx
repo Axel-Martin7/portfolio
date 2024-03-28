@@ -7,7 +7,10 @@ export default function Projects() {
     <section className={styles.projectsSectionContainer}>
       <div className={styles.allProjectsContainer}>
         {/* Portfolio --> */}
-        <div className={styles.projectCardContainer}>
+        <Link
+          className={styles.projectCardContainer}
+          href={'/projects/portfolio'}
+        >
           <div className={styles.imageContainer}>
             <div className={styles.imageFrame}>
               <Image
@@ -34,9 +37,12 @@ export default function Projects() {
               <p className={styles.skills}>Figma</p>
             </div>
           </div>
-        </div>
+        </Link>
         {/* Victory Zone --> */}
-        <div className={styles.projectCardContainer}>
+        <Link
+          className={styles.projectCardContainer}
+          href={'/projects/victoryzone'}
+        >
           <div className={styles.imageContainer}>
             <div className={styles.imageFrame}>
               <Image
@@ -67,9 +73,12 @@ export default function Projects() {
               <p className={styles.skills}>Agile</p>
             </div>
           </div>
-        </div>
+        </Link>
         {/* Okanban --> */}
-        <div className={styles.projectCardContainer}>
+        <Link
+          className={styles.projectCardContainer}
+          href={'/projects/okanban'}
+        >
           <div className={styles.imageContainer}>
             <div className={styles.imageFrame}>
               <Image
@@ -98,7 +107,7 @@ export default function Projects() {
               <p className={styles.skills}>Sequelize</p>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

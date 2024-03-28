@@ -34,7 +34,7 @@ export default function Home() {
       {/* <Skills3 /> */}
 
       <Projects />
-      <Projects2 />
+      {/* <Projects2 /> */}
 
       <Logo />
     </main>

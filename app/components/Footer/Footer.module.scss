@@ -1,0 +1,57 @@
+.footer {
+  padding: 80px 0;
+  border: 1px solid red;
+
+  .socialLinksContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 40px;
+    padding: 40px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+    border-image: linear-gradient(
+      90deg,
+      rgba(198, 53, 117, 0),
+      #ffffff,
+      rgba(198, 53, 117, 0)
+    );
+    border-image-slice: 1;
+
+    .itemContainer {
+      border: 1px solid white;
+    }
+  }
+}
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .footer {
+    border: 1px solid blue;
+
+    .socialLinksContainer {
+      margin: 0 80px;
+
+      .itemContainer {
+        .icon {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+
+    .socialLinksContainer {
+      width: calc(1200px + 80px);
+      margin: 0;
+    }
+  }
+}

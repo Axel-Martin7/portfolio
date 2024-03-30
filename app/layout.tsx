@@ -6,6 +6,7 @@ import { Montserrat } from 'next/font/google';
 import Header from './components/Header/Header';
 import Logo from './components/Logo/Logo';
 import '../styles/globals.scss';
+import Footer from './components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 const montserrat = Montserrat({
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Header />
         {/* <Logo /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );

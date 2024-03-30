@@ -40,7 +40,7 @@ export default function Home() {
 
       <Thanks />
 
-      <Logo />
+      {/* <Logo /> */}
     </main>
   );
 }

@@ -61,9 +61,12 @@
     align-items: center;
     gap: 40px;
 
+    border: 1px solid orange;
+
     .titleContainer {
       // display: flex;
       // justify-content: center;
+      border: 1px solid red;
 
       .title {
         text-transform: uppercase;
@@ -81,6 +84,7 @@
       font-size: 12px;
       letter-spacing: 3px;
       font-weight: 500;
+      border: 1px solid red;
 
       .emailContainer,
       .linkedinContainer,

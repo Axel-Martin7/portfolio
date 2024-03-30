@@ -18,6 +18,8 @@ import Logo from './components/Logo/Logo';
 import Projects2 from './components/Sections/Projects/Projects2';
 import Projects from './components/Sections/Projects/Projects';
 
+import Thanks from './components/Sections/Thanks/Thanks';
+
 export default function Home() {
   return (
     <main>
@@ -35,6 +37,8 @@ export default function Home() {
 
       <Projects />
       {/* <Projects2 /> */}
+
+      <Thanks />
 
       <Logo />
     </main>

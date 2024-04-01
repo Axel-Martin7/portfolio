@@ -2,6 +2,7 @@ import Image from 'next/image';
 import linkedin from '../../../public/icons/linkedin.svg';
 import styles from './Footer.module.scss';
 import Link from 'next/link';
+import Logo from '../Logo/Logo';
 
 export default function Footer() {
   return (
@@ -43,6 +44,32 @@ export default function Footer() {
             alt="Github icon"
           />
         </a>
+      </div>
+
+      <nav className={styles.navContainer}>
+        <Link className={styles.navItem} href={'/'}>
+          Home
+        </Link>
+        <Link className={styles.navItem} href={'/about'}>
+          About
+        </Link>
+        <Link className={styles.navItem} href={'/skills'}>
+          Skills
+        </Link>
+        <Link className={styles.navItem} href={'/projects'}>
+          Projects
+        </Link>
+        <Link className={styles.navItem} href={'/contact'}>
+          Contact
+        </Link>
+      </nav>
+
+      <div className={styles.logoContainer}>
+        <Logo />
+      </div>
+
+      <div className={styles.textsContainer}>
+        <p>Portfolio v.1 - 2024</p>
       </div>
     </footer>
   );

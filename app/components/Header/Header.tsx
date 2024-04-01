@@ -10,7 +10,13 @@ export default function Header() {
         <p className={styles.signature}>AM</p>
       </Link>
 
-      <div className={styles.menuContainer}></div>
+      <button className={styles.menuContainer}>
+        <div className={styles.burgerLinesContainer}>
+          <div className={styles.line}></div>
+          <div className={styles.line}></div>
+          <div className={styles.line}></div>
+        </div>
+      </button>
 
       <div className={styles.languagesContainer}></div>
     </header>

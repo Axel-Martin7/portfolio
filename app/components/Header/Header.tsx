@@ -18,7 +18,9 @@ export default function Header() {
         </div>
       </button>
 
-      <div className={styles.languagesContainer}></div>
+      <button className={styles.languagesContainer}>
+        <p className={styles.language}>FR</p>
+      </button>
     </header>
   );
 }

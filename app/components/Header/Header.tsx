@@ -2,19 +2,33 @@
 
 import Link from 'next/link';
 import styles from './Header.module.scss';
+import { useState } from 'react';
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Fonction pour changer l'état du menu;
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Bascule l'état
+  };
+
   return (
     <header className={styles.headerContainer}>
       <Link className={styles.signatureContainer} href={'/'}>
         <p className={styles.signature}>AM</p>
       </Link>
 
-      <button className={styles.menuContainer}>
+      <button className={styles.menuContainer} onClick={toggleMenu}>
         <div className={styles.burgerLinesContainer}>
-          <div className={styles.line}></div>
-          <div className={styles.line}></div>
-          <div className={styles.line}></div>
+          <div
+            className={`${styles.line} ${isMenuOpen ? styles.line1Open : ''}`}
+          ></div>
+          <div
+            className={`${styles.line} ${isMenuOpen ? styles.line2Open : ''}`}
+          ></div>
+          <div
+            className={`${styles.line} ${isMenuOpen ? styles.line3Open : ''}`}
+          ></div>
         </div>
       </button>
 

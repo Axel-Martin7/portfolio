@@ -1,8 +1,10 @@
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Projects.module.scss';
 
 export default function Projects() {
+  const t = useTranslations('Projects');
   return (
     <section className={styles.projectsSectionContainer}>
       <div className={styles.allProjectsContainer}>
@@ -15,7 +17,7 @@ export default function Projects() {
             <div className={styles.imageFrame}>
               <Image
                 src="/images/projects/portfolio/portfoliologo.png"
-                alt="Logo du projet portfolio v1"
+                alt={t('portfolioImgAlt')}
                 fill
               />
             </div>
@@ -23,12 +25,7 @@ export default function Projects() {
           <div className={styles.descriptionContainer}>
             <h2 className={styles.projectName}>Portfolio v.1</h2>
             <p className={styles.creationDate}>2024</p>
-            <p className={styles.description}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-              autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam
-              quaerat esse nostrum dolores ipsa voluptas voluptates doloribus
-              obcaecati vitae. Ipsum, numquam odio!
-            </p>
+            <p className={styles.description}>{t('portfolioDescription')}</p>
             <div className={styles.skillsContainer}>
               <p className={styles.skills}>Html</p>
               <p className={styles.skills}>Scss</p>
@@ -47,7 +44,7 @@ export default function Projects() {
             <div className={styles.imageFrame}>
               <Image
                 src="/images/projects/victoryzone/desktophome2.png"
-                alt="Image du projet VictoryZone"
+                alt={t('vzImgAlt')}
                 fill
               />
             </div>
@@ -55,12 +52,7 @@ export default function Projects() {
           <div className={styles.descriptionContainer}>
             <h2 className={styles.projectName}>Victory Zone</h2>
             <p className={styles.creationDate}>2023</p>
-            <p className={styles.description}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-              autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam
-              quaerat esse nostrum dolores ipsa voluptas voluptates doloribus
-              obcaecati vitae. Ipsum, numquam odio!
-            </p>
+            <p className={styles.description}>{t('vzDescription')}</p>
             <div className={styles.skillsContainer}>
               <p className={styles.skills}>Html</p>
               <p className={styles.skills}>Scss</p>
@@ -83,7 +75,7 @@ export default function Projects() {
             <div className={styles.imageFrame}>
               <Image
                 src="/images/projects/okanban/okanbandesktop.png"
-                alt="Aperçu du projet oKanban en version desktop"
+                alt={t('okanbanImgAlt')}
                 fill
               />
             </div>
@@ -91,12 +83,7 @@ export default function Projects() {
           <div className={styles.descriptionContainer}>
             <h2 className={styles.projectName}>O&apos;Kanban</h2>
             <p className={styles.creationDate}>2023</p>
-            <p className={styles.description}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-              autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam
-              quaerat esse nostrum dolores ipsa voluptas voluptates doloribus
-              obcaecati vitae. Ipsum, numquam odio!
-            </p>
+            <p className={styles.description}>{t('okanbanDescription')}</p>
             <div className={styles.skillsContainer}>
               <p className={styles.skills}>Html</p>
               <p className={styles.skills}>Css</p>

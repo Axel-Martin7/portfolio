@@ -36,5 +36,14 @@
     "formationTitle": "Ma formation",
     "formationDescriptionPart1": "Durant ma formation intensive chez O’Clock, j’ai acquis des compétences clé en JavaScript, couvrant le développement front-end, back-end, et la gestion de bases de données.",
     "formationDescriptionPart2": "J’ai choisi de suivre une spécialisation front-end en découvrant React. Puis au terme de ma formation, j’ai décidé de continuer mon apprentissage en suivant une seconde spécialisation Data & API."
+  },
+
+  "Projects": {
+    "portfolioImgAlt": "Logo du projet portfolio v1",
+    "portfolioDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam uaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!",
+    "vzImgAlt": "Image du projet VictoryZone",
+    "vzDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniamautem provident sunt dolorum reprehenderit, voluptatem vero, ipsam quaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!",
+    "okanbanImgAlt": "Image du projet O'Kanban",
+    "okanbanDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam quaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!"
   }
 }

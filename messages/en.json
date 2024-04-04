@@ -10,5 +10,11 @@
     "descriptionPart5": "My immediate objective is to join a company that shares my passion for excellence in web development.",
     "descriptionPart6": "I am prepared to train according to its specific needs to actively contribute to the success of its projects, by creating robust, aesthetic, and high-performing web solutions. I look forward to being part of a dynamic team and engaging in captivating projects.",
     "descriptionPart7": "Consider me as an opportunity for continuous evolution, destined to become the ideal professional to meet your specific needs and expectations. It's a promise of mutual commitment towards a fruitful future."
+  },
+
+  "Contact": {
+    "description": "For any professional proposition, collaboration opportunity, or simply to share and exchange ideas, feel free to contact me directly on my social networks or via email at the following address:",
+    "linkedinIconAlt": "Linkedin icon",
+    "githubIconAlt": "Github icon"
   }
 }

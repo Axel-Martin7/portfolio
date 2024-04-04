@@ -1,8 +1,11 @@
+import { useTranslations } from 'next-intl';
 import styles from './Contact.module.scss';
 import linkedin from '../../../../public/icons/linkedin.svg';
 import Image from 'next/image';
 
 export default function Contact() {
+  const t = useTranslations('Contact');
+
   return (
     <section className={styles.contactSectionContainer}>
       <div className={styles.contactContainer}>
@@ -12,12 +15,7 @@ export default function Contact() {
             <div className={styles.titleSeparator}></div>
           </div>
 
-          <p className={styles.contactText}>
-            Pour toute proposition professionnelle, opportunité de collaboration
-            ou simplement pour partager et échanger, n&apos;hésitez pas à me
-            contacter directement sur mes réseaux ou par e-mail à l&apos;adresse
-            suivante :
-          </p>
+          <p className={styles.contactText}>{t('description')}</p>
 
           <div className={styles.contactInfos}>
             <a className={styles.mail} href="mailto:axel.martin@outlook.com">
@@ -33,7 +31,7 @@ export default function Contact() {
                   src={linkedin}
                   width={50}
                   height={50}
-                  alt="Linkedin icon"
+                  alt={t('linkedinIconAlt')}
                 />
                 <p className={styles.itemName}>Linkedin</p>
               </a>
@@ -47,7 +45,7 @@ export default function Contact() {
                   src={linkedin}
                   width={50}
                   height={50}
-                  alt="Linkedin icon"
+                  alt={t('githubIconAlt')}
                 />
                 <p className={styles.itemName}>GitHub</p>
               </a>

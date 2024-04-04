@@ -1,6 +1,9 @@
 import styles from './VisitCards.module.scss';
+import { useTranslations } from 'next-intl';
 
-const VisitCards = () => {
+export default function VisitCards() {
+  const t = useTranslations('VisitCards');
+
   return (
     <section className={styles.visitCardsContainer}>
       <div className={styles.logoCardContainer}>
@@ -32,6 +35,4 @@ const VisitCards = () => {
       </div>
     </section>
   );
-};
-
-export default VisitCards;
+}

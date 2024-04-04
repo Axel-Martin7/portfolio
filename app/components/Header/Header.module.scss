@@ -14,7 +14,11 @@
 
   background: linear-gradient(0deg, transparent 0%, #121212 100%);
   backdrop-filter: blur(0.5px);
-  // border: 1px solid red;
+
+  &.headerOpen {
+    background: #121212;
+    transition: background-color 0.2s ease;
+  }
 
   .signatureContainer {
     width: 80px;
@@ -22,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid orange;
+    // border: 1px solid orange;
 
     .signature {
       width: 50%;
@@ -32,7 +36,6 @@
       align-items: center;
       font-family: 'holligate';
       font-size: 30px;
-      border: 1px solid yellow;
     }
   }
 
@@ -42,7 +45,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid orange;
 
     .burgerLinesContainer {
       width: 50%;
@@ -52,8 +54,6 @@
       justify-content: space-around;
       border: 1px solid transparent;
 
-      // border: 1px solid yellow;
-
       .line {
         width: 100%;
         height: 4px;
@@ -61,17 +61,16 @@
         border: 1px solid white;
         border-radius: 10px;
         transition: all 0.1s ease-in-out;
-      }
-
-      .line1Open {
-        transform: rotate(45deg) translate(9px, 9px);
-      }
-      .line2Open {
-        opacity: 0;
-        visibility: hidden;
-      }
-      .line3Open {
-        transform: rotate(-45deg) translate(9px, -9px);
+        &.line1Open {
+          transform: rotate(45deg) translate(9px, 9px);
+        }
+        &.line2Open {
+          opacity: 0;
+          visibility: hidden;
+        }
+        &.line3Open {
+          transform: rotate(-45deg) translate(9px, -9px);
+        }
       }
     }
   }
@@ -82,7 +81,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid orange;
 
     .language {
       width: 50%;
@@ -92,9 +90,37 @@
       align-items: center;
       letter-spacing: 1px;
 
-      border: 1px solid yellow;
       &:hover {
         font-weight: 600;
+      }
+    }
+  }
+
+  .menuPanel {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: #121212;
+    overflow: hidden;
+    transition: height 0.2s ease; // Ajoutez une transition à la propriété height
+
+    &.open {
+      height: 100vh; // Changez cette valeur selon la hauteur désirée du panneau
+    }
+
+    .navContainer {
+      margin-top: 40px;
+      text-align: center;
+
+      .navItem {
+        padding: 40px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        &:hover {
+          font-weight: 600;
+        }
       }
     }
   }
@@ -102,227 +128,14 @@
 
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
+  .headerContainer {
+    .menuPanel {
+      .navContainer {
+        margin-top: 80px;
+        .navItem {
+          padding: 20px;
+        }
+      }
+    }
+  }
 }
-// ---------------------------------------------------   DESKTOPS
-@media screen and (min-width: 1200px) {
-}
-
-// ----------------------------------------------------------------
-
-// @import 'styles/mixins';
-// @font-face {
-//   font-family: 'holligate';
-//   src: url('/fonts/holligate-signature.ttf') format('truetype');
-// }
-
-// .header {
-//   z-index: 9999;
-//   position: fixed;
-//   width: 100%;
-//   height: 80px;
-//   display: flex;
-//   justify-content: space-between;
-//   background: linear-gradient(to top, transparent, #121212);
-//   backdrop-filter: blur(0.5px);
-
-//   .signatureContainer {
-//     width: 80px;
-//     height: 80px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     border: 1px solid orange;
-
-//     .signature {
-//       width: 50%;
-//       height: 50%;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       font-family: 'holligate';
-//       font-size: 30px;
-//       border: 1px solid white;
-//     }
-//   }
-
-//   .menuContainer {
-//     width: 80px;
-//     height: 80px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     border: 1px solid orange;
-
-//     .burgerLinesContainer {
-//       width: 50%;
-//       height: 50%;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-around;
-
-//       border: 1px solid transparent;
-
-//       .line {
-//         width: 100%;
-//         height: 4px;
-//         background-color: white;
-//         border: 1px solid white;
-//         border-radius: 10px;
-
-//         transition: all 0.2s ease-in-out;
-//       }
-
-//       .line1Open {
-//         transform: rotate(45deg) translate(9px, 9px);
-//       }
-//       .line2Open {
-//         opacity: 0;
-//         visibility: hidden;
-//       }
-//       .line3Open {
-//         transform: rotate(-45deg) translate(9px, -9px);
-//       }
-//     }
-//   }
-
-//   .languageContainer {
-//     width: 80px;
-//     height: 80px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     border: 1px solid orange;
-
-//     .languageBtn {
-//       // border: 1px solid white;
-//       width: 50%;
-//       height: 50%;
-//       color: white;
-//       font-weight: 600;
-//       letter-spacing: 1px;
-//     }
-//   }
-// }
-
-// // ---------------------------------------------------   TABLETS
-// @media screen and (min-width: 768px) {
-// }
-// // ---------------------------------------------------   DESKTOPS
-// @media screen and (min-width: 1200px) {
-// }
-
-// // ----------------------------------------------------------------
-
-// @font-face {
-//   font-family: 'holligate';
-//   src: url('/fonts/holligate-signature.ttf') format('truetype');
-// }
-
-// .headerContainer {
-//   z-index: 999;
-//   position: fixed;
-//   top: 0;
-//   height: 80px;
-//   width: 100%;
-//   display: flex;
-//   justify-content: space-between;
-//   background-color: black;
-//   // border: 1px solid red;
-
-//   .signatureContainer {
-//     width: 80px;
-//     height: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     .signature {
-//       font-family: 'holligate';
-//       font-size: 30px;
-//       margin-left: 10px;
-//     }
-//   }
-
-//   .menuContainer {
-//     width: 80px;
-//     height: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     cursor: pointer;
-
-//     .burgerLinesContainer {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 10px;
-
-//       .line {
-//         width: 40px;
-//         height: 4px;
-//         transition: all 0.3s ease-in-out;
-
-//         background-color: white;
-//       }
-
-//       // Lignes du burger apres avoir cliqué sur le menu
-//       .line1Open {
-//         transform: rotate(45deg) translate(10px, 10px);
-//       }
-//       .line2Open {
-//         opacity: 0;
-//         visibility: hidden;
-//       }
-//       .line3Open {
-//         transform: rotate(-45deg) translate(10px, -10px);
-//       }
-//     }
-//   }
-//   // Panneau déroulant -->
-//   .dropdownMenu {
-//     position: absolute;
-//     top: 80px;
-//     left: 0;
-//     width: 100%;
-//     height: 100vh;
-//     background-color: black;
-//     visibility: hidden;
-//     display: none;
-//   }
-//   .dropdownMenuOpen {
-//     visibility: visible;
-//     display: block;
-
-//     .navLinksContainer {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-
-//       margin-top: 80px;
-
-//       .navItemContainer {
-//         height: 80px;
-//         display: flex;
-//         align-items: center;
-//         text-transform: uppercase;
-//         letter-spacing: 3px;
-//         font-weight: 500;
-//       }
-//     }
-//   }
-
-//   .optionLanguageContainer {
-//     width: 80px;
-//     height: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     .buttonLanguageContainer {
-//       width: 40px;
-//       height: 40px;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//     }
-//   }
-// }

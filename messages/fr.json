@@ -17,5 +17,24 @@
     "description": "Pour toute proposition professionnelle, opportunité de collaboration ou simplement pour partager et échanger, n'hésitez pas à me contacter directement sur mes réseaux ou par e-mail à l'adresse suivante :",
     "linkedinIconAlt": "Icone Linkedin",
     "githubIconAlt": "Icone Github"
+  },
+
+  "Skills": {
+    "skillsTitle": "Mes Skills",
+    "htmlIconAlt": "Html icone",
+    "cssIconAlt": "Css icone",
+    "javascriptIconAlt": "Javascript icone",
+    "reactIconAlt": "React icone",
+    "nextIconAlt": "Nextjs icone",
+    "nodeIconAlt": "Nodejs icone",
+    "typescriptIconAlt": "Typescript icone",
+    "sqlIconAlt": "Sql icone",
+    "postgresqlIconAlt": "PostgreSql icone",
+    "gitIconAlt": "Git icone",
+    "agileIconAlt": "Agile icone",
+    "figmaIconAlt": "Figma icone",
+    "formationTitle": "Ma formation",
+    "formationDescriptionPart1": "Durant ma formation intensive chez O’Clock, j’ai acquis des compétences clé en JavaScript, couvrant le développement front-end, back-end, et la gestion de bases de données.",
+    "formationDescriptionPart2": "J’ai choisi de suivre une spécialisation front-end en découvrant React. Puis au terme de ma formation, j’ai décidé de continuer mon apprentissage en suivant une seconde spécialisation Data & API."
   }
 }

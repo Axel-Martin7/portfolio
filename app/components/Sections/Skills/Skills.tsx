@@ -1,9 +1,12 @@
+import { useTranslations } from 'next-intl';
 import styles from './Skills.module.scss';
 import linkedin from '../../../../public/icons/linkedin.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Skills() {
+  const t = useTranslations('Skills');
+
   return (
     <section className={styles.skillsSectionContainer}>
       <div className={styles.sectionHeaderContainer}>
@@ -17,7 +20,7 @@ export default function Skills() {
         <div className={styles.skillsCard}>
           <div className={styles.skillsContentContainer}>
             <div className={styles.titleContainer}>
-              <h2 className={styles.title}>My Skills</h2>
+              <h2 className={styles.title}>{t('skillsTitle')}</h2>
               <div className={styles.titleSeparator}></div>
             </div>
             <div className={styles.skillsGridContainer}>
@@ -28,7 +31,7 @@ export default function Skills() {
                   src={linkedin}
                   width={40}
                   height={40}
-                  alt="Linkedin icon"
+                  alt={t('htmlIconAlt')}
                 />
                 <p className={styles.itemName}>Html</p>
               </div>
@@ -39,7 +42,7 @@ export default function Skills() {
                   src={linkedin}
                   width={40}
                   height={40}
-                  alt="Linkedin icon"
+                  alt={t('cssIconAlt')}
                 />
                 <p className={styles.itemName}>Css</p>
               </div>
@@ -50,7 +53,7 @@ export default function Skills() {
                   src={linkedin}
                   width={40}
                   height={40}
-                  alt="Linkedin icon"
+                  alt={t('javascriptIconAlt')}
                 />
                 <p className={styles.itemName}>JavaScript</p>
               </div>
@@ -61,7 +64,7 @@ export default function Skills() {
                   src={linkedin}
                   width={40}
                   height={40}
-                  alt="Linkedin icon"
+                  alt={t('reactIconAlt')}
                 />
                 <p className={styles.itemName}>React</p>
               </div>
@@ -72,7 +75,7 @@ export default function Skills() {
                   src={linkedin}
                   width={40}
                   height={40}
-                  alt="Linkedin icon"
+                  alt={t('nextIconAlt')}
                 />
                 <p className={styles.itemName}>NextJs</p>
               </div>
@@ -83,7 +86,7 @@ export default function Skills() {
                   src={linkedin}
                   width={40}
                   height={40}
-                  alt="Linkedin icon"
+                  alt={t('nodeIconAlt')}
                 />
                 <p className={styles.itemName}>NodeJs</p>
               </div>
@@ -94,7 +97,7 @@ export default function Skills() {
                   src={linkedin}
                   width={40}
                   height={40}
-                  alt="Linkedin icon"
+                  alt={t('typescriptIconAlt')}
                 />
                 <p className={styles.itemName}>Typescript</p>
               </div>
@@ -105,7 +108,7 @@ export default function Skills() {
                   src={linkedin}
                   width={40}
                   height={40}
-                  alt="Linkedin icon"
+                  alt={t('sqlIconAlt')}
                 />
                 <p className={styles.itemName}>SQL</p>
               </div>
@@ -116,7 +119,7 @@ export default function Skills() {
                   src={linkedin}
                   width={40}
                   height={40}
-                  alt="Linkedin icon"
+                  alt={t('postgresqlIconAlt')}
                 />
                 <p className={styles.itemName}>PostgreSQL</p>
               </div>
@@ -127,7 +130,7 @@ export default function Skills() {
                   src={linkedin}
                   width={40}
                   height={40}
-                  alt="Linkedin icon"
+                  alt={t('gitIconAlt')}
                 />
                 <p className={styles.itemName}>GIT</p>
               </div>
@@ -138,7 +141,7 @@ export default function Skills() {
                   src={linkedin}
                   width={40}
                   height={40}
-                  alt="Linkedin icon"
+                  alt={t('agileIconAlt')}
                 />
                 <p className={styles.itemName}>Agile</p>
               </div>
@@ -149,7 +152,7 @@ export default function Skills() {
                   src={linkedin}
                   width={40}
                   height={40}
-                  alt="Linkedin icon"
+                  alt={t('figmaIconAlt')}
                 />
                 <p className={styles.itemName}>Figma</p>
               </div>
@@ -160,21 +163,15 @@ export default function Skills() {
         <div className={styles.formationCard}>
           <div className={styles.formationContentContainer}>
             <div className={styles.titleContainer}>
-              <h2 className={styles.title}>My Formation</h2>
+              <h2 className={styles.title}>{t('formationTitle')}</h2>
               <div className={styles.titleSeparator}></div>
             </div>
             <div className={styles.textsContainer}>
               <p className={styles.firstText}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                exercitationem, animi ipsa illo, quidem quos veritatis nesciunt
-                dolore excepturi dignissimos fuga tenetur aut quasi dolorem hic
-                quibusdam repellendus vitae eum.
+                {t('formationDescriptionPart1')}
               </p>
               <p className={styles.secondText}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                exercitationem, animi ipsa illo, quidem quos veritatis nesciunt
-                dolore excepturi dignissimos fuga tenetur aut quasi dolorem hic
-                quibusdam repellendus vitae eum.
+                {t('formationDescriptionPart2')}
               </p>
             </div>
             <Link className={styles.buttonContainer} href="/skills">

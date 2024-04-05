@@ -16,7 +16,8 @@
     "descriptionPart4": "Today, my goal is to continue expanding and strengthening my skills. I am actively seeking new exciting challenges that will allow me to grow professionally. My enthusiasm for discovering new technologies and concepts remains constant.",
     "descriptionPart5": "My immediate objective is to join a company that shares my passion for excellence in web development.",
     "descriptionPart6": "I am prepared to train according to its specific needs to actively contribute to the success of its projects, by creating robust, aesthetic, and high-performing web solutions. I look forward to being part of a dynamic team and engaging in captivating projects.",
-    "descriptionPart7": "Consider me as an opportunity for continuous evolution, destined to become the ideal professional to meet your specific needs and expectations. It's a promise of mutual commitment towards a fruitful future."
+    "descriptionPart7": "Consider me as an opportunity for continuous evolution, destined to become the ideal professional to meet your specific needs and expectations. It's a promise of mutual commitment towards a fruitful future.",
+    "button": "Learn More"
   },
 
   "ContactComponent": {
@@ -41,7 +42,8 @@
     "figmaIconAlt": "Figma icon",
     "formationTitle": "My formation",
     "formationDescriptionPart1": "During my intensive training at O'Clock, I acquired key skills in JavaScript, covering front-end development, back-end development, and database management.",
-    "formationDescriptionPart2": "I chose to specialize in front-end development by exploring React. Then, at the end of my training, I decided to continue my learning by pursuing a second specialization in Data & API."
+    "formationDescriptionPart2": "I chose to specialize in front-end development by exploring React. Then, at the end of my training, I decided to continue my learning by pursuing a second specialization in Data & API.",
+    "button": "Learn more"
   },
 
   "ProjectsComponent": {

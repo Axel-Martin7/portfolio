@@ -37,7 +37,7 @@ export default function About() {
         </div>
 
         <Link className={styles.buttonContainer} href="/about">
-          <button className={styles.aboutBtn}>Learn More</button>
+          <button className={styles.aboutBtn}>{t('button')}</button>
         </Link>
       </div>
     </section>

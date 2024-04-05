@@ -175,7 +175,7 @@ export default function Skills() {
               </p>
             </div>
             <Link className={styles.buttonContainer} href="/skills">
-              <button className={styles.skillsBtn}>Learn More</button>
+              <button className={styles.skillsBtn}>{t('button')}</button>
             </Link>
           </div>
         </div>

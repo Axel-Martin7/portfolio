@@ -14,7 +14,6 @@
 
   background: linear-gradient(0deg, transparent 0%, #121212 100%);
   backdrop-filter: blur(0.5px);
-  border: 1px solid red;
 
   &.headerOpen {
     background: #121212;
@@ -27,7 +26,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid orange;
 
     .signature {
       width: 50%;
@@ -46,7 +44,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid orange;
 
     .burgerLinesContainer {
       width: 50%;
@@ -83,7 +80,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid orange;
   }
 
   .menuPanel {

@@ -22,33 +22,45 @@ export default function Contact() {
             <h2 className={styles.title}>Contact</h2>
           </div>
           <div className={styles.contactInfosContainer}>
-            <div className={styles.emailContainer}>
+            <a
+              className={styles.itemContainer}
+              href="mailto:axel.martin@outlook.com"
+            >
               <Image
+                className={styles.icon}
                 src={linkedin}
                 width={50}
                 height={50}
                 alt="Linkedin icon"
               />
               <p>axel.martin@outlook.com</p>
-            </div>
-            <div className={styles.linkedinContainer}>
+            </a>
+            <a
+              className={styles.itemContainer}
+              href="https://www.linkedin.com/in/axel-martin7/"
+            >
               <Image
+                className={styles.icon}
                 src={linkedin}
                 width={50}
                 height={50}
                 alt="Linkedin icon"
               />
-              <p>axel.martin.com</p>
-            </div>
-            <div className={styles.githubContainer}>
+              <p>axel-martin7</p>
+            </a>
+            <a
+              className={styles.itemContainer}
+              href="https://github.com/Axel-Martin7"
+            >
               <Image
+                className={styles.icon}
                 src={linkedin}
                 width={50}
                 height={50}
                 alt="Linkedin icon"
               />
               <p>Axel-Martin7</p>
-            </div>
+            </a>
           </div>
         </div>
       </div>

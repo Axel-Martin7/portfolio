@@ -5,6 +5,7 @@
     "about": "À propos",
     "projects": "Projets"
   },
+
   "AboutComponent": {
     "title": "À propos",
     "imgAlt": "Photo de profil",
@@ -15,7 +16,8 @@
     "descriptionPart4": "Aujourd’hui, mon objectif est de continuer à élargir et à renforcer mes compétences. Je recherche activement de nouveaux défis passionnants qui me permettront de progresser professionnellement. Mon enthousiasme pour la découverte de nouvelles technologies et concepts reste constant.",
     "descriptionPart5": "Mon objectif immédiat est de rejoindre une entreprise partageant ma passion pour l’excellence en développement web.",
     "descriptionPart6": "Je suis prêt à me former en fonction de ses besoins spécifiques pour apporter une contribution active au succès de ses projets, en créant des solutions web robustes, esthétiques et performantes. J’ai hâte de faire partie d’une équipe dynamique et de participer à des projets captivants.",
-    "descriptionPart7": "Considérez-moi comme une opportunité d’investissement en évolution constante, destinée à devenir le professionnel idéal pour répondre à vos besoins spécifiques et à vos attentes. C’est la promesse d’un engagement mutuel en vue d’un avenir fructueux."
+    "descriptionPart7": "Considérez-moi comme une opportunité d’investissement en évolution constante, destinée à devenir le professionnel idéal pour répondre à vos besoins spécifiques et à vos attentes. C’est la promesse d’un engagement mutuel en vue d’un avenir fructueux.",
+    "button": "En savoir plus"
   },
 
   "ContactComponent": {
@@ -41,7 +43,8 @@
     "figmaIconAlt": "Figma icone",
     "formationTitle": "Ma formation",
     "formationDescriptionPart1": "Durant ma formation intensive chez O’Clock, j’ai acquis des compétences clé en JavaScript, couvrant le développement front-end, back-end, et la gestion de bases de données.",
-    "formationDescriptionPart2": "J’ai choisi de suivre une spécialisation front-end en découvrant React. Puis au terme de ma formation, j’ai décidé de continuer mon apprentissage en suivant une seconde spécialisation Data & API."
+    "formationDescriptionPart2": "J’ai choisi de suivre une spécialisation front-end en découvrant React. Puis au terme de ma formation, j’ai décidé de continuer mon apprentissage en suivant une seconde spécialisation Data & API.",
+    "button": "En savoir plus"
   },
 
   "ProjectsComponent": {

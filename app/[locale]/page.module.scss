@@ -1,3 +1,47 @@
-.wrapper {
-  margin-top: 80px;
+.projectsHeaderContainer {
+  padding: 80px 0 40px;
+  .projectsTitleContainer {
+    margin: 0 40px;
+
+    .titleContainer {
+      display: flex;
+      align-items: center;
+
+      .title {
+        margin-right: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 500;
+      }
+      .titleSeparator {
+        height: 1px;
+        background-color: white;
+        flex-grow: 1; // S'étend pour remplir l'espace disponibles
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+  .projectsHeaderContainer {
+    padding: 100px 0 40px;
+    .projectsTitleContainer {
+      margin: 0 80px;
+    }
+  }
+}
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .projectsHeaderContainer {
+    display: flex;
+    justify-content: center;
+    .projectsTitleContainer {
+      width: calc(1200px + 80px);
+      margin: 0;
+      .titleContainer {
+        width: 600px;
+      }
+    }
+  }
 }

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Skills() {
-  const t = useTranslations('SkillsComponent');
+  const t = useTranslations('component-Skills');
 
   return (
     <section className={styles.skillsSectionContainer}>

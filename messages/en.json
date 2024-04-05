@@ -6,7 +6,7 @@
     "projects": "Projects"
   },
 
-  "AboutComponent": {
+  "component-About": {
     "title": "About me",
     "imgAlt": "Profil picture",
     "descriptionPart1": "Welcome to my portfolio! I'm Axel, a FullStack Javascript web developer recently graduated from O'Clock school. My academic journey has equipped me with comprehensive skills in both front-end and back-end development, while integrating security and accessibility standards.",
@@ -20,13 +20,13 @@
     "button": "Learn More"
   },
 
-  "ContactComponent": {
+  "component-Contact": {
     "description": "For any professional proposition, collaboration opportunity, or simply to share and exchange ideas, feel free to contact me directly on my social networks or via email at the following address:",
     "linkedinIconAlt": "Linkedin icon",
     "githubIconAlt": "Github icon"
   },
 
-  "SkillsComponent": {
+  "component-Skills": {
     "skillsTitle": "My Skills",
     "htmlIconAlt": "Html icon",
     "cssIconAlt": "Css icon",
@@ -46,7 +46,7 @@
     "button": "Learn more"
   },
 
-  "ProjectsComponent": {
+  "component-Projects": {
     "portfolioImgAlt": "Portfolio v1 project logo",
     "portfolioDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam uaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!",
     "vzImgAlt": "VictoryZone project image",
@@ -55,7 +55,7 @@
     "okanbanDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam quaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!"
   },
 
-  "ThanksComponent": {
+  "component-Thanks": {
     "message": "Thanks for your visit !"
   }
 }

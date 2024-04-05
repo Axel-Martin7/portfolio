@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './page.module.scss';
-import linkedin from '../../public/icons/linkedin.svg';
+
+import linkedin from '@/public/icons/linkedin.svg';
 
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
           <div className={styles.photoContainer}>
             <Image
               className={styles.photo}
-              src="/images/imageprofil.jpg"
+              src="/images/imageprofil2.jpg"
               alt="Photo de profil"
               fill
             />

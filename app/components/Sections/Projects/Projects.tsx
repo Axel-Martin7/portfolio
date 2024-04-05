@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from './Projects.module.scss';
 
 export default function Projects() {
-  const t = useTranslations('ProjectsComponent');
+  const t = useTranslations('component-Projects');
 
   return (
     <section className={styles.projectsSectionContainer}>

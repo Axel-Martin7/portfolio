@@ -21,6 +21,7 @@
       .photo {
         @include cardsboxshadow;
         filter: brightness(90%);
+        filter: sepia(25%);
       }
     }
   }
@@ -74,6 +75,7 @@
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
   .aboutSectionContainer {
+    padding: 100px 0;
     border: 1px solid blue;
 
     .profilPictureContainer {
@@ -94,6 +96,7 @@
     display: flex;
     justify-content: center;
     gap: 80px;
+
     border: 1px solid red;
 
     .profilPictureContainer {

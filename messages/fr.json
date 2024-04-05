@@ -6,7 +6,7 @@
     "projects": "Projets"
   },
 
-  "AboutComponent": {
+  "component-About": {
     "title": "À propos",
     "imgAlt": "Photo de profil",
     "descriptionPart1": "Bienvenue sur mon portfolio ! Je suis Axel, un développeur web FullStack Javascript récemment diplômé de l'école O'Clock. Mon parcours académique m'a permis d'acquérir des compétences approfondies en développement front-end et back-end, tout en intégrant les normes de sécurité et d'accessibilité.",
@@ -20,14 +20,14 @@
     "button": "En savoir plus"
   },
 
-  "ContactComponent": {
+  "component-Contact": {
     "title": "Contact",
     "description": "Pour toute proposition professionnelle, opportunité de collaboration ou simplement pour partager et échanger, n'hésitez pas à me contacter directement sur mes réseaux ou par e-mail à l'adresse suivante :",
     "linkedinIconAlt": "Icone Linkedin",
     "githubIconAlt": "Icone Github"
   },
 
-  "SkillsComponent": {
+  "component-Skills": {
     "skillsTitle": "Mes Skills",
     "htmlIconAlt": "Html icone",
     "cssIconAlt": "Css icone",
@@ -47,7 +47,7 @@
     "button": "En savoir plus"
   },
 
-  "ProjectsComponent": {
+  "component-Projects": {
     "portfolioImgAlt": "Logo du projet portfolio v1",
     "portfolioDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam uaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!",
     "vzImgAlt": "Image du projet VictoryZone",
@@ -56,7 +56,7 @@
     "okanbanDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam quaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!"
   },
 
-  "ThanksComponent": {
+  "component-Thanks": {
     "message": "Merci de votre visite !"
   }
 }

@@ -34,6 +34,14 @@ export default function Home() {
 
       <Skills />
       {/* <Skills3 /> */}
+      <div className={styles.projectsHeaderContainer}>
+        <div className={styles.projectsTitleContainer}>
+          <div className={styles.titleContainer}>
+            <h2 className={styles.title}>Projects</h2>
+            <div className={styles.titleSeparator}></div>
+          </div>
+        </div>
+      </div>
 
       <Projects />
       {/* <Projects2 /> */}

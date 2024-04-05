@@ -1,5 +1,6 @@
 import styles from './page.module.scss';
-import linkedin from '../../public/icons/linkedin.svg';
+// import linkedin from '../../public/icons/linkedin.svg';
+import linkedin from '@/public/icons/linkedin.svg';
 import Image from 'next/image';
 
 export default function Contact() {

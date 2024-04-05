@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import linkedin from '../../../public/icons/linkedin.svg';
 import styles from './Footer.module.scss';
-import Link from 'next/link';
+// import Link from 'next/link';
+import { Link } from '@/navigation';
 import Logo from '../Logo/Logo';
 
 export default function Footer() {

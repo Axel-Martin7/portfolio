@@ -4,7 +4,7 @@ import linkedin from '../../../../public/icons/linkedin.svg';
 import Image from 'next/image';
 
 export default function Contact() {
-  const t = useTranslations('Contact');
+  const t = useTranslations('ContactComponent');
 
   return (
     <section className={styles.contactSectionContainer}>

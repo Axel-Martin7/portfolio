@@ -1,5 +1,8 @@
 {
-  "About": {
+  "Common": {
+    "switchLanguage": "en"
+  },
+  "AboutComponent": {
     "title": "À propos",
     "imgAlt": "Photo de profil",
     "descriptionPart1": "Bienvenue sur mon portfolio ! Je suis Axel, un développeur web FullStack Javascript récemment diplômé de l'école O'Clock. Mon parcours académique m'a permis d'acquérir des compétences approfondies en développement front-end et back-end, tout en intégrant les normes de sécurité et d'accessibilité.",
@@ -12,14 +15,14 @@
     "descriptionPart7": "Considérez-moi comme une opportunité d’investissement en évolution constante, destinée à devenir le professionnel idéal pour répondre à vos besoins spécifiques et à vos attentes. C’est la promesse d’un engagement mutuel en vue d’un avenir fructueux."
   },
 
-  "Contact": {
+  "ContactComponent": {
     "title": "Contact",
     "description": "Pour toute proposition professionnelle, opportunité de collaboration ou simplement pour partager et échanger, n'hésitez pas à me contacter directement sur mes réseaux ou par e-mail à l'adresse suivante :",
     "linkedinIconAlt": "Icone Linkedin",
     "githubIconAlt": "Icone Github"
   },
 
-  "Skills": {
+  "SkillsComponent": {
     "skillsTitle": "Mes Skills",
     "htmlIconAlt": "Html icone",
     "cssIconAlt": "Css icone",
@@ -38,12 +41,16 @@
     "formationDescriptionPart2": "J’ai choisi de suivre une spécialisation front-end en découvrant React. Puis au terme de ma formation, j’ai décidé de continuer mon apprentissage en suivant une seconde spécialisation Data & API."
   },
 
-  "Projects": {
+  "ProjectsComponent": {
     "portfolioImgAlt": "Logo du projet portfolio v1",
     "portfolioDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam uaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!",
     "vzImgAlt": "Image du projet VictoryZone",
     "vzDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniamautem provident sunt dolorum reprehenderit, voluptatem vero, ipsam quaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!",
     "okanbanImgAlt": "Image du projet O'Kanban",
     "okanbanDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam quaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!"
+  },
+
+  "ThanksComponent": {
+    "message": "Merci de votre visite !"
   }
 }

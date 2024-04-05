@@ -4,7 +4,7 @@ import styles from './About.module.scss';
 import Link from 'next/link';
 
 export default function About() {
-  const t = useTranslations('About');
+  const t = useTranslations('AboutComponent');
 
   return (
     <section className={styles.aboutSectionContainer}>

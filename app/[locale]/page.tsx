@@ -19,6 +19,7 @@ import Projects2 from '../components/Sections/Projects/Projects2';
 import Projects from '../components/Sections/Projects/Projects';
 
 import Thanks from '../components/Sections/Thanks/Thanks';
+import Switcher from '../components/Header/Switcher';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <VisitCards />
       {/* <VisitCards2 /> */}
 
+      <Switcher />
       <About />
       {/* <About6 /> */}
 

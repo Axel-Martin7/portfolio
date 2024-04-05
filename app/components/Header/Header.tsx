@@ -2,14 +2,20 @@
 
 import { useState } from 'react';
 
-import Link from 'next/link';
+// import Link from 'next/link';
+import { Link } from '@/navigation';
 import styles from './Header.module.scss';
+import Switcher from './Switcher';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -36,15 +42,22 @@ export default function Header() {
         </div>
       </button>
 
-      <button className={styles.languagesContainer}>
-        <p className={styles.language}>EN</p>
-      </button>
+      <div className={styles.languagesContainer}>
+        <Switcher />
+        {/* <LangSwitcher /> */}
+        {/* <Switcher /> */}
+        {/* <Link href={'/fr'}>FR</Link>
+        <Link href={'/en'}>En</Link> */}
+        {/* <p className={styles.language}>EN</p> */}
+      </div>
 
       <div className={`${styles.menuPanel} ${isMenuOpen ? styles.open : ''}`}>
         <nav className={styles.navContainer}>
           <ul>
             <li className={styles.navItem}>
-              <Link href={'/'}>Home</Link>
+              <Link href={'/'} onClick={closeMenu}>
+                Home
+              </Link>
             </li>
             <li className={styles.navItem}>
               <Link href={'/about'}>About</Link>
@@ -56,7 +69,9 @@ export default function Header() {
               <Link href={'/projects'}>Projects</Link>
             </li>
             <li className={styles.navItem}>
-              <Link href={'/contact'}>Contact</Link>
+              <Link href={'/contact'} onClick={closeMenu}>
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>

@@ -1,0 +1,12 @@
+.switcherContainer {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+
+  &:hover {
+    font-weight: 600;
+  }
+}

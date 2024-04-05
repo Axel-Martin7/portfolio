@@ -6,9 +6,11 @@ import { useState } from 'react';
 import { Link } from '@/navigation';
 import styles from './Header.module.scss';
 import Switcher from './Switcher';
+import { useTranslations } from 'next-intl';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations('Common');
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -56,17 +58,23 @@ export default function Header() {
           <ul>
             <li className={styles.navItem}>
               <Link href={'/'} onClick={closeMenu}>
-                Home
+                {t('home')}
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href={'/about'}>About</Link>
+              <Link href={'/about'} onClick={closeMenu}>
+                {t('about')}
+              </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href={'/skills'}>Skills</Link>
+              <Link href={'/skills'} onClick={closeMenu}>
+                Skills
+              </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href={'/projects'}>Projects</Link>
+              <Link href={'/projects'} onClick={closeMenu}>
+                {t('projects')}
+              </Link>
             </li>
             <li className={styles.navItem}>
               <Link href={'/contact'} onClick={closeMenu}>

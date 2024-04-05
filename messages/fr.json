@@ -1,6 +1,9 @@
 {
   "Common": {
-    "switchLanguage": "en"
+    "switchLanguage": "en",
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets"
   },
   "AboutComponent": {
     "title": "À propos",

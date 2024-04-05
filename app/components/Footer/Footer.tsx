@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import linkedin from '../../../public/icons/linkedin.svg';
 import styles from './Footer.module.scss';
@@ -6,6 +7,8 @@ import { Link } from '@/navigation';
 import Logo from '../Logo/Logo';
 
 export default function Footer() {
+  const t = useTranslations('Common');
+
   return (
     <footer className={styles.footer}>
       <div className={styles.socialLinksContainer}>
@@ -49,16 +52,16 @@ export default function Footer() {
 
       <nav className={styles.navContainer}>
         <Link className={styles.navItem} href={'/'}>
-          Home
+          {t('home')}
         </Link>
         <Link className={styles.navItem} href={'/about'}>
-          About
+          {t('about')}
         </Link>
         <Link className={styles.navItem} href={'/skills'}>
           Skills
         </Link>
         <Link className={styles.navItem} href={'/projects'}>
-          Projects
+          {t('projects')}
         </Link>
         <Link className={styles.navItem} href={'/contact'}>
           Contact

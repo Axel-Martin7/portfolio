@@ -7,10 +7,10 @@
 .visitCardsContainer {
   display: flex;
   flex-direction: column;
-  gap: 80px;
-  padding: 160px 0 80px 0;
-  border: 1px solid red;
+  padding: calc(80px + 140px) 0 80px;
+  gap: 160px;
   @include cardsbg;
+  // border: 1px solid red;
 
   .logoCardContainer {
     display: flex;
@@ -119,8 +119,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 180px 0 100px 0;
-    border: 1px solid blue;
+    gap: 80px;
+    // border: 1px solid blue;
 
     .logoCardContainer {
       width: 600px;
@@ -152,7 +152,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 320px 0 240px 0;
-    border: 1px solid red;
+    padding: calc(80px + 300px) 0 160px;
+
+    // border: 1px solid red;
   }
 }

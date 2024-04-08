@@ -10,7 +10,7 @@ import { useTranslations } from 'next-intl';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const t = useTranslations('Common');
+  const t = useTranslations('common');
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);

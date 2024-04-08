@@ -1,5 +1,7 @@
 .projectsHeaderContainer {
   padding: 80px 0 40px;
+
+  // border: 1px solid red;
   .projectsTitleContainer {
     margin: 0 40px;
 
@@ -9,6 +11,7 @@
 
       .title {
         margin-right: 20px;
+        font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 3px;
         font-weight: 500;
@@ -25,7 +28,6 @@
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
   .projectsHeaderContainer {
-    padding: 100px 0 40px;
     .projectsTitleContainer {
       margin: 0 80px;
     }

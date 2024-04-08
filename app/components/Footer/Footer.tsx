@@ -7,10 +7,28 @@ import { Link } from '@/navigation';
 import Logo from '../Logo/Logo';
 
 export default function Footer() {
-  const t = useTranslations('Common');
+  const t = useTranslations('common');
 
   return (
     <footer className={styles.footer}>
+      <nav className={styles.navContainer}>
+        <Link className={styles.navItem} href={'/'}>
+          {t('home')}
+        </Link>
+        <Link className={styles.navItem} href={'/about'}>
+          {t('about')}
+        </Link>
+        <Link className={styles.navItem} href={'/skills'}>
+          Skills
+        </Link>
+        <Link className={styles.navItem} href={'/projects'}>
+          {t('projects')}
+        </Link>
+        <Link className={styles.navItem} href={'/contact'}>
+          Contact
+        </Link>
+      </nav>
+
       <div className={styles.socialLinksContainer}>
         <a
           className={styles.itemContainer}
@@ -49,24 +67,6 @@ export default function Footer() {
           />
         </a>
       </div>
-
-      <nav className={styles.navContainer}>
-        <Link className={styles.navItem} href={'/'}>
-          {t('home')}
-        </Link>
-        <Link className={styles.navItem} href={'/about'}>
-          {t('about')}
-        </Link>
-        <Link className={styles.navItem} href={'/skills'}>
-          Skills
-        </Link>
-        <Link className={styles.navItem} href={'/projects'}>
-          {t('projects')}
-        </Link>
-        <Link className={styles.navItem} href={'/contact'}>
-          Contact
-        </Link>
-      </nav>
 
       <div className={styles.logoContainer}>
         <Logo />

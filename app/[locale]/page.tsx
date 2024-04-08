@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import styles from './page.module.scss';
 
@@ -21,6 +22,8 @@ import Projects from '../components/Sections/Projects/Projects';
 import Thanks from '../components/Sections/Thanks/Thanks';
 
 export default function Home() {
+  const t = useTranslations('common');
+
   return (
     <main>
       <VisitCards />
@@ -37,7 +40,7 @@ export default function Home() {
       <div className={styles.projectsHeaderContainer}>
         <div className={styles.projectsTitleContainer}>
           <div className={styles.titleContainer}>
-            <h2 className={styles.title}>Projects</h2>
+            <h2 className={styles.title}> {t('projects')}</h2>
             <div className={styles.titleSeparator}></div>
           </div>
         </div>

@@ -2,7 +2,6 @@
 
 .aboutSectionContainer {
   padding: 80px 0;
-  border: 1px solid red;
   background: #434343;
   background: radial-gradient(transparent 18%, #121212 86%),
     radial-gradient(at left center, #434343, #121212);
@@ -12,7 +11,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
-    // border: 1px solid white;
 
     .photoContainer {
       position: relative;
@@ -32,14 +30,13 @@
     gap: 40px;
     padding: 0 40px;
 
-    // border: 1px solid white;
-
     .titleContainer {
       display: flex;
       align-items: center;
 
       .title {
         margin-right: 20px;
+        font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 3px;
         font-weight: 500;
@@ -75,8 +72,7 @@
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
   .aboutSectionContainer {
-    padding: 100px 0;
-    border: 1px solid blue;
+    // border: 1px solid blue;
 
     .profilPictureContainer {
       .photoContainer {
@@ -96,12 +92,14 @@
     display: flex;
     justify-content: center;
     gap: 80px;
+    padding: 160px 0 80px;
 
-    border: 1px solid red;
+    // border: 1px solid red;
 
     .profilPictureContainer {
       width: 600px;
       height: 680px;
+      margin: 0;
     }
 
     .presentationContainer {

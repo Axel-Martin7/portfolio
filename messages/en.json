@@ -1,5 +1,5 @@
 {
-  "Common": {
+  "common": {
     "switchLanguage": "fr",
     "home": "Home",
     "about": "About",
@@ -57,5 +57,54 @@
 
   "component-Thanks": {
     "message": "Thanks for your visit !"
+  },
+
+  "page-about": {
+    "me-title": "Who am I ?",
+    "me-part1-line1": "Hello and welcome to my portfolio !",
+    "me-part1-line2": "I am Axel Martin, a passionate 33-year-old based in Geneva",
+    "me-part1-line3": "Since my early years, I have been fascinated by the intersection of art and technology, a fascination that has guided my professional choices",
+    "me-part2-line1": "After exploring various professional domains, I decided to embark on an intensive professional retraining in 2023 by immersing myself in the world of web development.",
+    "me-part2-line2": "This is how I joined O'Clock school, where I followed a fullstack JavaScript program.",
+    "me-part2-line3": "At the end of this program, I successfully obtained the professional title of web developer and web mobile developer, certified at RNCP level 5, equivalent to a bachelor's degree",
+    "me-part2-line4": "This certification attests to my skills in designing and implementing web projects, as well as developing mobile applications.",
+    "me-part2-line5": "Throughout my training, I expanded my skills by specializing in front-end development based on React.",
+    "me-part2-line6": "Then, after obtaining my diploma, I decided to continue my learning journey and pursue a second specialization in back-end development focused on DATA, APIs, databases, SQL language, security, and more.",
+    "me-part2-line7": "These experiences allowed me to explore the various facets of web programming, combining both creativity and technical rigor.",
+    "me-part3-line1": "Outside of my passion for web development, you'll probably find me immersed in creative, sports, exploring new technologies, or simply enjoying the outdoors.",
+    "me-part3-line2": "I am a musician, passionate bassist, and I play American football.",
+    "me-part3-line3": "I am also a fervent enthusiast of history, philosophy, cinema, as well as travels and discoveries.",
+    "me-part3-line4": "These various passions have allowed me to develop skills such as creativity, effective teamwork collaboration, and time management.",
+    "me-part3-line5": "My practice of competitive American football has strengthened my ability to work under pressure, taught me the values of teamwork as well as discipline, while my involvement in music and arts has taught me the importance of attention to detail and aesthetics.",
+    "me-part3-line6": "I firmly believe that these skills are as relevant in the world of web development as they are in my other activities, and that they significantly enrich my professional contribution.",
+    "me-part4-line1": " If you would like to learn more about my journey and have further details about my training, I invite you to visit the Skills page or click on the following link :",
+
+    "before-title": "Before my training",
+    "before-part1-line1": "Before undertaking my professional retraining in the field of web development, I explored various academic and professional horizons.",
+    "before-part1-line2": "In high school, I pursued studies in commerce, obtaining a certificate in sales and merchandising.",
+    "before-part1-line3": "Later on, my passion led me towards sound, prompting me to join a sound engineering school in Geneva, the SAE Institute.",
+    "before-part2-line1": "Alongside my studies and after their completion, I explored various professions to broaden my skills and discover new fields.",
+    "before-part2-line2": "For example, I worked as a graphic designer at EG Mask in Geneva, designing masks for the automotive industry using Adobe Illustrator.",
+    "before-part2-line3": "I also had the opportunity to work at Sahy, a London-based company specializing in promoting athletes and sports brands on social media",
+    "before-part2-line4": "My role involved creating dynamic content, designing impactful graphic elements, and fostering community engagement around these athletes.",
+    "before-part2-line5": "Later on, I worked in various recording studios, contributing to sound recording, mixing, and post-production for musical and cinematic projects.",
+    "before-part2-line6": "At the same time, I held various jobs, including in the industry, where I developed fundamental values such as teamwork, resilience, and organizational skills.",
+    "before-part3-line1": "These varied experiences, although distinct from my current path, have enriched my professional perspective and have shaped my ability to approach challenges with creativity, rigor, and determination.",
+
+    "goals-title": "My Goals",
+    "goals-part1-line1": "In my relentless pursuit of knowledge, I am constantly seeking new opportunities to enhance my skills and explore ever-expanding technological horizons.",
+    "goals-part1-line2": "My training has equipped me with solid foundations necessary to tackle the challenges of web development, but I do not wish to stop there.",
+    "goals-part1-line3": "I am eager to discover new concepts, explore new technologies, and master innovative skills that will propel my young career to new heights",
+    "goals-part2-line1": "My goal is to join a dynamic company that shares my passion for excellence in web development, one that will guide and refine me according to its vision and values with the aim of becoming a key contributor actively contributing to its success.",
+    "goals-part2-line2": "I am ready to fully invest in my professional growth to become a valuable asset within your team by putting into practice my enthusiasm, creativity, and determination.",
+    "goals-part2-line3": "I am convinced that in an environment where collaboration reigns and where innovation is encouraged, I will be able to fully express my potential.",
+    "goals-part3-line1": "Consider me as an ever-evolving investment opportunity, destined to become the ideal professional to meet your specific needs and expectations.",
+    "goals-part3-line2": " It is a promise of mutual commitment towards a fruitful future.",
+    "goals-part4-line1": "If you are looking for a motivated and determined web developer committed to excelling, I would be delighted to discuss how I can contribute to your company and projects.",
+    "goals-part5-line1": "If you would like to learn more about my background, vision, potential, or for any professional proposal, collaboration opportunity, or simply to share and exchange ideas, please feel free to contact me through my social networks or directly via email at the following address :",
+
+    "img-alt": "Profil picture",
+    "linkedin-alt": "Linkedin icon",
+    "github-alt": "Github icon"
   }
 }

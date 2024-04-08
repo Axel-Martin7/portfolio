@@ -62,7 +62,6 @@
       justify-content: center;
 
       .aboutBtn {
-        padding: 20px;
         @include btnstyle;
       }
     }
@@ -106,12 +105,6 @@
       width: 600px;
       height: 680px;
       padding: 0;
-
-      .buttonContainer {
-        .aboutBtn {
-          padding: 10px;
-        }
-      }
     }
   }
 }

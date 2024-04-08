@@ -1,9 +1,10 @@
+@import 'styles/mixins';
+
 .aboutContainer {
   display: flex;
   flex-direction: column;
-  gap: 100px;
-  padding: 160px 0 80px 0;
-  border: 1px solid red;
+  gap: 80px;
+  padding: calc(80px + 80px - 20px) 0 80px;
 
   .profilPictureContainer {
     display: flex;
@@ -41,6 +42,7 @@
 
         .title {
           margin-right: 20px;
+          font-size: 14px;
           text-transform: uppercase;
           letter-spacing: 3px;
           font-weight: 500;
@@ -66,9 +68,7 @@
         justify-content: center;
 
         .skillsBtn {
-          padding: 10px;
-          color: white;
-          border: 1px solid white;
+          @include btnstyle;
         }
       }
     }
@@ -84,6 +84,7 @@
 
         .title {
           margin-right: 20px;
+          font-size: 14px;
           text-transform: uppercase;
           letter-spacing: 3px;
           font-weight: 500;
@@ -116,6 +117,7 @@
 
         .title {
           margin-right: 20px;
+          font-size: 14px;
           text-transform: uppercase;
           letter-spacing: 3px;
           font-weight: 500;
@@ -144,6 +146,7 @@
 
         .contactMail {
           font-weight: 600;
+          padding: 20px;
         }
 
         .socialLinksContainer {
@@ -172,9 +175,12 @@
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
   .aboutContainer {
-    border: 1px solid blue;
+    padding: calc(80px + 160px - 20px) 0 80px;
+
+    gap: 160px;
 
     .informationsSectionsContainer {
+      gap: 160px;
       padding: 0 80px;
     }
   }
@@ -186,7 +192,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
 
     .profilPictureContainer {
       width: calc(1200px + 80px);
@@ -196,6 +201,19 @@
       width: calc(1200px + 80px);
       max-width: 100%;
       padding: 0;
+
+      .goalsContainer {
+        .contactContainer {
+          .socialLinksContainer {
+            .itemContainer {
+              .itemIcon {
+                width: 40px;
+                height: 40px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

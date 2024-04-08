@@ -101,7 +101,6 @@
 
           .skillsBtn {
             @include btnstyle;
-            padding: 20px;
           }
         }
       }
@@ -208,12 +207,6 @@
 
             .secondText {
               padding-left: 20px;
-            }
-          }
-
-          .buttonContainer {
-            .skillsBtn {
-              padding: 10px;
             }
           }
         }

@@ -7,8 +7,8 @@ export default function Skills() {
   const t = useTranslations('page-skills');
   return (
     <main>
-      <div className={styles.skillsContainer}>
-        <section className={styles.skillsCardContainer}>
+      <div className={styles.skillsPageContainer}>
+        <section className={styles.skillsSection}>
           <div className={styles.skillsCard}>
             <div className={styles.skillsContentContainer}>
               <div className={styles.titleContainer}>
@@ -81,7 +81,6 @@ export default function Skills() {
                   />
                   <p className={styles.itemName}>NodeJs</p>
                 </div>
-
                 {/* TypeScript --> */}
                 <div className={styles.itemContainer}>
                   <Image
@@ -153,84 +152,78 @@ export default function Skills() {
           </div>
         </section>
 
-        <section className={styles.formationContainer}>
-          <div className={styles.formationPresentationContainer}>
+        <section className={styles.formationSection}>
+          <div className={styles.formationContainer}>
             <div className={styles.titleContainer}>
               <h2 className={styles.title}>{t('formation-title')}</h2>
             </div>
-            <div className={styles.formationPresentationContentContainer}>
-              <p>{t('formation-part1-line1')}</p>
-              <p>
-                {t('formation-part2-line1')} <br></br>
-                {t('formation-part2-line2')} <br></br>
-                {t('formation-part2-line3')}
-              </p>
-              <p>{t('formation-part3-line1')}</p>
-              <ul className={styles.list}>
-                <li>{t('formation-li-line1')}</li>
-                <li>{t('formation-li-line2')}</li>
-                <li>{t('formation-li-line3')}</li>
-                <li>{t('formation-li-line4')}</li>
-                <li>{t('formation-li-line5')}</li>
-                <li>{t('formation-li-line6')}</li>
-              </ul>
-              <p>
-                {t('formation-part4-line1')} <br></br>
-                {t('formation-part4-line2')}
-                <br></br> {t('formation-part4-line3')} <br></br>
-                {t('formation-part4-line4')} <br></br>
-                {t('formation-part4-line5')}
-              </p>
-              <p>{t('formation-part5-line1')}</p>
-            </div>
-          </div>
 
-          <div className={styles.socleContainer}>
-            <div className={styles.titleContainer}>
-              <h3 className={styles.title}>Le Socle</h3>
-              <div className={styles.titleSeparator}></div>
-            </div>
-            <div className={styles.socleContentContainer}>
-              <p>
-                {t('socle-part1-line1')}
-                <br></br>
-                {t('socle-part1-line2')} <br></br>
-                {t('socle-part1-line3')} <br></br>
-                {t('socle-part1-line4')}
-              </p>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>{t('socle-li1-title')}</p>
+            <div className={styles.presentationContainer}>
+              <div className={styles.presentationContentContainer}>
+                <p>{t('formation-part1-line1')}</p>
+                <p>
+                  {t('formation-part2-line1')} <br></br>
+                  {t('formation-part2-line2')} <br></br>
+                  {t('formation-part2-line3')}
+                </p>
+                <p>{t('formation-part3-line1')}</p>
                 <ul className={styles.list}>
-                  <li> {t('socle-li1-line1')}</li>
+                  <li>{t('formation-li-line1')}</li>
+                  <li>{t('formation-li-line2')}</li>
+                  <li>{t('formation-li-line3')}</li>
+                  <li>{t('formation-li-line4')}</li>
+                  <li>{t('formation-li-line5')}</li>
+                  <li>{t('formation-li-line6')}</li>
+                </ul>
+                <p>
+                  {t('formation-part4-line1')} <br></br>
+                  {t('formation-part4-line2')}
+                  <br></br> {t('formation-part4-line3')} <br></br>
+                  {t('formation-part4-line4')} <br></br>
+                  {t('formation-part4-line5')}
+                </p>
+                <p>{t('formation-part5-line1')}</p>
+              </div>
+            </div>
+
+            <div className={styles.socleContainer}>
+              <div className={styles.titleContainer}>
+                <h3 className={styles.title}>Le Socle</h3>
+                <div className={styles.titleSeparator}></div>
+              </div>
+              <div className={styles.contentContainer}>
+                <p>
+                  {t('socle-part1-line1')}
+                  <br></br>
+                  {t('socle-part1-line2')} <br></br>
+                  {t('socle-part1-line3')} <br></br>
+                  {t('socle-part1-line4')}
+                </p>
+                <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>{t('socle-li1-title')}</h4>
+                  <li>{t('socle-li1-line1')}</li>
                   <li>HTML & CSS</li>
                   <li>{t('socle-li1-line3')}</li>
                   <li>{t('socle-li1-line4')}</li>
-                  <li>Responsive design</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>Module: Interactions :</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>Module: Interactions :</h4>
                   <li>{t('socle-li2-line1')}</li>
                   <li>{t('socle-li2-line2')}</li>
                   <li>{t('socle-li2-line3')}</li>
                   <li>{t('socle-li2-line4')}</li>
                   <li>{t('socle-li2-line5')}</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>{t('socle-li3-title')}</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>{t('socle-li3-title')}</h4>
                   <li>Node.js</li>
                   <li>{t('socle-li3-line2')}</li>
                   <li>{t('socle-li3-line3')}</li>
                   <li>{t('socle-li3-line4')}</li>
                   <li>GET & POST</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>{t('socle-li4-title')}</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>{t('socle-li4-title')}</h4>
                   <li>{t('socle-li4-line1')}</li>
                   <li>{t('socle-li4-line2')}</li>
                   <li>Cookies & Sessions</li>
@@ -238,10 +231,8 @@ export default function Skills() {
                   <li>{t('socle-li4-line5')}</li>
                   <li>{t('socle-li4-line6')}</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>{t('socle-li5-title')}</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>{t('socle-li5-title')}</h4>
                   <li>{t('socle-li5-line1')}</li>
                   <li>{t('socle-li5-line2')}</li>
                   <li>ORM</li>
@@ -249,28 +240,22 @@ export default function Skills() {
                   <li>{t('socle-li5-line5')}</li>
                   <li>Promises, async/await</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>Module: API :</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>Module: API :</h4>
                   <li>Workflow front+back</li>
                   <li>AJAX + fetch</li>
                   <li>{t('socle-li6-line3')}</li>
                   <li>{t('socle-li6-line4')}</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>{t('socle-li7-title')}</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>{t('socle-li7-title')}</h4>
                   <li>Workflow front+back</li>
                   <li>AJAX + fetch</li>
                   <li>{t('socle-li7-line3')}</li>
                   <li>{t('socle-li7-line4')}</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>{t('socle-li8-title')}</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>{t('socle-li8-title')}</h4>
                   <li>{t('socle-li8-line1')}</li>
                   <li>{t('socle-li8-line2')}</li>
                   <li>{t('socle-li8-line3')}</li>
@@ -279,56 +264,48 @@ export default function Skills() {
                 </ul>
               </div>
             </div>
-          </div>
 
-          <div className={styles.specialisationContainer}>
-            <div className={styles.titleContainer}>
-              <h3 className={styles.title}>{t('specialization-title')}</h3>
-              <div className={styles.titleSeparator}></div>
-            </div>
-            <div className={styles.specialisationContentContainer}>
-              <p>
-                {t('specialization-part1-line1')}
-                <br></br>
-                {t('specialization-part1-line2')}
-                <br></br>
-                {t('specialization-part1-line3')}
-                <br></br>
-                {t('specialization-part1-line4')}
-              </p>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>
-                  {t('specialization-li1-title')}
+            <div className={styles.specialisationContainer}>
+              <div className={styles.titleContainer}>
+                <h3 className={styles.title}>{t('specialization-title')}</h3>
+                <div className={styles.titleSeparator}></div>
+              </div>
+              <div className={styles.contentContainer}>
+                <p>
+                  {t('specialization-part1-line1')}
+                  <br></br>
+                  {t('specialization-part1-line2')}
+                  <br></br>
+                  {t('specialization-part1-line3')}
+                  <br></br>
+                  {t('specialization-part1-line4')}
                 </p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>
+                    {t('specialization-li1-title')}
+                  </h4>
                   <li>{t('specialization-li1-line1')}</li>
                   <li>{t('specialization-li1-line2')}</li>
                   <li>{t('specialization-li1-line3')}</li>
                   <li>SASS</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>
-                  {t('specialization-li2-title')}
-                </p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>
+                    {t('specialization-li2-title')}
+                  </h4>
                   <li>{t('specialization-li2-line1')}</li>
                   <li>{t('specialization-li2-line2')}</li>
                   <li>{t('specialization-li2-line3')}</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>Module: React :</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>Module: React :</h4>
                   <li>Installation</li>
                   <li>{t('specialization-li3-line2')}</li>
                   <li>{t('specialization-li3-line3')}</li>
                   <li>Hooks</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>Module: React avancé :</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>Module: React avancé :</h4>
                   <li>Redux & React-Redux</li>
                   <li>Router</li>
                   <li>TypeScript</li>
@@ -336,31 +313,31 @@ export default function Skills() {
                 </ul>
               </div>
             </div>
-          </div>
 
-          <div className={styles.apotheoseContainer}>
-            <div className={styles.titleContainer}>
-              <h3 className={styles.title}>Apothéose</h3>
-              <div className={styles.titleSeparator}></div>
-            </div>
-            <div className={styles.apotheoseContentContainer}>
-              <p>
-                {t('apotheose-part1-line1')} <br></br>
-                {t('apotheose-part1-line2')} <br></br>
-                {t('apotheose-part1-line3')} <br></br>
-                {t('apotheose-part1-line4')}
-              </p>
-              <p>
-                {t('apotheose-part2-line1')} <br></br>
-                {t('apotheose-part2-line2')}
-              </p>
-              <p>
-                {t('apotheose-part3-line1')} <br></br>
-                {t('apotheose-part3-line2')}
-              </p>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>{t('apotheose-li1-title')}</p>
+            <div className={styles.apotheoseContainer}>
+              <div className={styles.titleContainer}>
+                <h3 className={styles.title}>Apothéose</h3>
+                <div className={styles.titleSeparator}></div>
+              </div>
+              <div className={styles.contentContainer}>
+                <p>
+                  {t('apotheose-part1-line1')} <br></br>
+                  {t('apotheose-part1-line2')} <br></br>
+                  {t('apotheose-part1-line3')} <br></br>
+                  {t('apotheose-part1-line4')}
+                </p>
+                <p>
+                  {t('apotheose-part2-line1')} <br></br>
+                  {t('apotheose-part2-line2')}
+                </p>
+                <p>
+                  {t('apotheose-part3-line1')} <br></br>
+                  {t('apotheose-part3-line2')}
+                </p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>
+                    {t('apotheose-li1-title')}
+                  </h4>
                   <li>{t('apotheose-li1-line1')}</li>
                   <li>{t('apotheose-li1-line2')}</li>
                   <li>{t('apotheose-li1-line3')}</li>
@@ -370,27 +347,27 @@ export default function Skills() {
                   <li>{t('apotheose-li1-line7')}</li>
                   <li>{t('apotheose-li1-line8')}</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>{t('apotheose-li2-title')}</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>
+                    {t('apotheose-li2-title')}
+                  </h4>
                   <li>{t('apotheose-li2-line1')}</li>
                   <li>{t('apotheose-li2-line2')}</li>
                   <li>{t('apotheose-li2-line3')}</li>
                   <li>{t('apotheose-li2-line4')}</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>{t('apotheose-li3-title')}</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>
+                    {t('apotheose-li3-title')}
+                  </h4>
                   <li>{t('apotheose-li3-line1')}</li>
                   <li>{t('apotheose-li3-line2')}</li>
                   <li>{t('apotheose-li3-line3')}</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>{t('apotheose-li4-title')}</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>
+                    {t('apotheose-li4-title')}
+                  </h4>
                   <li>{t('apotheose-li4-line1')}</li>
                   <li>{t('apotheose-li4-line2')}</li>
                   <li>{t('apotheose-li4-line3')}</li>
@@ -399,41 +376,35 @@ export default function Skills() {
                 </ul>
               </div>
             </div>
-          </div>
 
-          <div className={styles.titreProContainer}>
-            <div className={styles.titleContainer}>
-              <h3 className={styles.title}> {t('tpro-title')}</h3>
-              <div className={styles.titleSeparator}></div>
-            </div>
-            <div className={styles.titreProContentContainer}>
-              <p>
-                {t('tpro-part1-line1')} <br></br>
-                {t('tpro-part1-line2')}
-              </p>
-              <p>
-                {t('tpro-part2-line1')} <br></br>
-                {t('tpro-part2-line2')} <br></br>
-                {t('tpro-part2-line3')}
-              </p>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>{t('tpro-li1-title')}</p>
+            <div className={styles.titreProContainer}>
+              <div className={styles.titleContainer}>
+                <h3 className={styles.title}> {t('tpro-title')}</h3>
+                <div className={styles.titleSeparator}></div>
+              </div>
+              <div className={styles.contentContainer}>
+                <p>
+                  {t('tpro-part1-line1')} <br></br>
+                  {t('tpro-part1-line2')}
+                </p>
+                <p>
+                  {t('tpro-part2-line1')} <br></br>
+                  {t('tpro-part2-line2')} <br></br>
+                  {t('tpro-part2-line3')}
+                </p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>{t('tpro-li1-title')}</h4>
                   <li>{t('tpro-li1-line1')}</li>
                   <li>{t('tpro-li1-line2')}</li>
                   <li>{t('tpro-li1-line3')}</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>{t('tpro-li2-title')}</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>{t('tpro-li2-title')}</h4>
                   <li>{t('tpro-li2-line1')}</li>
                   <li>{t('tpro-li2-line2')}</li>
                   <li>{t('tpro-li2-line3')}</li>
                 </ul>
-              </div>
-              <p>{t('tpro-part3-line1')}</p>
-              <div className={styles.moduleContainer}>
+                <p>{t('tpro-part3-line1')}</p>
                 <ul className={styles.list}>
                   <li>{t('tpro-li3-line1')}</li>
                   <li>{t('tpro-li3-line2')}</li>
@@ -442,46 +413,38 @@ export default function Skills() {
                 </ul>
               </div>
             </div>
-          </div>
 
-          <div className={styles.secondSpecialisationContainer}>
-            <div className={styles.titleContainer}>
-              <h3 className={styles.title}>{t('2ndspecialisation-title')}</h3>
-              <div className={styles.titleSeparator}></div>
-            </div>
-            <div className={styles.secondSpecialisationContentContainer}>
-              <p>{t('2ndspecialisation-part1-line1')}</p>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>Module : SQL :</p>
+            <div className={styles.secondSpecialisationContainer}>
+              <div className={styles.titleContainer}>
+                <h3 className={styles.title}>{t('2ndspecialisation-title')}</h3>
+                <div className={styles.titleSeparator}></div>
+              </div>
+              <div className={styles.contentContainer}>
+                <p>{t('2ndspecialisation-part1-line1')}</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>Module : SQL :</h4>
                   <li>{t('2ndspecialisation-li1-line1')}</li>
                   <li>{t('2ndspecialisation-li1-line2')}</li>
                   <li>{t('2ndspecialisation-li1-line3')}</li>
                   <li>{t('2ndspecialisation-li1-line4')}</li>
                   <li>{t('2ndspecialisation-li1-line5')}</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>Module : API DATA :</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>Module : API DATA :</h4>
                   <li>{t('2ndspecialisation-li2-line1')}</li>
                   <li>{t('2ndspecialisation-li2-line2')}</li>
                   <li>{t('2ndspecialisation-li2-line3')}</li>
                   <li>{t('2ndspecialisation-li2-line4')} </li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>Module : NoSql :</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>Module : NoSql :</h4>
                   <li>{t('2ndspecialisation-li3-line1')}</li>
                   <li>Redis, MongoDB</li>
                   <li>GraphQL</li>
                   <li>{t('2ndspecialisation-li3-line4')}</li>
                 </ul>
-              </div>
-              <div className={styles.moduleContainer}>
-                <p className={styles.moduleTitle}>Module : DataScience :</p>
                 <ul className={styles.list}>
+                  <h4 className={styles.listTitle}>Module : DataScience :</h4>
                   <li>{t('2ndspecialisation-li4-line1')}</li>
                   <li>Machine Learning</li>
                   <li>{t('2ndspecialisation-li4-line3')}</li>

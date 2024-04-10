@@ -1,60 +1,18 @@
-.skillsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
+@import 'styles/mixins';
 
-  .skillsCardContainer {
+.skillsPageContainer {
+  padding: 80px 0;
+  border: 1px solid red;
+
+  .skillsSection {
+    padding: 80px 0;
+
     .skillsCard {
       .skillsContentContainer {
         display: flex;
         flex-direction: column;
-        gap: 40px;
-
-        .titleContainer {
-          display: flex;
-          justify-content: center;
-
-          .title {
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 500;
-          }
-        }
-
-        .skillsGridContainer {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(4, 1fr);
-          grid-row-gap: 20px;
-          place-items: center;
-
-          .itemContainer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .itemName {
-              margin-top: 20px;
-              font-size: 10px;
-              text-transform: uppercase;
-              letter-spacing: 1px;
-            }
-          }
-        }
+        gap: 80px;
       }
-    }
-  }
-
-  .formationContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    padding: 0 40px;
-
-    .formationPresentationContainer {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
 
       .titleContainer {
         display: flex;
@@ -67,57 +25,56 @@
         }
       }
 
-      .formationPresentationContentContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        font-size: 14px;
-        line-height: 20px;
+      .skillsGridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 20px;
+        place-items: center;
 
-        .list {
-          margin: 20px 0;
+        .itemContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 
-          color: white;
-          list-style: inside;
+          .itemName {
+            margin-top: 20px;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
         }
       }
     }
+  }
 
-    .socleContainer {
+  .formationSection {
+    padding-top: 80px;
+
+    .formationContainer {
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 80px;
+      margin: 0 40px;
 
       .titleContainer {
         display: flex;
-        align-items: center;
+        justify-content: center;
 
         .title {
-          margin-right: 20px;
           text-transform: uppercase;
           letter-spacing: 3px;
           font-weight: 500;
         }
-
-        .titleSeparator {
-          height: 1px;
-          background-color: white;
-          flex-grow: 1; // S'étend pour remplir l'espace disponibles
-        }
       }
 
-      .socleContentContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        font-size: 14px;
-        line-height: 20px;
-
-        .moduleContainer {
-          margin-top: 20px;
-          .moduleTitle {
-            font-weight: 600;
-          }
+      .presentationContainer {
+        .presentationContentContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          font-size: 14px;
+          line-height: 20px;
 
           .list {
             color: white;
@@ -125,225 +82,48 @@
           }
         }
       }
-    }
 
-    .specialisationContainer {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-
-      .titleContainer {
-        display: flex;
-        align-items: center;
-
-        .title {
-          margin-right: 20px;
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-weight: 500;
-        }
-
-        .titleSeparator {
-          height: 1px;
-          background-color: white;
-          flex-grow: 1; // S'étend pour remplir l'espace disponibles
-        }
-      }
-
-      .specialisationContentContainer {
+      .socleContainer,
+      .specialisationContainer,
+      .apotheoseContainer,
+      .titreProContainer,
+      .secondSpecialisationContainer {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        font-size: 14px;
-        line-height: 20px;
+        gap: 40px;
 
-        .moduleContainer {
-          margin-top: 20px;
+        .titleContainer {
+          display: flex;
+          align-items: center;
 
-          .moduleTitle {
-            font-weight: 600;
+          .title {
+            margin-right: 20px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
           }
+
+          .titleSeparator {
+            height: 1px;
+            background-color: white;
+            flex-grow: 1; // S'étend pour remplir l'espace disponibles
+          }
+        }
+
+        .contentContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          font-size: 14px;
+          line-height: 20px;
 
           .list {
             color: white;
             list-style: inside;
-          }
 
-          .moduleContentContainer {
-            .moduleTitle {
+            .listTitle {
               font-weight: 600;
-            }
-
-            .list {
-              color: white;
-              list-style: inside;
-            }
-          }
-        }
-      }
-    }
-
-    .apotheoseContainer {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-
-      .titleContainer {
-        display: flex;
-        align-items: center;
-
-        .title {
-          margin-right: 20px;
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-weight: 500;
-        }
-
-        .titleSeparator {
-          height: 1px;
-          background-color: white;
-          flex-grow: 1; // S'étend pour remplir l'espace disponibles
-        }
-      }
-
-      .apotheoseContentContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        font-size: 14px;
-        line-height: 20px;
-
-        .moduleContainer {
-          margin-top: 20px;
-
-          .moduleTitle {
-            font-weight: 600;
-          }
-
-          .list {
-            color: white;
-            list-style: inside;
-          }
-
-          .moduleContentContainer {
-            .moduleTitle {
-              font-weight: 600;
-            }
-
-            .list {
-              color: white;
-              list-style: inside;
-            }
-          }
-        }
-      }
-    }
-
-    .titreProContainer {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-
-      .titleContainer {
-        display: flex;
-        align-items: center;
-
-        .title {
-          margin-right: 20px;
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-weight: 500;
-        }
-
-        .titleSeparator {
-          height: 1px;
-          background-color: white;
-          flex-grow: 1; // S'étend pour remplir l'espace disponibles
-        }
-      }
-
-      .titreProContentContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        font-size: 14px;
-        line-height: 20px;
-
-        .moduleContainer {
-          margin-top: 20px;
-          .moduleTitle {
-            font-weight: 600;
-          }
-
-          .list {
-            color: white;
-            list-style: inside;
-          }
-
-          .moduleContentContainer {
-            .moduleTitle {
-              font-weight: 600;
-            }
-
-            .list {
-              color: white;
-              list-style: inside;
-            }
-          }
-        }
-      }
-    }
-
-    .secondSpecialisationContainer {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-
-      .titleContainer {
-        display: flex;
-        align-items: center;
-
-        .title {
-          margin-right: 20px;
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-weight: 500;
-        }
-
-        .titleSeparator {
-          height: 1px;
-          background-color: white;
-          flex-grow: 1; // S'étend pour remplir l'espace disponibles
-        }
-      }
-
-      .secondSpecialisationContentContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        font-size: 14px;
-        line-height: 20px;
-
-        .moduleContainer {
-          margin-top: 20px;
-
-          .moduleTitle {
-            font-weight: 600;
-          }
-
-          .list {
-            color: white;
-            list-style: inside;
-          }
-
-          .moduleContentContainer {
-            .moduleTitle {
-              font-weight: 600;
-            }
-
-            .list {
-              color: white;
-              list-style: inside;
             }
           }
         }
@@ -354,15 +134,11 @@
 
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
-  .skillsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid blue;
-
-    .skillsCardContainer {
+  .skillsPageContainer {
+    .skillsSection {
       display: flex;
       justify-content: center;
+      padding: calc(160px - 40px) 0 80px;
 
       .skillsCard {
         width: 680px;
@@ -370,7 +146,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid white;
+        @include insidecardsbg;
+        @include cardsboxshadow;
 
         .skillsContentContainer {
           width: calc(100% - 80px); // Pour créer une marge de 40px
@@ -390,46 +167,43 @@
       }
     }
 
-    .formationContainer {
-      padding: 0 80px;
+    .formationSection {
+      .formationContainer {
+        margin: 0 80px;
+      }
     }
   }
 }
 
 // ---------------------------------------------------   DESKTOPS
 @media screen and (min-width: 1200px) {
-  .skillsContainer {
-    border: 1px solid red;
+  .skillsPageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .skillsCardContainer {
+    .skillsSection {
       width: calc(1200px + 80px);
     }
 
-    .formationContainer {
+    .formationSection {
       width: calc(1200px + 80px);
       max-width: 100%;
-      padding: 0px;
 
-      .socleContainer {
-        width: calc(50% - 80px);
-      }
+      .formationContainer {
+        margin: 0;
 
-      .specialisationContainer {
-        width: calc(50% - 80px);
-        align-self: flex-end;
-      }
+        .socleContainer,
+        .apotheoseContainer,
+        .secondSpecialisationContainer {
+          width: calc(50% - 40px);
+        }
 
-      .apotheoseContainer {
-        width: calc(50% - 80px);
-      }
-
-      .titreProContainer {
-        width: calc(50% - 80px);
-        align-self: flex-end;
-      }
-
-      .secondSpecialisationContainer {
-        width: calc(50% - 80px);
+        .specialisationContainer,
+        .titreProContainer {
+          width: calc(50% - 40px);
+          align-self: flex-end;
+        }
       }
     }
   }

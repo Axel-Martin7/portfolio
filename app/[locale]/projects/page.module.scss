@@ -1,0 +1,22 @@
+.projectsPage {
+  padding: 80px 0 0;
+  // border: 1px solid red;
+  .projectsContainer {
+    padding: 80px 0 0;
+    // border: 1px solid orange;
+  }
+}
+
+// ---------------------------------------------------   TABLETS
+@media screen and (min-width: 768px) {
+}
+
+// ---------------------------------------------------   DESKTOPS
+@media screen and (min-width: 1200px) {
+  .projectsPage {
+    .projectsContainer {
+      padding: calc(160px - 40px) 0 0px;
+      // padding: 160px 0 0;
+    }
+  }
+}

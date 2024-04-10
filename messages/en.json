@@ -288,5 +288,66 @@
 
     "2ndspecialisation-li4-line1": "Principles of Artificial Intelligence",
     "2ndspecialisation-li4-line3": "Predictive models"
+  },
+
+  "page-vz": {
+    "presentationImg-alt": "VictoryZone project image",
+    "sub-title": "Capstone project",
+    "description-part1-line1": "In the era of constantly evolving digital technology, new professional opportunities are emerging, paving the way for exciting and innovative careers.",
+    "description-part1-line2": "A fictitious company specializing in recruitment and professional retraining in the digital field has embarked on the project of creating and managing its own professional e-sports team, offering competitive gaming enthusiasts a unique opportunity to turn their passion into a lucrative and rewarding career.",
+    "description-part1-line3": "In response to this need, we have developed an application to represent this e-sports team: the VictoryZone!",
+    "description-part2-line1": "This application aims to promote the team by providing a comprehensive and engaging presentation.",
+    "description-part2-line2": "Visitors can closely follow the team's activities through regular news articles, detailed member profiles, match results, and upcoming events.",
+    "description-part2-line3": "Additionally, aspiring e-sports talents have the opportunity to apply to join the team through a recruitment form. ",
+    "description-part2-line4": "An administrator space is available to manage the website's data, such as adding, editing, or deleting site content.",
+    "description-part2-line5": "By combining these objectives, the application aspires to enhance the team's visibility and competitiveness while contributing to the development and growth of the e-sports scene by welcoming and training new promising talents.",
+    "description-part3-line1": "This application was developed as part of my final project for my training at O’Clock in preparation for the Professional Title examination.",
+    "description-part3-line2": "The topic was assigned to us, and we had a deadline of one month to complete the full MVP of this application.",
+    "description-part3-line3": "We were divided into a group of 5 developers: 3 back-end and 2 front-end, of which I was a part.",
+    "description-part3-line4": "I held the roles of Lead Front-end Developer and Front-end Reference.",
+    "description-part3-line5": "We drew inspiration from the SCRUM development framework, based on agile principles, to successfully execute our project.",
+    "description-part3-line6": "The development was structured in the form of sprints, each lasting one week :",
+
+    "description-li1-title": "Sprint 0: Preparation of the project charter and project setup :",
+    "description-li1-line1": "Identification of the features to integrate to achieve a reliable MVP, as well as its potential evolutions",
+    "description-li1-line2": "List of technologies to be used for front-end and back-end repositories",
+    "description-li1-line3": "Creation of User Stories",
+    "description-li1-line4": "Establishment of the project's structure",
+    "description-li1-line5": "Creation of the Entity-Relationship Diagram (ERD) and a data dictionary",
+    "description-li1-line6": "Identification of routes to be implemented on the front-end and back-end",
+    "description-li1-line7": "Creation of Wireframes for all project pages",
+
+    "description-li2-title": "Sprint 1: Start of development :",
+    "description-li2-line1": "Setup of repositories",
+    "description-li2-line2": "Division into two teams",
+    "description-li2-line3": "Start of project setup",
+    "description-li2-line4": "Implementation of features defined for the MVP",
+
+    "description-li3-title": "Sprint 2: Continued development :",
+    "description-li3-line1": "Improvement of existing features",
+    "description-li3-line2": "Addition of new features",
+    "description-li3-line3": "Bug fixes",
+
+    "description-li4-title": "Sprint 3: Finalization:",
+    "description-li4-line1": "No further addition of new features",
+    "description-li4-line2": "Finalization of existing features",
+    "description-li4-line3": "Verification of the proper functioning of the entire system",
+    "description-li4-line4": "Work on style and design",
+    "description-li4-line5": "Preparation for the final presentation",
+
+    "button-arialabel": "Visit Victory Zone web site",
+
+    "desktop-imgalt-1": "Image section presentation of the VictoryZone project - desktop version",
+    "desktop-imgalt-2": "Image section team of the VictoryZone project - desktop version",
+    "desktop-imgalt-3": "Image section calendar of the VictoryZone project - desktop version",
+    "desktop-imgalt-4": "Image section articles of the VictoryZone project - desktop version",
+    "desktop-imgalt-5": "Image section recruitment form of the VictoryZone project - desktop version",
+    "desktop-imgalt-6": "Image section admin dashboard of the VictoryZone project - desktop version",
+    "mobile-imgalt-1": "Image section presentation of the VictoryZone project - mobile version",
+    "mobile-imgalt-2": "Image section team of the VictoryZone project - mobile version",
+    "mobile-imgalt-3": "Image section calendar of the VictoryZone project - mobile version",
+    "mobile-imgalt-4": "Image section articles of the VictoryZone project - mobile version",
+    "mobile-imgalt-5": "Image footer of the VictoryZone project - mobile version",
+    "mobile-imgalt-6": "Image admin dashboard of the VictoryZone project - mobile version"
   }
 }

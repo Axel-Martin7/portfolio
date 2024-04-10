@@ -289,5 +289,66 @@
 
     "2ndspecialisation-li4-line1": "Principes de l’intelligence Artificielle",
     "2ndspecialisation-li4-line3": "Modèles prédictifs"
+  },
+
+  "page-vz": {
+    "presentationImg-alt": "Image du projet VictoryZone",
+    "sub-title": "Projet fin d'études",
+    "description-part1-line1": "À l’ère du numérique en perpétuelle évolution, de nouvelles opportunités professionnelles se dessinent, ouvrant la voie à des carrières passionnantes et innovantes.",
+    "description-part1-line2": "Une entreprise fictive spécialisée dans le recrutement et la reconversion professionnelle dans le domaine du numérique s’est lancée dans le projet de créer et gérer sa propre équipe e-sports professionnelle en offrant aux passionnés du gaming compétitif une chance unique de transformer leur passion en une carrière lucrative et enrichissante.",
+    "description-part1-line3": "En réponse à ce besoin, nous avons mis en place une application pour représenter cette équipe e-sport : la VictoryZone !",
+    "description-part2-line1": "Cette application vise à promouvoir l'équipe en offrant une présentation complète et attractive.",
+    "description-part2-line2": "Les visiteurs peuvent suivre de près les activités de l'équipe à travers des actualités régulières sous forme d'articles, de présentation détaillées des membres, des résultats de match et d'événements à venir.",
+    "description-part2-line3": "De plus, les nouveaux talents passionnés d'e-sport ont la possibilité de postuler pour rejoindre l'équipe via un formulaire de recrutement.",
+    "description-part2-line4": "Un espace administrateur est disponible pour gérer les données du site, comme l'ajout, la modification ou la suppression du contenu du site.",
+    "description-part2-line5": "En combinant ces objectifs, l'application aspire à renforcer la visibilité et la compétitivité de l'équipe tout en contribuant au développement et à l'essor de la scène e-sport en accueillant et en formant de nouveaux talents prometteurs.",
+    "description-part3-line1": "Cette application a été réalisée dans le cadre de projet de fin d’études de ma formation chez O’Clock en vue du passage du Titre Professionnel.",
+    "description-part3-line2": "Le sujet nous a été donné et nous avions une deadline d’ 1 mois pour réaliser le MVP complet de cette application.",
+    "description-part3-line3": "Nous étions répartis dans un groupe de 5 développeurs : 3 back-end et 2 front-end dont je faisais partie.",
+    "description-part3-line4": "J’avais les rôles de Lead developper front-end et référent front-end.",
+    "description-part3-line5": "Nous nous sommes inspirés du cadre de développement SCRUM, basé sur les principes agiles pour mener à bien notre projet.",
+    "description-part3-line6": "Le développement devait être structuré sous forme de sprints d’une durée d’une semaine chacun :",
+
+    "description-li1-title": "Sprint 0: réalisation du cahier des charges et mise en place du projet :",
+    "description-li1-line1": "Identification des fonctionnalités à intégrer pour obtenir un MVP fiable, ainsi que ses évolutions potentielles",
+    "description-li1-line2": "Liste des technologies à utiliser pour les repos front-end et back-end",
+    "description-li1-line3": "Création des User Stories",
+    "description-li1-line4": "Établissement de l’arborescence du projet",
+    "description-li1-line5": "Création du MCD et d’un dictionnaire des données",
+    "description-li1-line6": "Identification des routes à mettre en place coté front-end et back-end",
+    "description-li1-line7": "Création des Wireframes pour toutes les pages du projet",
+
+    "description-li2-title": "Sprint 1: Début du développement :",
+    "description-li2-line1": "Mise en place des repos",
+    "description-li2-line2": "Répartitions en deux équipes",
+    "description-li2-line3": "Début de la mise en place du projet",
+    "description-li2-line4": "Implémentation des fonctionnalités définie pour le MVP",
+
+    "description-li3-title": "Sprint 2: Suite du développement :",
+    "description-li3-line1": "Amélioration des fonctionnalités existantes",
+    "description-li3-line2": "Ajout de nouvelles fonctionnalités",
+    "description-li3-line3": "Correction des bugs",
+
+    "description-li4-title": "Sprint 3: Finalisation :",
+    "description-li4-line1": "Plus d’ajout de nouvelles fonctionnalités",
+    "description-li4-line2": "Finalisation des fonctionnalités existantes",
+    "description-li4-line3": "Vérification du bon fonctionnement de tout le système",
+    "description-li4-line4": "Travail sur le style et le design",
+    "description-li4-line5": "Préparation à la présentation finale",
+
+    "button-arialabel": "Visitez le site Victory Zone",
+
+    "desktop-imgalt-1": "Image section présentation du project VictoryZone version desktop",
+    "desktop-imgalt-2": "Image section team du project VictoryZone version desktop",
+    "desktop-imgalt-3": "Image section calendrier du project VictoryZone version desktop",
+    "desktop-imgalt-4": "Image section articles du project VictoryZone version desktop",
+    "desktop-imgalt-5": "Image page formulaire de recrutement du project VictoryZone version desktop",
+    "desktop-imgalt-6": "Image page administrateur du project VictoryZone version desktop",
+    "mobile-imgalt-1": "Image section présentation du project VictoryZone version mobile",
+    "mobile-imgalt-2": "Image section team du project VictoryZone version mobile",
+    "mobile-imgalt-3": "Image section calendrier du project VictoryZone version mobile",
+    "mobile-imgalt-4": "Image section articles du project VictoryZone version desktop",
+    "mobile-imgalt-5": "Image footer du project VictoryZone version mobile",
+    "mobile-imgalt-6": "Image page administrateur du project VictoryZone version mobile"
   }
 }

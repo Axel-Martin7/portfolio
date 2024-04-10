@@ -349,5 +349,27 @@
     "mobile-imgalt-4": "Image section articles of the VictoryZone project - mobile version",
     "mobile-imgalt-5": "Image footer of the VictoryZone project - mobile version",
     "mobile-imgalt-6": "Image admin dashboard of the VictoryZone project - mobile version"
+  },
+
+  "page-okanban": {
+    "presentationImg-alt": "Project Okanbam image",
+    "sub-title": "Fullstack application",
+
+    "description-part1-line1": "OKANBAN is an online project management application that uses a Kanban board system based on the same principle as Trello.",
+    "description-part1-line2": "Its operation is based on boards composed of lists, and each list contains cards that represent tasks or items to be processed.",
+    "description-part1-line3": "Users create boards for their different projects or areas of activity, then add lists corresponding to the different stages or categories of these projects.",
+    "description-part1-line4": "Then, they create cards inside each list to represent specific tasks, ideas, or objectives.",
+    "description-part1-line5": "Cards can be easily moved from one list to another, allowing to track their progress through the various stages of the project.",
+
+    "description-part2-line1": "I developed this application during my training at O’Clock.",
+    "description-part2-line2": " I used Node.js and Express to create the server and manage the routes.",
+    "description-part2-line3": "The database is set up with PostgreSQL, and Sequelize is used as an ORM to facilitate database operations.",
+    "description-part2-line4": "When designing the database, I created user stories, MCD, MLD, and a data dictionary.",
+    "description-part2-line5": "The application follows an MVC (Model-View-Controller) architecture.",
+    "description-part2-line6": " Models are defined to represent the main entities of the application such as lists, cards, and tags with associations configured to manage the relationships between them.",
+
+    "button-arialabel": "Redirect to the GitHub page of the repository containing the back-end code.",
+    "desktop-imgalt-1": "Preview of the oKanban project in desktop version",
+    "mobile-imgalt-1": "Preview of the oKanban project in mobile version"
   }
 }

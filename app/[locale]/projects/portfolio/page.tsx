@@ -1,7 +1,10 @@
 import styles from './page.module.scss';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function Portfolio() {
+  const t = useTranslations('page-vz');
+
   return (
     <main>
       <div className={styles.projectContainer}>
@@ -15,11 +18,13 @@ export default function Portfolio() {
           </div>
           <div className={styles.projectInformationsContainer}>
             <div className={styles.titlesContainer}>
-              <h1 className={styles.projectName}>Portfolio</h1>
-              <div className={styles.subTitleContainer}>
-                <div className={styles.separator}></div>
-                <h2 className={styles.subTitle}>premiere version</h2>
-                <div className={styles.separator}></div>
+              <div className={styles.titlesContentContainer}>
+                <h1 className={styles.projectName}>Victory Zone</h1>
+                <div className={styles.subTitleContainer}>
+                  <div className={styles.separator}></div>
+                  <h2 className={styles.subTitle}>{t('sub-title')}</h2>
+                  <div className={styles.separator}></div>
+                </div>
               </div>
             </div>
             <div className={styles.projectSkills}>

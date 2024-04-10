@@ -1,3 +1,5 @@
+@import 'styles/mixins';
+
 .projectContainer {
   display: flex;
   flex-direction: column;
@@ -29,30 +31,36 @@
 
       .titlesContainer {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid red;
+        justify-content: center;
 
-        .projectName {
-          margin-bottom: 5px;
-          font-size: 22px;
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-weight: 600;
-          border: 1px solid orange;
-        }
+        .titlesContentContainer {
+          width: max-content;
 
-        .subTitleContainer {
-          display: flex;
-          align-items: center;
-          border: 1px solid orange;
-
-          .subTitle {
-            padding: 0 10px; // Un peu d'espace autour du texte
-            font-size: 12px;
+          .projectName {
+            margin-bottom: 5px;
+            font-size: 22px;
             text-transform: uppercase;
             letter-spacing: 3px;
-            font-weight: 500;
+            font-weight: 600;
+          }
+
+          .subTitleContainer {
+            display: flex;
+            align-items: center;
+
+            .subTitle {
+              padding: 0 5px; // Un peu d'espace autour du texte
+              font-size: 10px;
+              text-transform: uppercase;
+              letter-spacing: 3px;
+              font-weight: 500;
+            }
+            .separator {
+              flex-grow: 1; // Permet aux barres de se développer pour occuper l'espace disponible
+              // min-width: 1px; // Assurez-vous que les barres ont une largeur minimale
+              height: 1px;
+              background-color: #f1f1f2;
+            }
           }
         }
       }
@@ -79,6 +87,16 @@
         font-size: 14px;
         line-height: 20px;
         border: 1px solid red;
+      }
+
+      .buttonContainer {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+
+        .btn {
+          @include btnstyle;
+        }
       }
     }
   }
@@ -122,16 +140,17 @@
 
       .projectInformationsContainer {
         .titlesContainer {
-          .projectName {
-            font-size: 29px;
-            letter-spacing: 4px;
-          }
-          .subTitleContainer {
-            .separator {
-              // flex-grow: 1; // Permet aux barres de se développer pour occuper l'espace disponible
-              min-width: 30px; // Assurez-vous que les barres ont une largeur minimale
-              height: 1px;
-              background-color: #f1f1f2;
+          .titlesContentContainer {
+            .projectName {
+              font-size: 29px;
+              letter-spacing: 4px;
+            }
+
+            .subTitleContainer {
+              .subTitle {
+                padding: 0 10px; // Un peu d'espace autour du texte
+                font-size: 12px;
+              }
             }
           }
         }

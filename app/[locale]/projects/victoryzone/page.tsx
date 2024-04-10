@@ -193,6 +193,7 @@ export default function VictoryZone() {
             </div>
             <div className={styles.image}>
               <Image
+                className={styles.test}
                 src="/images/projects/victoryzone/mobileadmin.png"
                 alt={t('mobile-imgalt-6')}
                 fill

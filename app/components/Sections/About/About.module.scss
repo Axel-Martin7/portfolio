@@ -1,7 +1,7 @@
 @import 'styles/mixins';
 
 .aboutSectionContainer {
-  padding: 80px 0;
+  padding-top: 80px;
   background: #434343;
   background: radial-gradient(transparent 18%, #121212 86%),
     radial-gradient(at left center, #434343, #121212);
@@ -71,8 +71,6 @@
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
   .aboutSectionContainer {
-    // border: 1px solid blue;
-
     .profilPictureContainer {
       .photoContainer {
         width: 340px;
@@ -91,9 +89,7 @@
     display: flex;
     justify-content: center;
     gap: 80px;
-    padding: 160px 0 80px;
-
-    // border: 1px solid red;
+    padding: 80px 0;
 
     .profilPictureContainer {
       width: 600px;

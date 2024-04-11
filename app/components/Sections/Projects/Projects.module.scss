@@ -1,10 +1,8 @@
 @import 'styles/mixins';
 
 .projectsSectionContainer {
-  padding-bottom: 80px;
   @include cardsbg;
-
-  // border: 1px solid red;
+  padding-top: 40px;
 
   .allProjectsContainer {
     display: flex;
@@ -90,16 +88,13 @@
 
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
-  .projectsSectionContainer {
-    // border: 1px solid blue;
-  }
 }
 // ---------------------------------------------------   DESKTOPS
 @media screen and (min-width: 1200px) {
   .projectsSectionContainer {
     display: flex;
     justify-content: center;
-    // border: 1px solid red;
+    padding-bottom: 80px;
 
     .allProjectsContainer {
       width: calc(1200px + 80px);

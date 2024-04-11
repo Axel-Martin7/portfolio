@@ -51,9 +51,9 @@
     "portfolioImgAlt": "Logo du projet portfolio v1",
     "portfolioDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam uaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!",
     "vzImgAlt": "Image du projet VictoryZone",
-    "vzDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniamautem provident sunt dolorum reprehenderit, voluptatem vero, ipsam quaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!",
+    "vzDescription": "VictoryZone est une application destinée à représenter une équipe E-sport. Le MVP a été réalisé en équipe de 5 sur une durée d'un mois dans le cadre du projet de fin d’études de ma formation chez O’Clock. J'avais le rôle de développeur front-end.",
     "okanbanImgAlt": "Image du projet O'Kanban",
-    "okanbanDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam quaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!"
+    "okanbanDescription": "OKANBAN est une application de gestion de projet en ligne qui utilise un système de tableau Kanban basé sur le même principe que Trello. J’ai développé cette application fullstack lors de ma formation chez O’Clock."
   },
 
   "component-Thanks": {

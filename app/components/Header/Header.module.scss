@@ -11,10 +11,8 @@
   height: 80px;
   display: flex;
   justify-content: space-between;
-
   background: linear-gradient(0deg, transparent 0%, #121212 100%);
   backdrop-filter: blur(0.5px);
-  // border: 1px solid red;
 
   &.headerOpen {
     background: #121212;

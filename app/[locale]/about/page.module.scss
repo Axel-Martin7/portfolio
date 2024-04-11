@@ -3,12 +3,12 @@
 .aboutContainer {
   display: flex;
   flex-direction: column;
-  gap: 80px;
-  padding: calc(80px + 80px - 20px) 0 80px;
+  padding: calc(80px - 20px) 0 80px;
 
   .profilPictureContainer {
     display: flex;
     justify-content: center;
+    padding: 80px 0;
 
     .photoContainer {
       width: 340px;
@@ -175,12 +175,7 @@
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
   .aboutContainer {
-    padding: calc(80px + 160px - 20px) 0 80px;
-
-    gap: 160px;
-
     .informationsSectionsContainer {
-      gap: 160px;
       padding: 0 80px;
     }
   }
@@ -195,11 +190,13 @@
 
     .profilPictureContainer {
       width: calc(1200px + 80px);
+      padding: 160px 0;
     }
 
     .informationsSectionsContainer {
       width: calc(1200px + 80px);
       max-width: 100%;
+      gap: 160px;
       padding: 0;
 
       .goalsContainer {

@@ -372,5 +372,12 @@
     "button-arialabel": "Redirection vers la page Github du repos contenant le code du back-end",
     "desktop-imgalt-1": "Aperçu du projet oKanban en version desktop",
     "mobile-imgalt-1": "Aperçu du projet oKanban en version mobile"
+  },
+
+  "page-portfolio": {
+    "presentationImg-alt": "Image du projet Okanban",
+    "sub-title": "Application fullstack",
+
+    "button-arialabel": "Redirection vers la page Github du repos contenant le code du projet"
   }
 }

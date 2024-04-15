@@ -9,33 +9,35 @@ export default function Okanban() {
     <main>
       <div className={styles.projectContainer}>
         <section className={styles.presentationSection}>
-          <div className={styles.projectImage}>
+          <div className={styles.projectImageContainer}>
             <Image
               src="/images/projects/okanban/okanbandesktop.png"
               alt={t('presentationImg-alt')}
               fill
             />
           </div>
-          <div className={styles.projectInformationsContainer}>
-            <div className={styles.titlesContainer}>
-              <div className={styles.titlesContentContainer}>
-                <h1 className={styles.projectName}>Victory Zone</h1>
-                <div className={styles.subTitleContainer}>
-                  <div className={styles.separator}></div>
-                  <h2 className={styles.subTitle}>{t('sub-title')}</h2>
-                  <div className={styles.separator}></div>
+
+          <div className={styles.projectPresentationContainer}>
+            <div className={styles.projectHeader}>
+              <div className={styles.titlesContainer}>
+                <div className={styles.titlesContentContainer}>
+                  <h1 className={styles.projectName}>Okanban</h1>
+                  <div className={styles.subTitleContainer}>
+                    <div className={styles.separator}></div>
+                    <h2 className={styles.subTitle}>{t('sub-title')}</h2>
+                    <div className={styles.separator}></div>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className={styles.projectSkills}>
-              <p className={styles.skills}>Html</p>
-              <p className={styles.skills}>Css</p>
-              <p className={styles.skills}>JavaScript</p>
-              <p className={styles.skills}>Node.js</p>
-              <p className={styles.skills}>Express</p>
-              <p className={styles.skills}>PostgreSQL</p>
-              <p className={styles.skills}>Sequelize</p>
+              <div className={styles.skillsContainer}>
+                <p className={styles.skills}>Html</p>
+                <p className={styles.skills}>Css</p>
+                <p className={styles.skills}>JavaScript</p>
+                <p className={styles.skills}>Node.js</p>
+                <p className={styles.skills}>Express</p>
+                <p className={styles.skills}>PostgreSQL</p>
+                <p className={styles.skills}>Sequelize</p>
+              </div>
             </div>
 
             <div className={styles.projectDescription}>

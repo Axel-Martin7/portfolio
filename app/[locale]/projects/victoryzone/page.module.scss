@@ -5,14 +5,12 @@
   flex-direction: column;
   gap: 80px;
   padding: (80px + 80px - 20px) 0 80px;
-  border: 1px solid red;
 
   .presentationSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 80px;
-    border: 1px solid orange;
 
     .projectImageContainer {
       position: relative;
@@ -20,6 +18,7 @@
       height: 340px;
       max-width: 400px;
       @include cardsboxshadow;
+
       border: 0.5px solid white;
       border-radius: 0px;
     }
@@ -44,6 +43,7 @@
 
             .projectName {
               margin-bottom: 5px;
+              text-align: center;
               font-size: 22px;
               text-transform: uppercase;
               letter-spacing: 3px;
@@ -126,7 +126,6 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
-    border: 1px solid orange;
 
     .desktopImageContainer {
       display: flex;

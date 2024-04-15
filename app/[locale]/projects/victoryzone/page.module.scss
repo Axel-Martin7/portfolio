@@ -4,18 +4,17 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
-  padding: calc(80px + 80px - 20px) 40px 80px;
-
-  // border: 1px solid red;
+  padding: (80px + 80px - 20px) 0 80px;
+  border: 1px solid red;
 
   .presentationSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 80px;
-    // border: 1px solid orange;
+    border: 1px solid orange;
 
-    .projectImage {
+    .projectImageContainer {
       position: relative;
       width: 100%;
       height: 340px;
@@ -25,61 +24,65 @@
       border-radius: 0px;
     }
 
-    .projectInformationsContainer {
-      max-width: 100%;
+    .projectPresentationContainer {
       display: flex;
       flex-direction: column;
-      gap: 40px;
-      border: 1px solid red;
+      gap: 80px;
+      padding: 0 40px;
 
-      .titlesContainer {
+      .projectHeader {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
 
-        .titlesContentContainer {
-          width: max-content;
+        .titlesContainer {
+          display: flex;
+          justify-content: center;
 
-          .projectName {
-            margin-bottom: 5px;
-            font-size: 22px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 600;
-          }
+          .titlesContentContainer {
+            width: max-content;
 
-          .subTitleContainer {
-            display: flex;
-            align-items: center;
-
-            .subTitle {
-              padding: 0 5px; // Un peu d'espace autour du texte
-              font-size: 10px;
+            .projectName {
+              margin-bottom: 5px;
+              font-size: 22px;
               text-transform: uppercase;
               letter-spacing: 3px;
-              font-weight: 500;
+              font-weight: 600;
             }
-            .separator {
-              flex-grow: 1; // Permet aux barres de se développer pour occuper l'espace disponible
-              // min-width: 1px; // Assurez-vous que les barres ont une largeur minimale
-              height: 1px;
-              background-color: #f1f1f2;
+
+            .subTitleContainer {
+              display: flex;
+              align-items: center;
+
+              .subTitle {
+                padding: 0 5px; // Un peu d'espace autour du texte
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 500;
+              }
+              .separator {
+                flex-grow: 1; // Permet aux barres de se développer pour occuper l'espace disponible
+                // min-width: 1px; // Assurez-vous que les barres ont une largeur minimale
+                height: 1px;
+                background-color: #f1f1f2;
+              }
             }
           }
         }
-      }
 
-      .projectSkills {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin-bottom: 40px;
+        .skillsContainer {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
 
-        .skills {
-          font-size: 10px;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          font-weight: 300;
+          .skills {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 300;
+          }
         }
       }
 
@@ -112,8 +115,6 @@
       .buttonContainer {
         display: flex;
         justify-content: center;
-        gap: 80px;
-
         .btn {
           @include btnstyle;
         }
@@ -124,8 +125,8 @@
   .imagesSection {
     display: flex;
     flex-direction: column;
-
     gap: 80px;
+    border: 1px solid orange;
 
     .desktopImageContainer {
       display: flex;
@@ -166,26 +167,22 @@
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
   .projectContainer {
-    padding: calc(80px + 160px - 20px) 80px 80px;
-    border: 1px solid blue;
-
     .presentationSection {
-      .projectImage {
-        width: 400px;
-      }
+      .projectPresentationContainer {
+        padding: 0 80px;
+        .projectHeader {
+          .titlesContainer {
+            .titlesContentContainer {
+              .projectName {
+                font-size: 29px;
+                letter-spacing: 4px;
+              }
 
-      .projectInformationsContainer {
-        .titlesContainer {
-          .titlesContentContainer {
-            .projectName {
-              font-size: 29px;
-              letter-spacing: 4px;
-            }
-
-            .subTitleContainer {
-              .subTitle {
-                padding: 0 10px; // Un peu d'espace autour du texte
-                font-size: 12px;
+              .subTitleContainer {
+                .subTitle {
+                  padding: 0 10px; // Un peu d'espace autour du texte
+                  font-size: 12px;
+                }
               }
             }
           }
@@ -211,15 +208,18 @@
 @media screen and (min-width: 1200px) {
   .projectContainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0;
-    border: 1px solid red;
+    gap: 160px;
+    padding-top: calc(80px + 160px - 20px);
 
     .presentationSection {
       width: calc(1200px + 80px);
+      gap: 160px;
 
-      .projectInformationsContainer {
+      .projectPresentationContainer {
         width: calc(800px + 80px);
+        padding: 0;
       }
     }
 

@@ -1,6 +1,8 @@
 import { useTranslations } from 'next-intl';
 import styles from './Contact.module.scss';
-import linkedin from '../../../../public/icons/linkedin.svg';
+// import linkedin from '@/public/icons/linkedin-gold.svg';
+import linkedin from '@/public/icons/linkedin.svg';
+import github from '@/public/icons/github.svg';
 import Image from 'next/image';
 
 export default function Contact() {
@@ -42,7 +44,7 @@ export default function Contact() {
               >
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={github}
                   width={50}
                   height={50}
                   alt={t('githubIconAlt')}

@@ -46,11 +46,6 @@ export default function Header() {
 
       <div className={styles.languagesContainer}>
         <Switcher />
-        {/* <LangSwitcher /> */}
-        {/* <Switcher /> */}
-        {/* <Link href={'/fr'}>FR</Link>
-        <Link href={'/en'}>En</Link> */}
-        {/* <p className={styles.language}>EN</p> */}
       </div>
 
       <div className={`${styles.menuPanel} ${isMenuOpen ? styles.open : ''}`}>
@@ -67,6 +62,11 @@ export default function Header() {
               </Link>
             </li>
             <li className={styles.navItem}>
+              <Link href={'/contact'} onClick={closeMenu}>
+                Contact
+              </Link>
+            </li>
+            <li className={styles.navItem}>
               <Link href={'/skills'} onClick={closeMenu}>
                 Skills
               </Link>
@@ -74,11 +74,6 @@ export default function Header() {
             <li className={styles.navItem}>
               <Link href={'/projects'} onClick={closeMenu}>
                 {t('projects')}
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href={'/contact'} onClick={closeMenu}>
-                Contact
               </Link>
             </li>
           </ul>

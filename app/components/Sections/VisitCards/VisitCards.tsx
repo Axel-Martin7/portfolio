@@ -28,7 +28,9 @@ export default function VisitCards() {
           web development degree, <br></br> I&apos;m looking now for career
           opportunities
         </p>
-        <p className={styles.email}>axel.martin@outlook.com</p>
+        <a className={styles.email} href="mailto:axel.martin@outlook.com">
+          axel.martin@outlook.com
+        </a>
       </div>
     </section>
   );

@@ -68,10 +68,6 @@ export default function Footer() {
         </a>
       </div>
 
-      <div className={styles.logoContainer}>
-        <Logo />
-      </div>
-
       <div className={styles.textsContainer}>
         <p>Portfolio v.1 - 2024</p>
       </div>

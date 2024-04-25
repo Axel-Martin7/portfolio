@@ -1,6 +1,20 @@
 import { useTranslations } from 'next-intl';
 import styles from './Skills.module.scss';
 import linkedin from '../../../../public/icons/linkedin.svg';
+
+import html from '@/public/icons/html5.svg';
+import css from '@/public/icons/css3.svg';
+import javascript from '@/public/icons/javascript.svg';
+import react from '@/public/icons/react.svg';
+import nextjs from '@/public/icons/nextjs.svg';
+import nodejs from '@/public/icons/nodejs.svg';
+import typescript from '@/public/icons/typescript.svg';
+import sql from '@/public/icons/sql.svg';
+import postgresql from '@/public/icons/postgresqlsvg.svg';
+import git from '@/public/icons/git.svg';
+import agile from '@/public/icons/agile.svg';
+import figma from '@/public/icons/figma.svg';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -28,7 +42,7 @@ export default function Skills() {
               <div className={styles.itemContainer}>
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={html}
                   width={40}
                   height={40}
                   alt={t('htmlIconAlt')}
@@ -39,7 +53,7 @@ export default function Skills() {
               <div className={styles.itemContainer}>
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={css}
                   width={40}
                   height={40}
                   alt={t('cssIconAlt')}
@@ -50,7 +64,7 @@ export default function Skills() {
               <div className={styles.itemContainer}>
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={javascript}
                   width={40}
                   height={40}
                   alt={t('javascriptIconAlt')}
@@ -61,7 +75,7 @@ export default function Skills() {
               <div className={styles.itemContainer}>
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={react}
                   width={40}
                   height={40}
                   alt={t('reactIconAlt')}
@@ -72,7 +86,7 @@ export default function Skills() {
               <div className={styles.itemContainer}>
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={nextjs}
                   width={40}
                   height={40}
                   alt={t('nextIconAlt')}
@@ -83,7 +97,7 @@ export default function Skills() {
               <div className={styles.itemContainer}>
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={nodejs}
                   width={40}
                   height={40}
                   alt={t('nodeIconAlt')}
@@ -94,7 +108,7 @@ export default function Skills() {
               <div className={styles.itemContainer}>
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={typescript}
                   width={40}
                   height={40}
                   alt={t('typescriptIconAlt')}
@@ -105,7 +119,7 @@ export default function Skills() {
               <div className={styles.itemContainer}>
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={sql}
                   width={40}
                   height={40}
                   alt={t('sqlIconAlt')}
@@ -116,7 +130,7 @@ export default function Skills() {
               <div className={styles.itemContainer}>
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={postgresql}
                   width={40}
                   height={40}
                   alt={t('postgresqlIconAlt')}
@@ -127,7 +141,7 @@ export default function Skills() {
               <div className={styles.itemContainer}>
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={git}
                   width={40}
                   height={40}
                   alt={t('gitIconAlt')}
@@ -138,7 +152,7 @@ export default function Skills() {
               <div className={styles.itemContainer}>
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={agile}
                   width={40}
                   height={40}
                   alt={t('agileIconAlt')}
@@ -149,7 +163,7 @@ export default function Skills() {
               <div className={styles.itemContainer}>
                 <Image
                   className={styles.itemIcon}
-                  src={linkedin}
+                  src={figma}
                   width={40}
                   height={40}
                   alt={t('figmaIconAlt')}

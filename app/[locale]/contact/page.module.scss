@@ -1,97 +1,83 @@
 @import 'styles/mixins';
+@import 'styles/variables';
 @font-face {
   font-family: 'amsterdam-four';
   src: url('/fonts/amsterdam-four.ttf') format('truetype');
 }
 
-.visitCardsContainer {
-  display: flex;
-  flex-direction: column;
-  // gap: 80px;
-  // padding: 160px 0 80px 0;
+.contactPage {
   padding: calc(80px - 20px) 0 80px;
-  @include cardsbg;
-  border: 1px solid red;
 
-  .logoCardContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 0;
-    border: 1px solid orange;
-
-    .logoContainer {
-      width: 290px;
-      height: 290px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid transparent; // Rend toutes les bordures transparentes
-      border-top: 1px solid white; // Segment nord-est visible
-      border-bottom: 1px solid white; // Segment sud-ouest visible
-      border-radius: 50%;
-      transform: rotate(45deg); // Rotation de 45 degrés
-
-      .logoTextContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transform: rotate(-45deg);
-
-        .signature {
-          margin-top: 20px;
-          font-family: 'amsterdam-four';
-          font-size: 44px;
-        }
-        .name {
-          margin: 45px 0 0 20px;
-          text-transform: uppercase;
-          font-size: 14px;
-          letter-spacing: 6px;
-          font-weight: 500;
-        }
-        .job {
-          margin: 10px 0 0 20px;
-          text-transform: uppercase;
-          font-size: 9px;
-          letter-spacing: 3px;
-          font-weight: 500;
-        }
-      }
-    }
-  }
-
-  .contactCardContainer {
+  .sectionsContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    border: 1px solid orange;
+    gap: 80px;
+    padding: 80px 0;
 
-    .titleContainer {
-      .title {
-        text-transform: uppercase;
+    // height: 80vh;
+
+    .presentationSection {
+      .textsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 40px;
         font-size: 14px;
-        letter-spacing: 6px;
-        font-weight: 500;
+        line-height: 17px;
       }
     }
 
-    .contactInfosContainer {
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      font-size: 12px;
-      letter-spacing: 3px;
-      font-weight: 500;
+    .cardsSection {
+      .contactCard {
+        .cardFrame {
+          display: flex;
+          justify-content: center;
 
-      .itemContainer {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        &:hover {
-          font-weight: 600;
+          .cardContentContainer {
+            display: inline-flex;
+            flex-direction: column;
+
+            .profilInfos {
+              display: inline-flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 10px;
+              padding-bottom: 20px;
+              border-bottom: 1px solid $primary-color;
+              text-transform: uppercase;
+              letter-spacing: 3px;
+
+              .name {
+                font-size: 22px;
+                font-weight: 600;
+
+                .lastname {
+                  margin-left: 10px;
+                  font-weight: 200;
+                }
+              }
+
+              .role {
+                font-size: 12px;
+                font-weight: 200;
+              }
+            }
+
+            .socialLinksContainer {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              padding-top: 20px;
+
+              .socialLink {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                font-size: 12px;
+                font-weight: 200;
+              }
+            }
+          }
         }
       }
     }
@@ -100,39 +86,59 @@
 
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
-  .visitCardsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    // padding: 180px 0 100px 0;
-    padding: calc(80px - 20px + 80px) 0 80px;
-    border: 1px solid blue;
+  .contactPage {
+    .sectionsContainer {
+      height: 80vh;
 
-    .logoCardContainer {
-      width: 600px;
-      height: 340px;
+      .presentationSection {
+        display: flex;
+        justify-content: center;
 
-      @include insidecardsbg;
-      @include cardsboxshadow;
-    }
+        .textsContainer {
+          width: 600px;
+          padding: 0 80px;
+        }
+      }
 
-    .contactCardContainer {
-      width: 600px;
-      height: 340px;
-      display: flex;
-      justify-content: center;
-      gap: 50px;
-      @include insidecardsbg;
-      @include cardsboxshadow;
+      .cardsSection {
+        display: flex;
+        justify-content: center;
 
-      .contactInfosContainer {
-        .itemContainer {
-          gap: 40px;
+        .contactCard {
+          width: 600px;
+          height: 340px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include insidecardsbg;
+          @include cardsboxshadow;
 
-          .icon {
-            width: 40px;
-            height: 40px;
+          .cardFrame {
+            width: calc(100% - 80px);
+            height: calc(100% - 80px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid $accent-color;
+            border-radius: 5px;
+
+            .cardContentContainer {
+              flex-direction: row;
+
+              .profilInfos {
+                padding: 0 20px 0 0; // espace du separator
+                border-bottom: none;
+
+                .role {
+                  text-align: end;
+                }
+              }
+
+              .socialLinksContainer {
+                border-left: 1px solid $primary-color;
+                padding: 0 0 0 20px;
+              }
+            }
           }
         }
       }
@@ -142,8 +148,290 @@
 
 // ---------------------------------------------------   DESKTOPS
 @media screen and (min-width: 1200px) {
-  .visitCardsContainer {
-    border: 1px solid red;
-    padding: calc(80px - 20px + 160px) 0 160px;
+  .contactPage {
+    display: flex;
+    justify-content: center;
+
+    .sectionsContainer {
+      width: calc(1200px + 80px);
+      height: 80vh;
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-between;
+
+      .presentationSection {
+        display: flex;
+        align-items: center;
+        width: 600px;
+      }
+
+      .cardsSection {
+        width: 600px;
+        align-items: center;
+      }
+    }
   }
 }
+
+// .contactPage {
+//   padding: calc(80px - 20px) 0 80px;
+//   border: 1px solid red;
+
+//   .sectionsContainer {
+//     // padding: 0 40px;
+//     border: 1px solid orange;
+
+//     .presentationSection {
+//       border: 1px solid red;
+//     }
+
+//     .cardsSection {
+//       border: 1px solid red;
+//       .contactCard {
+//         .contactCardFrame {
+//           display: flex;
+//           justify-content: center;
+
+//           .cardContentContainer {
+//             display: inline-flex;
+//             flex-direction: column;
+
+//             .profilInfos {
+//               display: inline-flex;
+//               flex-direction: column;
+//               justify-content: center;
+//               gap: 10px;
+//               padding-bottom: 20px;
+//
+
+//               .name {
+//                 font-size: 22px;
+//                 text-transform: uppercase;
+//                 letter-spacing: 3px;
+//                 font-weight: 600;
+//                 .lastname {
+//                   margin-left: 10px;
+//                   font-weight: 200;
+//                 }
+//               }
+//               .role {
+//                 font-size: 12px;
+//                 text-transform: uppercase;
+//                 letter-spacing: 3px;
+
+//                 font-weight: 200;
+//               }
+//             }
+
+//             .socialLinksContainer {
+//               display: flex;
+//               flex-direction: column;
+//               gap: 5px;
+//               padding-top: 20px;
+
+//               .socialLink {
+//                 display: flex;
+//                 align-items: center;
+//                 gap: 20px;
+//                 font-size: 12px;
+//                 font-weight: 200;
+//               }
+//             }
+//           }
+//         }
+//       }
+
+//       .backCard {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+
+// // ---------------------------------------------------   TABLETS
+// @media screen and (min-width: 768px) {
+//   .contactPage {
+//     border: 1px solid blue;
+
+//     .sectionsContainer {
+//       border: 1px solid orange;
+
+//       .presentationSection {
+//         display: flex;
+//         justify-content: center;
+//         border: 1px solid red;
+
+//         .textsContainer {
+//           width: 600px;
+//           padding: 80px;
+//           font-size: 14px;
+//           line-height: 17px;
+//           border: 1px solid orange;
+//         }
+//       }
+
+//       .cardsSection {
+//         position: relative;
+//         display: flex;
+//         justify-content: center;
+//         height: 800px;
+
+//         .contactCard {
+//           z-index: 3;
+//           position: absolute;
+//           top: 80px;
+//           transform: translateX(80px); /* Décale de 80px à droite */
+//           width: 600px;
+//           height: 340px;
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           @include insidecardsbg;
+//           @include cardsboxshadow;
+
+//           .contactCardFrame {
+//             width: calc(100% - 80px);
+//             height: calc(100% - 80px);
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
+//             border: 1px solid $accent-color;
+//             border-radius: 5px;
+
+//             .cardContentContainer {
+//               display: inline-flex;
+//               flex-direction: row;
+
+//               .profilInfos {
+//                 padding: 0 20px 0 0; // espace du separator
+//                 border-bottom: none;
+
+//                 .role {
+//                   text-align: end;
+//                 }
+//               }
+
+//               .socialLinksContainer {
+//                 border-left: 1px solid $primary-color;
+//                 padding: 0 0 0 20px;
+//               }
+//             }
+//           }
+//         }
+
+//         .backCard {
+//           z-index: 2;
+//           position: absolute;
+//           width: 600px;
+//           height: 340px;
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           @include insidecardsbg;
+//           @include cardsboxshadow;
+//         }
+
+//         .backCard2 {
+//           position: absolute;
+//           width: 600px;
+//           height: 340px;
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           @include insidecardsbg;
+//           @include cardsboxshadow;
+//         }
+
+//         .backCard,
+//         .backCard2 {
+//           .logoContainer {
+//             width: 290px;
+//             height: 290px;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             border: 1px solid transparent; // Rend toutes les bordures transparentes
+//             border-top: 1px solid $accent-color; // Segment nord-est visible
+//             border-bottom: 1px solid $accent-color; // Segment sud-ouest visible
+//             border-radius: 50%;
+//             transform: rotate(45deg); // Rotation de 45 degrés
+
+//             .logoTextContainer {
+//               display: flex;
+//               flex-direction: column;
+//               align-items: center;
+//               transform: rotate(-45deg);
+
+//               .signature {
+//                 margin-top: 20px;
+//                 font-family: 'amsterdam-four';
+//                 font-size: 44px;
+//                 color: $accent-color;
+//               }
+
+//               .name {
+//                 margin: 45px 0 0 20px;
+//                 text-transform: uppercase;
+//                 font-size: 14px;
+//                 letter-spacing: 6px;
+//                 font-weight: 500;
+//                 color: $accent-color;
+//               }
+
+//               .job {
+//                 margin: 10px 0 0 20px;
+//                 text-transform: uppercase;
+//                 font-size: 9px;
+//                 letter-spacing: 3px;
+//                 font-weight: 500;
+//                 color: $accent-color;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // ---------------------------------------------------   DESKTOPS
+// @media screen and (min-width: 1200px) {
+//   .contactPage {
+//     display: flex;
+//     justify-content: center;
+//     border: 1px solid red;
+
+//     .sectionsContainer {
+//       width: calc(1200px + 80px);
+//       display: flex;
+//       border: 1px solid orange;
+
+//       .presentationSection {
+//         width: 600px;
+//       }
+
+//       .cardsSection {
+//         width: calc(600px + 80px);
+//         // display: block;
+
+//         .contactCard {
+//           top: 80px;
+//           transform: none;
+//           right: 0;
+//         }
+
+//         .backCard {
+//           top: 0;
+//           left: 0;
+//         }
+
+//         .backCard2 {
+//           top: 0;
+//           right: 0;
+//         }
+//       }
+//     }
+//   }
+// }

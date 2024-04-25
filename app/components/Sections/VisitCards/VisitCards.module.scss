@@ -7,11 +7,14 @@
 .visitCardsContainer {
   display: flex;
   flex-direction: column;
-  padding-top: calc(
-    80px - 20px
-  ); // version en commencant a partir de la fin du burger menu
-  // padding: 80px 0; // version en prenant l'espace total du header
-  @include cardsbg;
+  padding-top: calc(80px - 20px);
+  background: radial-gradient(transparent 40%, $dark-bg-color 100%),
+    linear-gradient(
+      0deg,
+      $dark-bg-color 0%,
+      $light-bg-color 46%,
+      $dark-bg-color 100%
+    );
 
   .logoCardContainer {
     padding: 160px 0;
@@ -26,8 +29,8 @@
       justify-content: center;
       align-items: center;
       border: 1px solid transparent; // Rend toutes les bordures transparentes
-      border-top: 1px solid white; // Segment nord-est visible
-      border-bottom: 1px solid white; // Segment sud-ouest visible
+      border-top: 1px solid $primary-color; // Segment nord-est visible
+      border-bottom: 1px solid $primary-color; // Segment sud-ouest visible
       border-radius: 50%;
       transform: rotate(45deg); // Rotation de 45 degrés
 
@@ -93,7 +96,7 @@
           // flex-grow: 1; // Permet aux barres de se développer pour occuper l'espace disponible
           min-width: 35px; // Assurez-vous que les barres ont une largeur minimale
           height: 1px;
-          background-color: #f1f1f2;
+          background-color: $primary-color;
         }
       }
     }
@@ -107,10 +110,12 @@
       font-weight: 300;
     }
     .email {
-      text-align: center;
+      display: flex;
+      justify-content: center;
       font-size: 12px;
       letter-spacing: 1px;
       font-weight: 500;
+      padding: 10px;
     }
   }
 }

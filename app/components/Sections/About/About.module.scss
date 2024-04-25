@@ -2,9 +2,8 @@
 
 .aboutSectionContainer {
   padding-top: 80px;
-  background: #434343;
-  background: radial-gradient(transparent 18%, #121212 86%),
-    radial-gradient(at left center, #434343, #121212);
+  background: radial-gradient(transparent 18%, $dark-bg-color 70%),
+    radial-gradient(at left center, $light-bg-color, $dark-bg-color);
 
   .profilPictureContainer {
     height: 340px;
@@ -44,7 +43,7 @@
 
       .titleSeparator {
         height: 1px;
-        background-color: white;
+        background-color: $primary-color;
         flex-grow: 1; // S'étend pour remplir l'espace disponibles
       }
     }

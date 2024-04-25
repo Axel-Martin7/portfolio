@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import styles from './About.module.scss';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 
 export default function About() {
   const t = useTranslations('component-About');

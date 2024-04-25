@@ -3,11 +3,11 @@
 .skillsPageContainer {
   // padding: 80px 0;
   padding: calc(80px - 20px) 0 80px;
-  border: 1px solid red;
 
   .skillsSection {
     padding: 80px 0;
-    border: 1px solid orange;
+    background-image: radial-gradient(transparent 24%, #121212 70%),
+      linear-gradient(to bottom, transparent 0%, #434343 50%, transparent 100%);
 
     .skillsCard {
       .skillsContentContainer {
@@ -51,8 +51,6 @@
   }
 
   .formationSection {
-    border: 1px solid orange;
-
     .formationContainer {
       display: flex;
       flex-direction: column;

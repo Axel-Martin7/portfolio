@@ -108,6 +108,14 @@
     "github-alt": "Github icon"
   },
 
+  "page-contact": {
+    "description-part1": "As a recent graduate in web development, I am seeking my first professional opportunities.",
+    "description-part2-line1": "With me, you're making an investment in the future, in a young web developer who is ready to grow with your company, learn quickly, and bring a touch of creativity to every project.",
+    "description-part2-line2": "I'm excited about the prospect of joining a dynamic team and working on exciting projects.",
+    "description-part3-line1": "If you're in need of a motivated web developer determined to excel, I'd be delighted to discuss how I can contribute to your company.",
+    "description-part3-line2": "Feel free to contact me directly via email or through LinkedIn."
+  },
+
   "page-skills": {
     "skills-title": "My Skills",
     "skills-html-alt": "HTML language icon",

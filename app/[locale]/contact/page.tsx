@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import styles from './page.module.scss';
 // import linkedin from '../../public/icons/linkedin.svg';
 import linkedin from '@/public/icons/linkedin.svg';
@@ -6,29 +7,22 @@ import mail from '@/public/icons/mail.svg';
 import Image from 'next/image';
 
 export default function Contact() {
+  const t = useTranslations('page-contact');
+
   return (
     <main>
       <div className={styles.contactPage}>
         <div className={styles.sectionsContainer}>
           <section className={styles.presentationSection}>
             <div className={styles.textsContainer}>
+              <p>{t('description-part1')}</p>
               <p>
-                En tant que jeune diplômé dans le développement web, je suis à
-                la recherche de mes premières opportunités professionnelles.
+                {t('description-part2-line1')} <br></br>
+                {t('description-part2-line2')}
               </p>
               <p>
-                Avec moi, vous faites un investissement dans l'avenir, dans un
-                jeune développeur web qui est prêt à grandir avec votre
-                entreprise, à apprendre rapidement et à apporter une touche de
-                créativité à chaque projet. <br></br>Je suis enthousiaste à
-                l'idée de rejoindre une équipe dynamique et de travailler sur
-                des projets passionnants.
-              </p>
-              <p>
-                Si vous êtes à la recherche d'un développeur web motivé et
-                déterminé à exceller, je serai ravi de discuter de la façon dont
-                je peux contribuer à votre entreprise. <br></br> N'hésitez pas à
-                me contacter directement par mail ou via LinkedIn.
+                {t('description-part3-line1')} <br></br>
+                {t('description-part2-line2')}
               </p>
             </div>
           </section>
@@ -42,7 +36,7 @@ export default function Contact() {
                       <span className={styles.firstname}>Axel</span>
                       <span className={styles.lastname}>Martin</span>
                     </p>
-                    <p className={styles.role}>Web developper</p>
+                    <p className={styles.role}>Web developer</p>
                   </div>
                   <div className={styles.socialLinksContainer}>
                     <a

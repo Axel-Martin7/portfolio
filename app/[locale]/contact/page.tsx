@@ -22,7 +22,7 @@ export default function Contact() {
               </p>
               <p>
                 {t('description-part3-line1')} <br></br>
-                {t('description-part2-line2')}
+                {t('description-part3-line2')}
               </p>
             </div>
           </section>
@@ -82,6 +82,8 @@ export default function Contact() {
                 </div>
               </div>
             </div>
+
+            <div className={styles.backCard}></div>
           </section>
         </div>
       </div>

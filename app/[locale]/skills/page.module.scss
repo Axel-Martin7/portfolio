@@ -1,7 +1,7 @@
 @import 'styles/mixins';
+@import 'styles/variables';
 
 .skillsPageContainer {
-  // padding: 80px 0;
   padding: calc(80px - 20px) 0 80px;
 
   .skillsSection {
@@ -14,36 +14,37 @@
         display: flex;
         flex-direction: column;
         gap: 80px;
-      }
 
-      .titleContainer {
-        display: flex;
-        justify-content: center;
-
-        .title {
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-weight: 500;
-        }
-      }
-
-      .skillsGridContainer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-row-gap: 20px;
-        place-items: center;
-
-        .itemContainer {
+        .titleContainer {
           display: flex;
-          flex-direction: column;
-          align-items: center;
+          justify-content: center;
 
-          .itemName {
-            margin-top: 20px;
-            font-size: 10px;
+          .title {
+            color: $accent-color;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 3px;
+            font-weight: 500;
+          }
+        }
+
+        .skillsGridContainer {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          grid-row-gap: 20px;
+          place-items: center;
+
+          .itemContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .itemName {
+              margin-top: 20px;
+              font-size: 10px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            }
           }
         }
       }
@@ -62,6 +63,7 @@
         justify-content: center;
 
         .title {
+          color: $accent-color;
           text-transform: uppercase;
           letter-spacing: 3px;
           font-weight: 500;
@@ -77,8 +79,9 @@
           line-height: 20px;
 
           .list {
-            color: white;
+            color: $primary-color;
             list-style: inside;
+            font-weight: 200;
           }
         }
       }
@@ -118,10 +121,15 @@
           font-size: 14px;
           line-height: 20px;
 
-          .list {
-            color: white;
-            list-style: inside;
-
+          .moduleLists {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            ul {
+              color: $primary-color;
+              list-style: inside;
+              font-weight: 200;
+            }
             .listTitle {
               font-weight: 600;
             }
@@ -138,7 +146,6 @@
     .skillsSection {
       display: flex;
       justify-content: center;
-      // padding: calc(160px - 40px) 0 80px;
 
       .skillsCard {
         width: 680px;
@@ -190,10 +197,17 @@
     .formationSection {
       width: calc(1200px + 80px);
       max-width: 100%;
-      // padding-top: 160px;
 
       .formationContainer {
         padding: 0;
+
+        .presentationContainer {
+          display: flex;
+          justify-content: center;
+          .presentationContentContainer {
+            width: calc(800px + 80px);
+          }
+        }
 
         .socleContainer,
         .apotheoseContainer,

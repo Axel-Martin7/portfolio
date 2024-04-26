@@ -5,19 +5,14 @@
   flex-direction: column;
   gap: 80px;
   padding: (80px + 80px - 20px) 0 80px;
-
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    #434343 51%,
-    rgba(67, 67, 67, 0.018) 100%
-  );
+  border: 1px solid red;
 
   .presentationSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 80px;
+    border: 1px solid red;
 
     .projectImageContainer {
       position: relative;
@@ -35,7 +30,7 @@
       flex-direction: column;
       gap: 80px;
       padding: 0 40px;
-      background: radial-gradient(#121212 0%, transparent 83%);
+      border: 1px solid orange;
 
       .projectHeader {
         display: flex;
@@ -227,6 +222,7 @@
       .projectPresentationContainer {
         width: calc(800px + 80px);
         padding: 0;
+        border: 1px solid yellow;
       }
     }
 

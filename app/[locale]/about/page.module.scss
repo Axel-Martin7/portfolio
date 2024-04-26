@@ -60,7 +60,7 @@
 
         .titleSeparator {
           height: 1px;
-          background-color: $accent-color;
+          background-color: $primary-color;
           flex-grow: 1; // S'étend pour remplir l'espace disponibles
         }
       }
@@ -98,11 +98,12 @@
           text-transform: uppercase;
           letter-spacing: 3px;
           font-weight: 500;
+          color: $accent-color;
         }
 
         .titleSeparator {
           height: 1px;
-          background-color: white;
+          background-color: $primary-color;
           flex-grow: 1; // S'étend pour remplir l'espace disponibles
         }
       }
@@ -131,11 +132,12 @@
           text-transform: uppercase;
           letter-spacing: 3px;
           font-weight: 500;
+          color: $accent-color;
         }
 
         .titleSeparator {
           height: 1px;
-          background-color: white;
+          background-color: $primary-color;
           flex-grow: 1; // S'étend pour remplir l'espace disponibles
         }
       }

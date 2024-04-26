@@ -1,6 +1,24 @@
+'use client';
+import { useEffect, useState } from 'react';
 import styles from './VisitCards.module.scss';
 
 export default function VisitCards() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section className={styles.visitCardsContainer}>
       <div className={styles.logoCardContainer}>
@@ -32,6 +50,10 @@ export default function VisitCards() {
           axel.martin@outlook.com
         </a>
       </div>
+
+      <div
+        className={`${styles.scrollIndicator} ${isScrolled ? styles.hide : ''}`}
+      ></div>
     </section>
   );
 }

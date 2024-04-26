@@ -13,12 +13,12 @@
 
     .projectCardContainer {
       height: 680px;
-      width: 100%;
+      width: 90%;
       max-width: 400px;
       @include insidecardsbg;
       @include cardsboxshadow;
       .imageFrame img {
-        filter: sepia(80%) brightness(60%); /* Appliquer le filtre sepia par défaut */
+        filter: sepia(80%) brightness(90%); /* Appliquer le filtre sepia par défaut */
         border-radius: 10px;
         transition: filter 0.1s ease; /* Ajouter une transition fluide */
       }
@@ -39,8 +39,8 @@
         .imageFrame {
           position: relative;
           aspect-ratio: 1/1;
-          width: calc(100% - 80px);
-          height: calc(100% - 80px);
+          width: calc(100% - 40px);
+          height: calc(100% - 40px);
           @include cardsboxshadow;
 
           img {
@@ -98,6 +98,20 @@
 
 // ---------------------------------------------------   TABLETS
 @media screen and (min-width: 768px) {
+  .projectsSectionContainer {
+    .allProjectsContainer {
+      .projectCardContainer {
+        width: 100%;
+
+        .imageContainer {
+          .imageFrame {
+            width: calc(100% - 80px);
+            height: calc(100% - 80px);
+          }
+        }
+      }
+    }
+  }
 }
 // ---------------------------------------------------   DESKTOPS
 @media screen and (min-width: 1200px) {

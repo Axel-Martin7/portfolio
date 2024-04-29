@@ -1,6 +1,7 @@
 import styles from './page.module.scss';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/navigation';
 
 export default function VictoryZone() {
   const t = useTranslations('page-vz');
@@ -200,6 +201,18 @@ export default function VictoryZone() {
                 fill
               />
             </div>
+          </div>
+        </section>
+
+        <section className={styles.otherProjectsSection}>
+          <p>Mes autres projets : </p>
+          <div className={styles.projectLinksContainer}>
+            <Link className={styles.buttonContainer} href="/projects/portfolio">
+              <button className={styles.projectBtn}>Portfolio</button>
+            </Link>
+            <Link className={styles.buttonContainer} href="/projects/okanban">
+              <button className={styles.projectBtn}>OKanban</button>
+            </Link>
           </div>
         </section>
       </div>

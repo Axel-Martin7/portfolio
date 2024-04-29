@@ -1,6 +1,7 @@
 import styles from './page.module.scss';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/navigation';
 
 export default function Okanban() {
   const t = useTranslations('page-okanban');
@@ -86,6 +87,21 @@ export default function Okanban() {
               alt={t('mobile-imgalt-1')}
               fill
             />
+          </div>
+        </section>
+
+        <section className={styles.otherProjectsSection}>
+          <p>Mes autres projets : </p>
+          <div className={styles.projectLinksContainer}>
+            <Link className={styles.buttonContainer} href="/projects/portfolio">
+              <button className={styles.projectBtn}>Portfolio</button>
+            </Link>
+            <Link
+              className={styles.buttonContainer}
+              href="/projects/victoryzone"
+            >
+              <button className={styles.projectBtn}>Victory Zone</button>
+            </Link>
           </div>
         </section>
       </div>

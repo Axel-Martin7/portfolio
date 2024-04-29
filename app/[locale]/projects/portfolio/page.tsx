@@ -1,6 +1,7 @@
 import styles from './page.module.scss';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/navigation';
 
 export default function Portfolio() {
   const t = useTranslations('page-portfolio');
@@ -68,6 +69,21 @@ export default function Portfolio() {
                 Github
               </button>
             </a>
+          </div>
+        </section>
+
+        <section className={styles.otherProjectsSection}>
+          <p>Mes autres projets : </p>
+          <div className={styles.projectLinksContainer}>
+            <Link
+              className={styles.buttonContainer}
+              href="/projects/victoryzone"
+            >
+              <button className={styles.projectBtn}>Victory Zone</button>
+            </Link>
+            <Link className={styles.buttonContainer} href="/projects/okanban">
+              <button className={styles.projectBtn}>OKanban</button>
+            </Link>
           </div>
         </section>
       </div>

@@ -164,6 +164,32 @@
       }
     }
   }
+
+  .otherProjectsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .projectLinksContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .buttonContainer {
+        display: flex;
+        flex-direction: column;
+        .projectBtn {
+          @include btnstyle;
+        }
+      }
+    }
+  }
 }
 
 // ---------------------------------------------------   TABLETS

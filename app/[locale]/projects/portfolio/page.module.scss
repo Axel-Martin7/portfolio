@@ -5,12 +5,14 @@
   flex-direction: column;
   gap: 80px;
   padding: (80px + 80px - 20px) 0 80px;
+  border: 1px solid red;
 
   .presentationSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 80px;
+    border: 1px solid orange;
 
     .projectImageContainer {
       position: relative;
@@ -27,6 +29,7 @@
       flex-direction: column;
       gap: 80px;
       padding: 0 40px;
+      border: 1px solid white;
 
       .projectHeader {
         display: flex;
@@ -97,6 +100,32 @@
         display: flex;
         justify-content: center;
         .btn {
+          @include btnstyle;
+        }
+      }
+    }
+  }
+
+  .otherProjectsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .projectLinksContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .buttonContainer {
+        display: flex;
+        flex-direction: column;
+        .projectBtn {
           @include btnstyle;
         }
       }

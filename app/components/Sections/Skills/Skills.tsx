@@ -10,7 +10,7 @@ import nextjs from '@/public/icons/nextjs.svg';
 import nodejs from '@/public/icons/nodejs.svg';
 import typescript from '@/public/icons/typescript.svg';
 import sql from '@/public/icons/sql.svg';
-import postgresql from '@/public/icons/postgresqlsvg.svg';
+import postgresql from '@/public/icons/postgresql.svg';
 import git from '@/public/icons/git.svg';
 import agile from '@/public/icons/agile.svg';
 import figma from '@/public/icons/figma.svg';

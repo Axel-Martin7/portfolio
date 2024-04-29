@@ -49,7 +49,7 @@
 
   "component-Projects": {
     "portfolioImgAlt": "Logo du projet portfolio v1",
-    "portfolioDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam uaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!",
+    "portfolioDescription": "C'est le projet que vous explorez actuellement. Il offre une plateforme détaillée pour une présentation efficace. J'ai opté pour un design minimaliste, cherchant à allier l'élégance de la simplicité avec une structure claire et organisée.",
     "vzImgAlt": "Image du projet VictoryZone",
     "vzDescription": "VictoryZone est une application destinée à représenter une équipe E-sport. Le MVP a été réalisé en équipe de 5 sur une durée d'un mois dans le cadre du projet de fin d’études de ma formation chez O’Clock. J'avais le rôle de développeur front-end.",
     "okanbanImgAlt": "Image du projet O'Kanban",

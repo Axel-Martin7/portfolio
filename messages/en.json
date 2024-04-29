@@ -356,7 +356,9 @@
     "mobile-imgalt-3": "Image section calendar of the VictoryZone project - mobile version",
     "mobile-imgalt-4": "Image section articles of the VictoryZone project - mobile version",
     "mobile-imgalt-5": "Image footer of the VictoryZone project - mobile version",
-    "mobile-imgalt-6": "Image admin dashboard of the VictoryZone project - mobile version"
+    "mobile-imgalt-6": "Image admin dashboard of the VictoryZone project - mobile version",
+
+    "other-projects": "My other projects :"
   },
 
   "page-okanban": {
@@ -378,7 +380,8 @@
 
     "button-arialabel": "Redirect to the GitHub page of the repository containing the back-end code.",
     "desktop-imgalt-1": "Preview of the oKanban project in desktop version",
-    "mobile-imgalt-1": "Preview of the oKanban project in mobile version"
+    "mobile-imgalt-1": "Preview of the oKanban project in mobile version",
+    "other-projects": "My other projects :"
   },
 
   "page-portfolio": {
@@ -396,6 +399,7 @@
     "description-part2-line4": "I implemented a translation system using the Next-Intl library, allowing users to switch between French and English.",
     "description-part2-line5": "Translations are stored in .JSON files and then retrieved in JSX files of pages and components, enabling the display of content in the appropriate language based on the user's selection.",
 
-    "button-arialabel": "Redirecting to the GitHub page of the repository containing the project's code."
+    "button-arialabel": "Redirecting to the GitHub page of the repository containing the project's code.",
+    "other-projects": "My other projects :"
   }
 }

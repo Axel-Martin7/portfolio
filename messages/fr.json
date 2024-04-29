@@ -357,7 +357,9 @@
     "mobile-imgalt-3": "Image section calendrier du project VictoryZone version mobile",
     "mobile-imgalt-4": "Image section articles du project VictoryZone version desktop",
     "mobile-imgalt-5": "Image footer du project VictoryZone version mobile",
-    "mobile-imgalt-6": "Image page administrateur du project VictoryZone version mobile"
+    "mobile-imgalt-6": "Image page administrateur du project VictoryZone version mobile",
+
+    "other-projects": "Mes autres projets :"
   },
 
   "page-okanban": {
@@ -379,7 +381,8 @@
 
     "button-arialabel": "Redirection vers la page Github du repos contenant le code du back-end",
     "desktop-imgalt-1": "Aperçu du projet oKanban en version desktop",
-    "mobile-imgalt-1": "Aperçu du projet oKanban en version mobile"
+    "mobile-imgalt-1": "Aperçu du projet oKanban en version mobile",
+    "other-projects": "Mes autres projets :"
   },
 
   "page-portfolio": {
@@ -397,6 +400,7 @@
     "description-part2-line4": "J’ai mis en place un système de traduction grâce à la bibliothèque Next-Intl, permettant aux utilisateurs de basculer entre le français et l’anglais. ",
     "description-part2-line5": "Les traductions sont stockées dans des fichiers .JSON et sont ensuite récupérées dans les fichiers JSX des pages et des composants, ce qui permet d’afficher le contenu dans la langue appropriée en fonction de la sélection de l’utilisateur.",
 
-    "button-arialabel": "Redirection vers la page Github du repos contenant le code du projet"
+    "button-arialabel": "Redirection vers la page Github du repos contenant le code du projet",
+    "other-projects": "Mes autres projets :"
   }
 }

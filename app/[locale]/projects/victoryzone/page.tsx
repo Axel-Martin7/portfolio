@@ -205,7 +205,7 @@ export default function VictoryZone() {
         </section>
 
         <section className={styles.otherProjectsSection}>
-          <p>Mes autres projets : </p>
+          <p>{t('other-projects')}</p>
           <div className={styles.projectLinksContainer}>
             <Link className={styles.buttonContainer} href="/projects/portfolio">
               <button className={styles.projectBtn}>Portfolio</button>

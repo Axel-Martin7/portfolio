@@ -379,5 +379,23 @@
     "button-arialabel": "Redirect to the GitHub page of the repository containing the back-end code.",
     "desktop-imgalt-1": "Preview of the oKanban project in desktop version",
     "mobile-imgalt-1": "Preview of the oKanban project in mobile version"
+  },
+
+  "page-portfolio": {
+    "presentationImg-alt": "Image of the Portfolio v1 project",
+    "sub-title": "Personal project",
+
+    "description-part1-line1": "This portfolio represents the project you are currently exploring, in its first version.",
+    "description-part1-line2": "It offers a detailed platform to showcase my skills, experiences, projects, and goals.",
+    "description-part1-line3": "I opted for a minimalist design, aiming to combine the elegance of simplicity with a clear and organized structure.",
+    "description-part1-line4": "The main objective was to create a clean and user-friendly interface, highlighting the content while providing an enjoyable user experience.",
+
+    "description-part2-line1": "I developed this project using React with the Next.js framework version 14.",
+    "description-part2-line2": "I chose to use Typescript and Airbnb's EsLint for better code structuring.",
+    "description-part2-line3": "Styling is done with Scss for more efficient management of style sheets.",
+    "description-part2-line4": "I implemented a translation system using the Next-Intl library, allowing users to switch between French and English.",
+    "description-part2-line5": "Translations are stored in .JSON files and then retrieved in JSX files of pages and components, enabling the display of content in the appropriate language based on the user's selection.",
+
+    "button-arialabel": "Redirecting to the GitHub page of the repository containing the project's code."
   }
 }

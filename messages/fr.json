@@ -383,8 +383,20 @@
   },
 
   "page-portfolio": {
-    "presentationImg-alt": "Image du projet Okanban",
-    "sub-title": "Application fullstack",
+    "presentationImg-alt": "Image du projet Portfolio v1",
+    "sub-title": "Projet personnel",
+
+    "description-part1-line1": "Ce portfolio représente le projet que vous explorez actuellement, dans sa première version.",
+    "description-part1-line2": "Il propose une plateforme détaillée pour présenter mes compétences, expériences, projets et objectifs. ",
+    "description-part1-line3": "J’ai opté pour un design minimaliste, cherchant à allier l’élégance de la simplicité avec une structure claire et organisée.",
+    "description-part1-line4": "L’objectif principal était de créer une interface épurée et conviviale, mettant en avant le contenu tout en offrant une expérience utilisateur agréable.",
+
+    "description-part2-line1": "J’ai développé ce projet en utilisant React avec le framework Next.js version 14. ",
+    "description-part2-line2": "J’ai choisi d’utiliser Typescript et EsLint airbnb pour une meilleure structuration du code. ",
+    "description-part2-line3": "Le style est réalisé avec Scss pour une gestion plus efficace des feuilles de style. ",
+    "description-part2-line4": "J’ai mis en place un système de traduction grâce à la bibliothèque Next-Intl, permettant aux utilisateurs de basculer entre le français et l’anglais. ",
+    "description-part2-line5": "Les traductions sont stockées dans des fichiers .JSON et sont ensuite récupérées dans les fichiers JSX des pages et des composants, ce qui permet d’afficher le contenu dans la langue appropriée en fonction de la sélection de l’utilisateur.",
+
     "button-arialabel": "Redirection vers la page Github du repos contenant le code du projet"
   }
 }

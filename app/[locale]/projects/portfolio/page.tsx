@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 export default function Portfolio() {
-  const t = useTranslations('page-vz');
+  const t = useTranslations('page-portfolio');
 
   return (
     <main>
@@ -33,15 +33,28 @@ export default function Portfolio() {
                 <p className={styles.skills}>Html</p>
                 <p className={styles.skills}>Scss</p>
                 <p className={styles.skills}>Next.js</p>
+                <p className={styles.skills}>React</p>
                 <p className={styles.skills}>TypeScript</p>
                 <p className={styles.skills}>EsLint</p>
+                <p className={styles.skills}>Next-Intl</p>
                 <p className={styles.skills}>Git</p>
+                <p className={styles.skills}>Figma</p>
               </div>
             </div>
 
             <div className={styles.projectDescription}>
               <p>
                 {t('description-part1-line1')} <br></br>
+                {t('description-part1-line2')} <br></br>
+                {t('description-part1-line3')} <br></br>
+                {t('description-part1-line4')}
+              </p>
+              <p>
+                {t('description-part2-line1')} <br></br>
+                {t('description-part2-line2')} <br></br>
+                {t('description-part2-line3')} <br></br>
+                {t('description-part2-line4')} <br></br>
+                {t('description-part2-line5')}
               </p>
             </div>
 

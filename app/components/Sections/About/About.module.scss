@@ -18,7 +18,7 @@
       .photo {
         @include cardsboxshadow;
         filter: brightness(90%);
-        filter: sepia(25%);
+        filter: sepia(50%);
       }
     }
   }

@@ -8,14 +8,15 @@
   display: flex;
   flex-direction: column;
   padding-top: calc(80px - 20px);
-  background: radial-gradient(transparent 40%, $dark-bg-color 100%),
+  background: radial-gradient(transparent 20%, $dark-bg-color 100%),
     linear-gradient(
       0deg,
-      $dark-bg-color 0%,
+      $dark-bg-color 10%,
       $light-bg-color 46%,
-      $dark-bg-color 100%
+      $dark-bg-color 80%
     );
-  border: 1px solid red;
+  // background: radial-gradient(transparent 18%, $dark-bg-color 70%),
+  //   radial-gradient(at left center, $light-bg-color, $dark-bg-color);
 
   .logoCardContainer {
     padding: 160px 0;

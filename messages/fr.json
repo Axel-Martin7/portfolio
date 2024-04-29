@@ -49,7 +49,7 @@
 
   "component-Projects": {
     "portfolioImgAlt": "Logo du projet portfolio v1",
-    "portfolioDescription": "C'est le projet que vous explorez actuellement. Il offre une plateforme détaillée pour une présentation efficace. J'ai opté pour un design minimaliste, cherchant à allier l'élégance de la simplicité avec une structure claire et organisée.",
+    "portfolioDescription": "C'est le projet que vous explorez actuellement. Il propose une plateforme détaillée pour présenter mes compétences, expériences, projets et objectifs. J’ai opté pour un design minimaliste, cherchant à allier l’élégance de la simplicité avec une structure claire et organisée.",
     "vzImgAlt": "Image du projet VictoryZone",
     "vzDescription": "VictoryZone est une application destinée à représenter une équipe E-sport. Le MVP a été réalisé en équipe de 5 sur une durée d'un mois dans le cadre du projet de fin d’études de ma formation chez O’Clock. J'avais le rôle de développeur front-end.",
     "okanbanImgAlt": "Image du projet O'Kanban",
@@ -110,9 +110,9 @@
   },
 
   "page-contact": {
-    "description-part1": "En tant que jeune diplômé en développement web, je cherche mes premières opportunités professionnelles.",
-    "description-part2-line1": "Je représente un investissement dans l'avenir, prêt à croître avec votre entreprise, à apprendre vite et à ajouter une touche de créativité à chaque projet.",
-    "description-part2-line2": "Je suis enthousiaste à l'idée de rejoindre une équipe dynamique et de travailler sur des projets passionnants.",
+    "description-part1": "En tant que jeune diplômé en développement web, je suis à la recherche de mes premières opportunités professionnelles.",
+    "description-part2-line1": "Je suis enthousiaste à l'idée de rejoindre une équipe dynamique et de travailler sur des projets passionnants.",
+    "description-part2-line2": "Je suis prêt à croître avec votre entreprise, à apprendre vite et à ajouter une touche de créativité à chaque projet.  Considérez-moi comme un investissement dans l'avenir.",
     "description-part3-line1": "Si vous êtes à la recherche d'un développeur web motivé et déterminé à exceller, je serai ravi de discuter de la façon dont je peux contribuer à votre entreprise. ",
     "description-part3-line2": "N'hésitez pas à me contacter directement par mail ou via LinkedIn."
   },

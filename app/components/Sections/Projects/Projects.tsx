@@ -35,6 +35,7 @@ export default function Projects() {
               <p className={styles.skills}>Typescript</p>
               <p className={styles.skills}>next-Intl</p>
               <p className={styles.skills}>Git</p>
+              <p className={styles.skills}>Figma</p>
             </div>
           </div>
         </Link>

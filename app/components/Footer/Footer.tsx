@@ -1,8 +1,10 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import linkedin from '../../../public/icons/linkedin.svg';
+import mail from '@/public/icons/mail.svg';
+import linkedin from '@/public/icons/linkedin.svg';
+import github from '@/public/icons/github.svg';
 import styles from './Footer.module.scss';
-// import Link from 'next/link';
+
 import { Link } from '@/navigation';
 import Logo from '../Logo/Logo';
 
@@ -36,7 +38,7 @@ export default function Footer() {
         >
           <Image
             className={styles.icon}
-            src={linkedin}
+            src={mail}
             width={50}
             height={50}
             alt="Email icon"
@@ -60,7 +62,7 @@ export default function Footer() {
         >
           <Image
             className={styles.icon}
-            src={linkedin}
+            src={github}
             width={50}
             height={50}
             alt="Github icon"

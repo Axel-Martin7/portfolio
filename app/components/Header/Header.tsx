@@ -26,11 +26,20 @@ export default function Header() {
         isMenuOpen ? styles.headerOpen : ''
       }`}
     >
-      <Link className={styles.signatureContainer} href={'/'}>
+      <Link
+        className={styles.signatureContainer}
+        href={'/'}
+        aria-label={t('home')}
+      >
         <p className={styles.signature}>AM</p>
       </Link>
 
-      <button className={styles.menuContainer} onClick={toggleMenu}>
+      <button
+        className={styles.menuContainer}
+        onClick={toggleMenu}
+        aria-label={isMenuOpen ? t('close-menu-aria') : t('open-menu-aria')}
+        aria-expanded={isMenuOpen}
+      >
         <div className={styles.burgerLinesContainer}>
           <div
             className={`${styles.line} ${isMenuOpen ? styles.line1Open : ''}`}

@@ -3,7 +3,9 @@
     "switchLanguage": "en",
     "home": "Accueil",
     "about": "À propos",
-    "projects": "Projets"
+    "projects": "Projets",
+    "close-menu-aria": "Fermeture du menu",
+    "open-menu-aria": "Ouverture du menu"
   },
 
   "component-About": {

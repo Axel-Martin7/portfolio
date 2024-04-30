@@ -1,6 +1,5 @@
 import { useTranslations } from 'next-intl';
 import styles from './page.module.scss';
-import linkedin from '@/public/icons/linkedin.svg';
 import Image from 'next/image';
 
 import html from '@/public/icons/html5.svg';

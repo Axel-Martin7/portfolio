@@ -27,8 +27,11 @@
 
   "component-Contact": {
     "description": "For any professional proposition, collaboration opportunity, or simply to share and exchange ideas, feel free to contact me directly on my social networks or via email at the following address:",
+    "mail-aria": "Send me an email",
     "linkedinIconAlt": "Linkedin icon",
-    "githubIconAlt": "Github icon"
+    "linkedin-aria": "Visit my Linkedin",
+    "githubIconAlt": "Github icon",
+    "github-aria": "Visit my Github"
   },
 
   "component-Skills": {

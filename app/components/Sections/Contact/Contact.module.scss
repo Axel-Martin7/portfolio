@@ -30,6 +30,7 @@
         margin: 40px 0;
         font-size: 14px;
         line-height: 17px;
+        font-weight: 300;
       }
 
       .contactInfos {
@@ -40,7 +41,7 @@
           padding: 20px;
           font-size: 16px;
           line-height: 17px;
-          font-weight: 600;
+          font-weight: 500;
           border: 1px solid $primary-color;
           border-radius: 5px;
           &:hover {

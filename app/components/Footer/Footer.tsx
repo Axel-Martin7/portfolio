@@ -7,8 +7,6 @@ import mail from '@/public/icons/mail.svg';
 import linkedin from '@/public/icons/linkedin.svg';
 import github from '@/public/icons/github.svg';
 
-import Logo from '../Logo/Logo';
-
 export default function Footer() {
   const t = useTranslations('common');
 

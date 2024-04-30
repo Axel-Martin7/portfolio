@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import styles from './Skills.module.scss';
-import linkedin from '../../../../public/icons/linkedin.svg';
+import Image from 'next/image';
+import { Link } from '@/navigation';
 
 import html from '@/public/icons/html5.svg';
 import css from '@/public/icons/css3.svg';
@@ -14,9 +15,6 @@ import postgresql from '@/public/icons/postgresql.svg';
 import git from '@/public/icons/git.svg';
 import agile from '@/public/icons/agile.svg';
 import figma from '@/public/icons/figma.svg';
-
-import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Skills() {
   const t = useTranslations('component-Skills');

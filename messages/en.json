@@ -11,6 +11,14 @@
     "github-aria": "Visit my Github"
   },
 
+  "component-VisitCards": {
+    "description-line1": "Hello,",
+    "description-line2": "my name is Axel. I'm a french web developper based in Geneva.",
+    "description-line3": "Recently graduated in fullstack JavaScript web development degree,",
+    "description-line4": "I'm looking now for career opportunities",
+    "mail-aria": "Send me an email"
+  },
+
   "component-About": {
     "title": "About me",
     "imgAlt": "Profil picture",

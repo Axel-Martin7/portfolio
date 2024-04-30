@@ -1,8 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 import styles from './VisitCards.module.scss';
+import { useTranslations } from 'next-intl';
 
 export default function VisitCards() {
+  const t = useTranslations('component-VisitCards');
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -41,12 +43,18 @@ export default function VisitCards() {
           </div>
         </div>
         <p className={styles.presentationText}>
-          Hello, <br></br> my name is Axel. I&apos;m a french web developper
-          based in Geneva. <br></br> Recently graduated in fullstack JavaScript
-          web development degree, <br></br> I&apos;m looking now for career
-          opportunities
+          {t('description-line1')} <br></br>
+          {t('description-line2')} <br></br>
+          {t('description-line3')} <br></br>
+          {t('description-line4')}
         </p>
-        <a className={styles.email} href="mailto:axel.martin@outlook.com">
+        <a
+          className={styles.email}
+          href="mailto:axel.martin@outlook.com"
+          aria-label={t('mail-aria')}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           axel.martin@outlook.com
         </a>
       </div>

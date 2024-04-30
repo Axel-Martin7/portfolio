@@ -120,8 +120,11 @@
     "goals-part5-line1": "If you would like to learn more about my background, vision, potential, or for any professional proposal, collaboration opportunity, or simply to share and exchange ideas, please feel free to contact me through my social networks or directly via email at the following address :",
 
     "img-alt": "Profil picture",
+    "mail-aria": "Send me an email",
     "linkedin-alt": "Linkedin icon",
-    "github-alt": "Github icon"
+    "linkedin-aria": "Visit my Linkedin",
+    "github-alt": "Github icon",
+    "github-aria": "Visit my Github"
   },
 
   "page-contact": {

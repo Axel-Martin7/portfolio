@@ -157,19 +157,32 @@
         gap: 40px;
 
         .contactMail {
-          font-weight: 600;
+          display: block;
           padding: 20px;
+          font-size: 16px;
+          line-height: 17px;
+          font-weight: 500;
+          border: 1px solid $primary-color;
+          border-radius: 5px;
+          &:hover {
+            border-color: $accent-color;
+          }
         }
 
         .socialLinksContainer {
           display: flex;
-          gap: 80px;
+          gap: 40px;
 
           .itemContainer {
             width: 60px; // Pour que chaques item ai la meme taille et donc la meme marge
             display: flex;
             flex-direction: column;
             align-items: center;
+            &:hover {
+              .itemName {
+                color: $accent-color;
+              }
+            }
 
             .itemName {
               margin-top: 20px;

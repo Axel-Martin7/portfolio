@@ -1,8 +1,10 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import styles from './page.module.scss';
+import { Link } from '@/navigation';
 
 import linkedin from '@/public/icons/linkedin.svg';
+import github from '@/public/icons/github.svg';
 
 export default function About() {
   const t = useTranslations('page-about');
@@ -47,9 +49,9 @@ export default function About() {
               </p>
               <p>{t('me-part4-line1')}</p>
             </div>
-            <div className={styles.buttonContainer}>
-              <div className={styles.skillsBtn}>Skills & Formation</div>
-            </div>
+            <Link className={styles.buttonContainer} href="/skills">
+              <button className={styles.skillsBtn}>Skills & Formation</button>
+            </Link>
           </div>
 
           <div className={styles.pastContainer}>
@@ -101,6 +103,9 @@ export default function About() {
               <a
                 className={styles.contactMail}
                 href="mailto:axel.martin@outlook.com"
+                aria-label={t('mail-aria')}
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 axel.martin@outlook.com
               </a>
@@ -108,6 +113,9 @@ export default function About() {
                 <a
                   className={styles.itemContainer}
                   href="https://www.linkedin.com/in/axel-martin7/"
+                  aria-label={t('linkedin-aria')}
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <Image
                     className={styles.itemIcon}
@@ -121,10 +129,13 @@ export default function About() {
                 <a
                   className={styles.itemContainer}
                   href="https://github.com/Axel-Martin7"
+                  aria-label={t('github-aria')}
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <Image
                     className={styles.itemIcon}
-                    src={linkedin}
+                    src={github}
                     width={60}
                     height={60}
                     alt={t('github-alt')}

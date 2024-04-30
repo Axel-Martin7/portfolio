@@ -121,8 +121,11 @@
     "goals-part5-line1": "Si vous souhaitez en savoir plus sur mon parcours, ma vision, mon potentiel, ou pour toute proposition professionnelle, opportunité de collaboration ou simplement pour partager et échanger, n'hésitez pas à me contacter sur mes réseaux ou directement par e-mail à l'adresse suivante :",
 
     "img-alt": "Photo de profil",
+    "mail-aria": "Envoyez moi un email",
     "linkedin-alt": "Icone Linkedin",
-    "github-alt": "Icone Github"
+    "linkedin-aria": "Visitez mon Linkedin",
+    "github-alt": "Icone Github",
+    "github-aria": "Visitez mon Github"
   },
 
   "page-contact": {

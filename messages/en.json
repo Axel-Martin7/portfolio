@@ -5,7 +5,10 @@
     "about": "About",
     "projects": "Projects",
     "close-menu-aria": "Menu closing",
-    "open-menu-aria": "Menu opening"
+    "open-menu-aria": "Menu opening",
+    "mail-aria": "Send me an email",
+    "linkedin-aria": "Visit my Linkedin",
+    "github-aria": "Visit my Github"
   },
 
   "component-About": {

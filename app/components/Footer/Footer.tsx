@@ -1,11 +1,12 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { Link } from '@/navigation';
+import styles from './Footer.module.scss';
+
 import mail from '@/public/icons/mail.svg';
 import linkedin from '@/public/icons/linkedin.svg';
 import github from '@/public/icons/github.svg';
-import styles from './Footer.module.scss';
 
-import { Link } from '@/navigation';
 import Logo from '../Logo/Logo';
 
 export default function Footer() {
@@ -20,14 +21,14 @@ export default function Footer() {
         <Link className={styles.navItem} href={'/about'}>
           {t('about')}
         </Link>
+        <Link className={styles.navItem} href={'/contact'}>
+          Contact
+        </Link>
         <Link className={styles.navItem} href={'/skills'}>
           Skills
         </Link>
         <Link className={styles.navItem} href={'/projects'}>
           {t('projects')}
-        </Link>
-        <Link className={styles.navItem} href={'/contact'}>
-          Contact
         </Link>
       </nav>
 
@@ -35,6 +36,9 @@ export default function Footer() {
         <a
           className={styles.itemContainer}
           href="mailto:axel.martin@outlook.com"
+          aria-label={t('mail-aria')}
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <Image
             className={styles.icon}
@@ -47,6 +51,9 @@ export default function Footer() {
         <a
           className={styles.itemContainer}
           href="https://www.linkedin.com/in/axel-martin7/"
+          aria-label={t('linkedin-aria')}
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <Image
             className={styles.icon}
@@ -59,6 +66,9 @@ export default function Footer() {
         <a
           className={styles.itemContainer}
           href="https://github.com/Axel-Martin7"
+          aria-label={t('github-aria')}
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <Image
             className={styles.icon}

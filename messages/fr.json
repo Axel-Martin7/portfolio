@@ -5,7 +5,10 @@
     "about": "À propos",
     "projects": "Projets",
     "close-menu-aria": "Fermeture du menu",
-    "open-menu-aria": "Ouverture du menu"
+    "open-menu-aria": "Ouverture du menu",
+    "mail-aria": "Envoyez moi un email ",
+    "linkedin-aria": "Visitez mon Linkedin",
+    "github-aria": "Visitez mon Github"
   },
 
   "component-About": {

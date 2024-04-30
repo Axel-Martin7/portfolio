@@ -17,7 +17,6 @@
       radial-gradient(at left center, $light-bg-color, $dark-bg-color);
 
     .presentationSection {
-      // border: 1px solid yellow;
       .textsContainer {
         display: flex;
         flex-direction: column;
@@ -25,11 +24,11 @@
         padding: 0 40px;
         font-size: 14px;
         line-height: 17px;
+        font-weight: 300;
       }
     }
 
     .cardsSection {
-      // border: 1px solid yellow;
       .contactCard {
         .cardFrame {
           display: flex;
@@ -68,7 +67,7 @@
             .socialLinksContainer {
               display: flex;
               flex-direction: column;
-              gap: 5px;
+              gap: 20px;
               padding-top: 20px;
 
               .socialLink {
@@ -138,8 +137,14 @@
               }
 
               .socialLinksContainer {
+                gap: 5px;
                 border-left: 1px solid $primary-color;
                 padding: 0 0 0 20px;
+
+                .socialIcon {
+                  width: 30px;
+                  height: 30px;
+                }
               }
             }
           }

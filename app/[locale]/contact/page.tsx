@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import styles from './page.module.scss';
-// import linkedin from '../../public/icons/linkedin.svg';
+
 import linkedin from '@/public/icons/linkedin.svg';
 import github from '@/public/icons/github.svg';
 import mail from '@/public/icons/mail.svg';
@@ -42,38 +42,47 @@ export default function Contact() {
                     <a
                       className={styles.socialLink}
                       href="mailto:axel.martin@outlook.com"
+                      aria-label={t('mail-aria')}
+                      rel="noopener noreferrer"
+                      target="_blank"
                     >
                       <Image
                         className={styles.socialIcon}
                         src={mail}
-                        width={30}
-                        height={30}
+                        width={40}
+                        height={40}
                         alt="pp"
                       />
                       axel.martin@outlook.com
                     </a>
                     <a
                       className={styles.socialLink}
-                      href="mailto:axel.martin@outlook.com"
+                      href="https://www.linkedin.com/in/axel-martin7/"
+                      aria-label={t('linkedin-aria')}
+                      rel="noopener noreferrer"
+                      target="_blank"
                     >
                       <Image
                         className={styles.socialIcon}
                         src={linkedin}
-                        width={30}
-                        height={30}
+                        width={40}
+                        height={40}
                         alt="pp"
                       />
                       linkedin.com/in/axel-martin7
                     </a>
                     <a
                       className={styles.socialLink}
-                      href="mailto:axel.martin@outlook.com"
+                      href="https://github.com/Axel-Martin7"
+                      aria-label={t('github-aria')}
+                      rel="noopener noreferrer"
+                      target="_blank"
                     >
                       <Image
                         className={styles.socialIcon}
                         src={github}
-                        width={30}
-                        height={30}
+                        width={40}
+                        height={40}
                         alt="pp"
                       />
                       github.com/Axel-Martin7

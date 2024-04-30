@@ -27,12 +27,15 @@ export default function About() {
 
         <div className={styles.textsContainer}>
           <p>
-            {t('descriptionPart1')} <br></br> {t('descriptionPart2')} <br></br>{' '}
+            {t('descriptionPart1')} <br></br>
+            {t('descriptionPart2')} <br></br>
             {t('descriptionPart3')}
           </p>
           <p>
-            {t('descriptionPart4')} <br></br> {t('descriptionPart5')} <br></br>
-            {t('descriptionPart6')} <br></br> {t('descriptionPart7')}
+            {t('descriptionPart4')} <br></br>
+            {t('descriptionPart5')} <br></br>
+            {t('descriptionPart6')} <br></br>
+            {t('descriptionPart7')}
           </p>
         </div>
 

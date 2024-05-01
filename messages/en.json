@@ -64,11 +64,11 @@
 
   "component-Projects": {
     "portfolioImgAlt": "Portfolio v1 project logo",
-    "portfolioDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam uaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!",
+    "portfolioDescription": "This is the project you are currently exploring. It offers a detailed platform to showcase my skills, experiences, projects, and goals. I have opted for a minimalist design, aiming to combine the elegance of simplicity with a clear and organized structure.",
     "vzImgAlt": "VictoryZone project image",
-    "vzDescription": "This is the project you are currently exploring. It provides a detailed platform for effective presentation. I opted for a minimalist design, seeking to combine the elegance of simplicity with a clear and organized structure.",
+    "vzDescription": "VictoryZone is an application designed to represent an E-sports team. The MVP was developed by a team of 5 over a period of one month as part of the final project for my training at O’Clock. I served as the front-end developer.",
     "okanbanImgAlt": "O'Kanban project image",
-    "okanbanDescription": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem provident sunt dolorum reprehenderit, voluptatem vero, ipsam quaerat esse nostrum dolores ipsa voluptas voluptates doloribus obcaecati vitae. Ipsum, numquam odio!"
+    "okanbanDescription": "O'Kanban is an online project management application that utilizes a Kanban board system based on the same principle as Trello. I developed this full-stack application during my training at O’Clock."
   },
 
   "component-Thanks": {

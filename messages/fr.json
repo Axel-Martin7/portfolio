@@ -69,7 +69,7 @@
     "vzImgAlt": "Image du projet VictoryZone",
     "vzDescription": "VictoryZone est une application destinée à représenter une équipe E-sport. Le MVP a été réalisé en équipe de 5 sur une durée d'un mois dans le cadre du projet de fin d’études de ma formation chez O’Clock. J'avais le rôle de développeur front-end.",
     "okanbanImgAlt": "Image du projet O'Kanban",
-    "okanbanDescription": "OKANBAN est une application de gestion de projet en ligne qui utilise un système de tableau Kanban basé sur le même principe que Trello. J’ai développé cette application fullstack lors de ma formation chez O’Clock."
+    "okanbanDescription": "O'Kanban est une application de gestion de projet en ligne qui utilise un système de tableau Kanban basé sur le même principe que Trello. J’ai développé cette application fullstack lors de ma formation chez O’Clock."
   },
 
   "component-Thanks": {

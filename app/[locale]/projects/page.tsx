@@ -2,7 +2,6 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/navigation';
 import Image from 'next/image';
 import styles from './page.module.scss';
-import Projects from '@/app/components/Sections/Projects/Projects';
 
 export default function ProjectsPage() {
   const t = useTranslations('component-Projects');
@@ -105,10 +104,5 @@ export default function ProjectsPage() {
         </div>
       </div>
     </main>
-    // <main className={styles.projectsPage}>
-    //   <div className={styles.projectsContainer}>
-    //     <Projects />
-    //   </div>
-    // </main>
   );
 }

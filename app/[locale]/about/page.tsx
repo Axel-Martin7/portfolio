@@ -109,40 +109,6 @@ export default function About() {
               >
                 axel.martin@outlook.com
               </a>
-              <div className={styles.socialLinksContainer}>
-                <a
-                  className={styles.itemContainer}
-                  href="https://www.linkedin.com/in/axel-martin7/"
-                  aria-label={t('linkedin-aria')}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <Image
-                    className={styles.itemIcon}
-                    src={linkedin}
-                    width={60}
-                    height={60}
-                    alt={t('linkedin-alt')}
-                  />
-                  <p className={styles.itemName}>Linkedin</p>
-                </a>
-                <a
-                  className={styles.itemContainer}
-                  href="https://github.com/Axel-Martin7"
-                  aria-label={t('github-aria')}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <Image
-                    className={styles.itemIcon}
-                    src={github}
-                    width={60}
-                    height={60}
-                    alt={t('github-alt')}
-                  />
-                  <p className={styles.itemName}>Github</p>
-                </a>
-              </div>
             </div>
           </div>
         </div>

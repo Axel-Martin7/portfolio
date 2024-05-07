@@ -4,12 +4,14 @@
   padding-top: 80px;
   background: radial-gradient(transparent 18%, $dark-bg-color 70%),
     radial-gradient(at left center, $light-bg-color, $dark-bg-color);
+  // border: 1px solid red;
 
   .profilPictureContainer {
     height: 340px;
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
+    // border: 1px solid orange;
 
     .photoContainer {
       position: relative;
@@ -28,6 +30,7 @@
     flex-direction: column;
     gap: 40px;
     padding: 0 40px;
+    // border: 1px solid orange;
 
     .titleContainer {
       display: flex;

@@ -39,8 +39,8 @@ export default function Contact() {
                 <Image
                   className={styles.itemIcon}
                   src={linkedin}
-                  width={50}
-                  height={50}
+                  width={40}
+                  height={40}
                   alt={t('linkedinIconAlt')}
                 />
                 <p className={styles.itemName}>Linkedin</p>
@@ -56,8 +56,8 @@ export default function Contact() {
                 <Image
                   className={styles.itemIcon}
                   src={github}
-                  width={50}
-                  height={50}
+                  width={40}
+                  height={40}
                   alt={t('githubIconAlt')}
                 />
                 <p className={styles.itemName}>GitHub</p>

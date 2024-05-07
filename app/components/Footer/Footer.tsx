@@ -41,8 +41,8 @@ export default function Footer() {
           <Image
             className={styles.icon}
             src={mail}
-            width={50}
-            height={50}
+            width={40}
+            height={40}
             alt="Email icon"
           />
         </a>
@@ -56,8 +56,8 @@ export default function Footer() {
           <Image
             className={styles.icon}
             src={linkedin}
-            width={50}
-            height={50}
+            width={40}
+            height={40}
             alt="Linkedin icon"
           />
         </a>
@@ -71,8 +71,8 @@ export default function Footer() {
           <Image
             className={styles.icon}
             src={github}
-            width={50}
-            height={50}
+            width={40}
+            height={40}
             alt="Github icon"
           />
         </a>

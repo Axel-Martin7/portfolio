@@ -168,30 +168,6 @@
             border-color: $accent-color;
           }
         }
-
-        // .socialLinksContainer {
-        //   display: flex;
-        //   gap: 40px;
-
-        //   .itemContainer {
-        //     width: 60px; // Pour que chaques item ai la meme taille et donc la meme marge
-        //     display: flex;
-        //     flex-direction: column;
-        //     align-items: center;
-        //     &:hover {
-        //       .itemName {
-        //         color: $accent-color;
-        //       }
-        //     }
-
-        //     .itemName {
-        //       margin-top: 20px;
-        //       font-size: 10px;
-        //       text-transform: uppercase;
-        //       letter-spacing: 1px;
-        //     }
-        //   }
-        // }
       }
     }
   }
@@ -223,19 +199,6 @@
       max-width: 100%;
       gap: 160px;
       padding: 0;
-
-      // .goalsContainer {
-      //   .contactContainer {
-      //     .socialLinksContainer {
-      //       .itemContainer {
-      //         .itemIcon {
-      //           width: 40px;
-      //           height: 40px;
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
     }
   }
 }
